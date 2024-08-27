@@ -1,0 +1,168 @@
+@media (min-width: 1921px) and (min-height: 1081px) and (orientation: landscape)
+{
+/* --------------- */  
+/* TEXT FORMATTING */
+/* --------------- */  
+
+  #tagline
+  {
+    font-size: 2.8rem;
+  }
+
+  p
+  {
+    font-size: 1.4rem;
+  }
+
+  h2
+  {
+    font-size: 2.0rem;
+  }
+
+  .nav-name
+  {
+    font-size: 3.7rem;  
+    margin-right: 10%;
+  }
+
+  .nav-text
+  {
+    font-size: 2.5rem;  
+  }
+
+  .foot-text
+  {
+    font-size: 1.3rem; 
+  }
+
+/* ---- */  
+/* DIVS */
+/* ---- */  
+
+  .box
+  {
+    margin-bottom: 30vh;
+  }
+  
+  .content-left
+  {
+    max-width: 70%;
+  }
+  
+  .content-right
+  {  
+    top:78vh;
+    right: 1%;
+  }
+  
+/* ----- */  
+/* COVER */
+/* ----- */  
+
+  .video-container
+  {  
+    height: 73vh;
+    width: 100%;  
+    
+    position:fixed;    
+  
+    display:block;
+  
+    justify-content: center;
+    justify-self: center;
+    align-self:center;   
+  
+    overflow: hidden;
+  
+    top: 5%;
+  }
+  
+  #cover
+  {
+  
+    position: relative;
+    top: 50%;
+    left: 50%;
+    right:50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+  
+    display:block;
+  
+    justify-content: center;
+    justify-self: center;
+    align-self:center;      
+  }  
+  
+  #arrow-quiver
+  {
+    bottom: 12.1%;
+  }
+
+/* -------- */  
+/* NAV FOOT */
+/* -------- */  
+  
+  .nav-text
+  {
+    padding:0.5%;
+    margin: 1%;
+  }
+
+  .nav-name
+  {
+    margin-right:30.5%;
+  }
+  
+  footer
+  {
+    justify-content: center;
+  }
+  
+/* ----- */    
+/* BOXES */
+/* ----- */  
+  
+  .welcome-box
+  {      
+    display: flex;  
+  }
+
+  .project-list-box
+  {
+    bottom: 20vh;
+  }  
+  
+  #project-list
+  {
+    margin-top: 0%;
+  }
+  
+  .project-list-box
+  {  
+    align-items:center; 
+  }
+  
+  .project-list-item
+  {
+    margin: 1%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .project-list-image
+  {
+    margin: 0%;
+    max-height: 50%;
+    max-width: 50%; /* Set max-width to 100% */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  #bottom
+  {
+    height: 50vh;
+    visibility: hidden;
+  }
+}

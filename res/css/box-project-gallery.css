@@ -1,0 +1,40 @@
+/* ---------------- */  
+/* PROJECTS GALLERY */
+/* ---------------- */  
+
+  #project-gallery
+  {
+    margin-top: 5%;
+  }
+
+  .project-gallery-box
+  {  
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; /* Horizontally center the image */
+    align-items: center; /* Vertically center the image */
+  }
+
+  .project-gallery-item
+  {
+    flex: 1 0 calc(33.33% - 4%);
+    margin: 2%;
+    display: flex;
+    justify-content: center; /* Horizontally center the image */
+    filter: grayscale(25%);
+    position: relative;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .project-gallery-item:hover
+  {
+    transform: scale(1.1);
+    filter: grayscale(0%);    
+  }
+
+  .project-box-image
+  {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+  }

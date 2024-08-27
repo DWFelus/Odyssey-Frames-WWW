@@ -1,0 +1,35 @@
+/* -------------------- */  
+/* "STAY" / WELCOME box */
+/* -------------------- */  
+
+  #welcome
+  { 
+    margin-top: -5%;
+  }
+
+  .welcome-box
+  {
+    display: block;  
+  }
+
+  .welcome-item
+
+  {
+    margin: 1%;
+    flex: 1;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+  }
+
+  .welcome-image
+  {
+    margin: 1%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .welcome-text
+  {
+    flex:1;
+  }

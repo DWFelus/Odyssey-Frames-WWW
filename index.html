@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phalanx Frames</title>
+
+    <!-- CSS FILES -->        
+    <link rel="stylesheet" type="text/css" href="./res/css/load-screen.css"> 
+
+    <link rel="stylesheet" type="text/css" href="./res/css/common.css">    
+    <link rel="stylesheet" type="text/css" href="./res/css/nav-footer.css">  
+
+    <link rel="stylesheet" type="text/css" href="./res/css/box-project-gallery.css">
+    <link rel="stylesheet" type="text/css" href="./res/css/box-project-list.css">
+    <link rel="stylesheet" type="text/css" href="./res/css/box-welcome.css">    
+    <link rel="stylesheet" type="text/css" href="./res/css/box-content.css">
+    <link rel="stylesheet" type="text/css" href="./res/css/box-about.css"> 
+    <link rel="stylesheet" type="text/css" href="./res/css/box-arrow.css">   
+    <link rel="stylesheet" type="text/css" href="./res/css/box-tagline.css"> 
+
+    <link rel="stylesheet" type="text/css" href="./res/css/media/Portrait1080p+.css">
+    <link rel="stylesheet" type="text/css" href="./res/css/media/Landscape1080p+.css">
+    <link rel="stylesheet" type="text/css" href="./res/css/media/Portrait1080p.css">
+    <link rel="stylesheet" type="text/css" href="./res/css/media/Landscape1080p.css"> 
+    <link rel="stylesheet" type="text/css" href="./res/css/media/Portrait768p.css">
+    <link rel="stylesheet" type="text/css" href="./res/css/media/Landscape768p.css"> 
+    <link rel="stylesheet" type="text/css" href="./res/css/media/Portrait576p.css">
+    <link rel="stylesheet" type="text/css" href="./res/css/media/Landscape576p.css"> 
+
+    <!-- Font Awesome link-->
+    <script src="https://kit.fontawesome.com/ad6cff3a8c.js" crossorigin="anonymous"></script>       
+
+    <!-- FAVICON-->
+    <link rel="icon" href="./favicon.png" type="image/png">
+
+    <!-- FONT LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+
+    <!-- JS -->
+    <script src="./res/js/typewriterTagline.js"></script>  
+    <script src="./res/js/coverLoading.js"></script>    
+    <script src="./res/js/gotoOffset.js"></script>     
+    <script src="./res/js/navFooterSlide.js"></script>     
+    <script src="./res/js/bodyColorTransition.js"></script>
+    <script src="./res/js/autoplayGalleryVideos.js"></script>
+
+    
+  </head>
+
+
+  <!-- VISIBLE WWW -->
+<body> 
+
+  <div class="load-screen">            
+    <h2 id="loadtag">Loading</h2>
+    <div class="progress-container">           
+      <div class="progress-bar" id="myProgressBar"></div>            
+    </div>
+  </div> 
+
+  <div id="content">
+    <div id="top"></div>
+ 
+    <!-- NAV + FOOTER -->
+    
+    <nav role="presentation"> 
+        <h1 class="nav-name"><a href="#top">Phalanx Visuals</a></h1>
+        <h1 class="nav-text"><a href="#showreel">Showreel</h1>
+        <h1 class="nav-text"><a href="#sessions">Session</h1>
+        <h1 class="nav-text"><a href="#live">Live</h1>          
+        <h1 class="nav-text"><a href="#exp">Exp</h1>    
+        <h1 class="nav-text"><a href="#contact">Contact</h1>  
+    </nav>
+
+    <footer role="presentation"> >
+      <h1 class="foot-text"><a href="#gotoLIW">Lucky Chops<br>"Live in Warsaw"</a></h1>
+      <h1 class="foot-text"><a href="#gotoSM">Mikromusic<br>"Live in Gdansk"</a></h1>
+      <h1 class="foot-text"><a href="#gotoILLU">Illusion<br>"Tchórz"</a></h1>
+      <h1 class="foot-text"><a href="#gotoOK">Obsidian Kingdom<br>"Live in Gdansk"</a></h1>
+      <h1 class="foot-text"><a href="#gotoD20">Lucky Chops<br>"D20"</a></h1>      
+      <h1 class="foot-text"><a href="http://www.dwfls.pl" onclick='window.open("http://www.dwfls.pl");return false;'>www by<br>DWFLS.PL</a></h1>
+   </footer>  
+
+
+    <!--MAIN CONTENT>-->
+    <div class="content-box">   
+
+      
+      <!--ANIMATED HEADLINE-->
+      <div class="content-right">   
+             
+        <div class="tagline-container" role="presentation"> 
+          <h2 id="tagline"><span></span></h2>
+        </div>        
+      </div>
+
+      <!--SCROLL CONTENT-->
+      <div class="content-left">
+
+        <!--ARROW/COVER BOX -->
+        <div class="arrow-box" role="presentation">
+
+          <div class="video-container">
+            <video id="cover" preload="auto" autoplay loop muted src="res/video/coverV3-4mbps50speed-audiocomp.mp4" alt="Cover video of the www"></video>
+          </div>
+             
+          <div id="tagline-center-container">
+            <h2 id="tagline-center">Bring your band<br>To a visual dimension<span></span></h2>
+          </div>     
+          
+          <div id="arrow-quiver">            
+            <i class="fa-solid fa-arrow-down fa-beat-fade" id="arrow-down"></i> 
+          </div>       
+        </div>  
+
+        
+
+
+
+        <!-- SESSION AND STUDIO VIDEOS -->
+        <div class="headline-wrapper" role="presentation"> 
+          <div class="headline" id="project-gallery">
+            <h2>Session and Studio Videos</h2>
+          </div>
+        </div>
+
+        <div class="box"> 
+          <div class="project-gallery-box" role="presentation"> 
+            <div class="project-gallery-item">
+              <a href="#gotoAS">
+                <video class="project-box-image" preload="none" src="./res/video/asV3.mp4" poster="res/img/as.jpg" loading="lazy" muted alt="AutosaveNotepad"></video>
+              </a>
+            </div>
+            <div class="project-gallery-item">
+              <a href="#gotoYLH">
+                <video class="project-box-image" preload="none" src="./res/video/ylhV3.mp4" poster="res/img/ylh.jpg" loading="lazy" muted alt="YourLocalHero"></video>
+
+              </a>
+            </div>
+            <div class="project-gallery-item">
+              <a href="#gotoTP">
+                <video class="project-box-image" preload="none" src="./res/video/tpV3.mp4" poster="res/img/tp.jpg" loading="lazy" muted alt="AutosaveNotepad"></video>
+              </a>
+            </div>
+            <div class="project-gallery-item">
+              <a href="#gotoPS">
+                <video class="project-box-image" preload="none" src="./res/video/psV3.mp4" poster="res/img/ps.jpg" loading="lazy" muted alt="AutosaveNotepad"></video>
+              </a>
+            </div>
+            <div class="project-gallery-item">
+              <a href="#gotoPORT">
+                <video class="project-box-image" preload="none" src="./res/video/wwwV3.mp4" poster="res/img/www.jpg" loading="lazy" muted alt="AutosaveNotepad"></video>
+              </a>
+            </div>
+            <div class="project-gallery-item">
+              <a href="#gotoMP">
+                <video class="project-box-image" preload="none" src="./res/video/mpV3.mp4" poster="res/img/mp.jpg" loading="lazy" muted alt="AutosaveNotepad"></video>
+              </a>
+            </div>
+
+            <div class="project-gallery-item">
+              <a href="#gotoPORT">
+                <video class="project-box-image" preload="none" src="./res/video/wwwV3.mp4" poster="res/img/www.jpg" loading="lazy" muted alt="AutosaveNotepad"></video>
+              </a>
+            </div>
+            <div class="project-gallery-item">
+              <a href="#gotoMP">
+                <video class="project-box-image" preload="none" src="./res/video/mpV3.mp4" poster="res/img/mp.jpg" loading="lazy" muted alt="AutosaveNotepad"></video>
+              </a>
+            </div>
+
+          </div>
+        </div>   
+        
+        <!-- LIVE VIDEOS -->
+        <div class="headline-wrapper" role="presentation"> 
+          <div class="headline" id="project-gallery">
+            <h2>Live Videos</h2>
+          </div>
+        </div>
+
+        <div class="box"> 
+          <div class="project-gallery-box" role="presentation"> 
+            <div class="project-gallery-item">
+              <a href="#gotoAS">
+                <video class="project-box-image" preload="none" src="./res/video/asV3.mp4" poster="res/img/as.jpg" loading="lazy" muted alt="AutosaveNotepad"></video>
+              </a>
+            </div>
+            <div class="project-gallery-item">
+              <a href="#gotoYLH">
+                <video class="project-box-image" preload="none" src="./res/video/ylhV3.mp4" poster="res/img/ylh.jpg" loading="lazy" muted alt="YourLocalHero"></video>
+
+              </a>
+            </div>
+            <div class="project-gallery-item">
+              <a href="#gotoTP">
+                <video class="project-box-image" preload="none" src="./res/video/tpV3.mp4" poster="res/img/tp.jpg" loading="lazy" muted alt="AutosaveNotepad"></video>
+              </a>
+            </div>
+            <div class="project-gallery-item">
+              <a href="#gotoPS">
+                <video class="project-box-image" preload="none" src="./res/video/psV3.mp4" poster="res/img/ps.jpg" loading="lazy" muted alt="AutosaveNotepad"></video>
+              </a>
+            </div>
+            <div class="project-gallery-item">
+              <a href="#gotoPORT">
+                <video class="project-box-image" preload="none" src="./res/video/wwwV3.mp4" poster="res/img/www.jpg" loading="lazy" muted alt="AutosaveNotepad"></video>
+              </a>
+            </div>
+            <div class="project-gallery-item">
+              <a href="#gotoMP">
+                <video class="project-box-image" preload="none" src="./res/video/mpV3.mp4" poster="res/img/mp.jpg" loading="lazy" muted alt="AutosaveNotepad"></video>
+              </a>
+            </div>
+
+            <div class="project-gallery-item">
+              <a href="#gotoAS">
+                <video class="project-box-image" preload="none" src="./res/video/asV3.mp4" poster="res/img/as.jpg" loading="lazy" muted alt="AutosaveNotepad"></video>
+              </a>
+            </div>
+            <div class="project-gallery-item">
+              <a href="#gotoYLH">
+                <video class="project-box-image" preload="none" src="./res/video/ylhV3.mp4" poster="res/img/ylh.jpg" loading="lazy" muted alt="YourLocalHero"></video>
+
+              </a>
+            </div>
+            <div class="project-gallery-item">
+              <a href="#gotoTP">
+                <video class="project-box-image" preload="none" src="./res/video/tpV3.mp4" poster="res/img/tp.jpg" loading="lazy" muted alt="AutosaveNotepad"></video>
+              </a>
+            </div>
+            <div class="project-gallery-item">
+              <a href="#gotoPS">
+                <video class="project-box-image" preload="none" src="./res/video/psV3.mp4" poster="res/img/ps.jpg" loading="lazy" muted alt="AutosaveNotepad"></video>
+              </a>
+            </div>
+            <div class="project-gallery-item">
+              <a href="#gotoPORT">
+                <video class="project-box-image" preload="none" src="./res/video/wwwV3.mp4" poster="res/img/www.jpg" loading="lazy" muted alt="AutosaveNotepad"></video>
+              </a>
+            </div>
+            <div class="project-gallery-item">
+              <a href="#gotoMP">
+                <video class="project-box-image" preload="none" src="./res/video/mpV3.mp4" poster="res/img/mp.jpg" loading="lazy" muted alt="AutosaveNotepad"></video>
+              </a>
+            </div>
+
+            <div class="project-gallery-item">
+              <a href="#gotoAS">
+                <video class="project-box-image" preload="none" src="./res/video/asV3.mp4" poster="res/img/as.jpg" loading="lazy" muted alt="AutosaveNotepad"></video>
+              </a>
+            </div>
+            <div class="project-gallery-item">
+              <a href="#gotoYLH">
+                <video class="project-box-image" preload="none" src="./res/video/ylhV3.mp4" poster="res/img/ylh.jpg" loading="lazy" muted alt="YourLocalHero"></video>
+
+              </a>
+            </div>
+            <div class="project-gallery-item">
+              <a href="#gotoTP">
+                <video class="project-box-image" preload="none" src="./res/video/tpV3.mp4" poster="res/img/tp.jpg" loading="lazy" muted alt="AutosaveNotepad"></video>
+              </a>
+            </div>
+            <div class="project-gallery-item">
+              <a href="#gotoPS">
+                <video class="project-box-image" preload="none" src="./res/video/psV3.mp4" poster="res/img/ps.jpg" loading="lazy" muted alt="AutosaveNotepad"></video>
+              </a>
+            </div>
+            <div class="project-gallery-item">
+              <a href="#gotoPORT">
+                <video class="project-box-image" preload="none" src="./res/video/wwwV3.mp4" poster="res/img/www.jpg" loading="lazy" muted alt="AutosaveNotepad"></video>
+              </a>
+            </div>
+            <div class="project-gallery-item">
+              <a href="#gotoMP">
+                <video class="project-box-image" preload="none" src="./res/video/mpV3.mp4" poster="res/img/mp.jpg" loading="lazy" muted alt="AutosaveNotepad"></video>
+              </a>
+            </div>
+          </div>
+        </div>   
+
+
+        <!-- EXP BOX -->
+        <div class="headline-wrapper">
+          <div class="headline" id="about">
+            <h2>My Experience as a Band Videographer</h2>
+          </div>
+        </div>
+
+        <div class="box">   
+      
+
+          <div class="about-box">            
+
+            <div class="about-item">              
+              <p id="just">
+                
+                I first picked up a guitar in high school, starting my first band and just few years later I dove headfirst into the world of local <b>live music</b> scene. Over the years, I’ve played in various projects, which has given me a deep understanding of what it’s like to perform live and to understand the unique stage and musician lingo. This was crucial to <b>becoming a knowledgable band videographer</b>.
+
+                <br>
+                <br>
+
+                In around 2008, I began exploring video production. It quickly became clear that those two passions were on a direct collision course. Since then, I’ve had the opportunity to create videos in a multitude of venues, mastering the art of working in <b>low light, time pressure and under tight deadlines</b>. I’ve also gained substantial experience in studio settings, including sessions broadcasted live on radio, while occasionally taking on <b>audio mixing gigs</b>.
+
+                <br>
+                <br>
+
+                Under my previous moniker <i>Fractal Videos</i> I’ve produced videos for over <b>50 bands, artists and collectives</b>, building lasting relationships with many as <b>returning clients</b>. I've filmed bands in <b>London, Warsaw, Manchester, Gdańsk</b>, and other cities. The list includes, but is not limited to artists like:
+
+              </p> 
+            </div>
+
+            <div class="about-item">
+              <div class="profile-pic-circle">
+              <img class="about-image" src="./res/img/prof comp.jpg" alt="Picture of the www owner and author">
+              </div>
+            </div>
+
+          </div>
+          <p>         
+            
+            <i>Lucky Chops, Mikromusic, Obisidian Kingdom, Illusion, Tymon Tymański, Lipali, Krzta, The Materia, Jeru The Damaja, Abstract Orchestra, Slum Village, Farben Lehre, Mechanism, Moose The Tramp, Milczenie Owiec, Sautrus, The Black Thunder, Calm Hatchery, eM, Drown My Day, Lyko, Moust, Odd Stars, 441 Hz, Closterkeller, Mitra, Venflon, The Shipyard, Bollywood Brass Band, Thesis, Motorłeb, Alcoholica, Lowtide, Lux Perpetua, Gutter Sirens, Kozi Syn, Invicto, Fractal, FNAG, Deer Head On The Wall, Caren Coultrane Crusade <b>and others.</i></b>
+
+            <br><Br>
+
+            When I’m not working on videos or writing code, you might find me playing the guitar, composing music, or keeping my eyes sharp in the wilderness with a bow and arrow.
+
+          </p>  
+        </div>
+
+
+        <!-- CONTACT BOX -->
+
+        <div class="headline-wrapper">
+          <div class="headline" id="about">
+            <h2>Contact Me</h2>
+          </div>
+        </div>
+
+        <div class="box">   
+          <div class="about-box"> 
+            <div class="about-item">  
+            </div>
+          </div>
+          <p>  
+          </p>  
+        </div>
+
+
+
+        <!-- PROJECTS LIST BOX -->
+        <div class="headline-wrapper">
+          <div class="headline" id="project-list">
+            <h2>Highlighted Projects</h2>
+          </div> 
+        </div>
+
+        <div class="box" >      
+          <div class="project-list-box"> 
+            
+            <a href="https://github.com/DWFLS/AutosaveNotepad" onclick='window.open("https://github.com/DWFLS/AutosaveNotepad");return false;'>
+              <div class="project-list-item" id="gotoLIW">
+                <div class="project-list-image-wrapper">
+                  <iframe class="project-list-image" src="https://www.youtube.com/embed/xC6JEwFLcJk?si=B29bomPqyskbH4Pu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="project-list-text">
+                  <h3>Lucky Chops "Live in Warsaw"</h3>
+                  <p>Capturing Lucky Chops live in Warsaw was a videographer's dream come true. The band brought the raw energy of New York's jazz and funk scene straight to the heart of Poland, delivering a performance that could rival any stadium rock spectacle. With thundering modern drums and a rumble of catchy brass, the band's dynamic showmanship was on full display. Filming this event was a pure pleasure, and the resulting video was so compelling it was used successfully in Lucky Chops' campaign to fund their next album.</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://github.com/DWFLS/YourLocalHero" onclick='window.open("https://github.com/DWFLS/YourLocalHero");return false;'>
+              <div class="project-list-item" id="gotoSM">  
+              <div class="project-list-image-wrapper">
+                
+                <iframe class="project-list-image" src="https://www.youtube.com/embed/HV0RozRx1ig?si=6YS8xp4Sc6V-uxfX&amp;start=3039" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+                <div class="project-list-text">
+                  
+                  <h3>Mikromusic "Live in Stary Maneż"</h3>
+                  <p>  
+                    This video project was born from a spontaneous opportunity — thanks to a Facebook post and a recommendation, I found myself filming Micromusic live in Gdansk days before the event. Despite the last-minute organization, the video is anything but rushed. It captures the essence of Micromusic’s concert magic, giving viewers insight into the phenomenon behind their success. The video showcases how their masterfully crafted songs resonate deeply with audiences, a true testament to their artistry. 
+
+              </p></div>
+            </div>
+          </a>
+
+          <a href="https://github.com/DWFelus/ThemedPomodoro" onclick='window.open("https://github.com/DWFelus/ThemedPomodoro");return false;'>
+            <div class="project-list-item" id="gotoILLU">          
+              <div class="project-list-image-wrapper">
+                <iframe class="project-list-image" src="https://www.youtube.com/embed/1oHNSryjKSw?si=kIxrRUMKS1noV8v1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="project-list-text">
+                <h3>Illusion "Tchórz" Live Music Video  </h3>
+                
+                <p>
+                  One of the benefits of working with bands is that sometimes you get to work with musicians you've seen couple of times on the TV. Filming Illusion, the hard rock and metal icons of the polish soil, was one such experience. While I had previously worked on videos for Lipali, the vocalist’s other project, the chance to capture Illusion both in the studio and live was truly special. Given full creative freedom, I infused the videos with an old-school vibe that perfectly complements the band’s raw energy, just like I remembered seeing them on the telly.
+              
+              </p></div>
+            </div>
+          </a>
+
+          <a href="https://www.youtube.com/watch?v=xOOX5x0GvUY" onclick='window.open("https://www.youtube.com/watch?v=xOOX5x0GvUY");return false;'> 
+            <div class="project-list-item" id="gotoOK">
+              <div class="project-list-image-wrapper">
+                <img class="project-list-image" src="./res/img/ok.png" alt="Picture of the www owner and author">
+              </div>
+              <div class="project-list-text">
+                
+                 
+                  
+                <h3>Obsidian Kingdom "Live in Gdańsk"  </h3>
+                <p>
+                  Filming Obsidian Kingdom in Gdansk was a thrilling challenge — keeping the camera steady and focued while resisting the urge to headbang in the midst of flashing strobe lights was no easy task. The band’s electrifying performance at B90 was amplified by a dramatic lighting setup that played perfectly with the venue's shadows. Remarkably, the video features sound straight from the mixing board, as heard from the PA, capturing the raw, and authentic energy of the night. This project is a testament to the power of having a dedicated light and sound team, and of course, a videographer who knows how to bring the music to life.
+              
+              </p></div>
+            </div>
+          </a>
+
+          <a href="https://youtu.be/xSLiWe7F8xA?feature=shared" onclick='window.open("https://youtu.be/xSLiWe7F8xA?feature=shared");return false;'>
+            <div class="project-list-item" id="gotoD20">
+              <div class="project-list-image-wrapper">
+                <iframe class="project-list-image" src="https://www.youtube.com/embed/XSrJGvf-xWE?si=HCBFmIgyb3ieYJfV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="project-list-text">
+                
+                <h3>Lucky Chops "D20 - Castle Version"</h3>
+                <p>    
+                  When Lucky Chops returned to tour in Poland, another collaboration was inevitable. This time, we captured their vibrant energy not only within the walls of a Krakow club Kwadrat but also took the band to the streets, echoing their New York roots. The "Castle" version, was filmed on the historic Wawel Castle walls and by the Vistula River, and was edited to multiple versions. The Castle version landed on our Facebook profile, while the full, raw, <a href="">Judas Priest-esque</a> club performance was shared on the band’s official channels. Filming a band in such an iconic location was a unique experience, adding another memorable chapter to our collaborations.
+              
+              </p></div>
+            </div>
+          </a>
+
+
+          </div>
+
+        </div>
+
+        
+        <div class="headline-wrapper">
+          <div class="headline" id="bottom">
+            <h2></h2>
+          </div> 
+          
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+  </div>  
+      <!-- VISIBLE WWW END -->
+
+  </body>
+</html>

@@ -1,0 +1,27 @@
+.content-box
+{   
+  margin-bottom: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.content-left
+{
+  flex-basis: 70.00%; 
+  flex-grow: 0;    
+}
+
+.content-right
+{
+  flex-basis: 30%; 
+  flex-grow: 0; 
+  position: fixed; 
+  right: 0;
+  top: 0;
+  overflow: visible; 
+
+  right: 2%;
+
+  top: 50%;
+}
+

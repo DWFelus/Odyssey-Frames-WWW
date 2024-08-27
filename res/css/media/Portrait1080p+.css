@@ -1,0 +1,156 @@
+@media (min-width: 1081px) and (min-height: 1921px) and (orientation: portrait)
+{
+/* --------------- */    
+/* TEXT FORMATTING */
+/* --------------- */  
+
+  #tagline-center
+  {
+    font-size: 3.5rem;
+  }
+
+  p
+  {
+    font-size: 1.3rem;
+  }
+
+  h2
+  {
+    font-size: 2.0rem;
+  }
+
+  .nav-name
+  {
+    font-size: 3.2rem;  
+    margin-right: 7%;
+  }
+
+  .nav-text
+  {
+    font-size: 2.2rem;  
+  }
+
+  .foot-text
+  {
+    font-size: 1.0rem; 
+  }
+
+/* ---- */  
+/* DIVs */  
+/* ---- */  
+
+  .content-box
+  {
+    display:block;   
+  } 
+
+  .content-right
+  {
+    display:none;
+  } 
+
+/* ----- */  
+/* COVER */
+/* ----- */  
+
+  .video-container
+  {    
+    width: 100%;  
+    height: 92vh;
+        
+    display:block;
+    position:relative;
+
+    overflow: hidden;
+  }
+
+  #cover
+  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right:50%;
+    transform: translate(-50%, -50%);
+    max-width: none;
+    max-height: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .arrow-box
+  {
+    display:block;
+    position:relative;
+    margin-top: 5vh;
+    margin-bottom: -7vh;
+  }  
+
+  #arrow-quiver
+  {
+    bottom:12.5%; 
+  }
+
+  #tagline
+  {
+    visibility: hidden;
+  }
+
+  #tagline-center-container
+  {
+    position: relative;
+    bottom: 55%;
+    visibility: visible;
+  }
+
+/* ----- */  
+/* BOXES */
+/* ----- */  
+
+  .welcome-box
+  {    
+    display: block;  
+  }
+
+  #project-list
+  {
+    margin-top: 0%;
+  }
+
+  .project-list-box
+  {
+    margin-bottom: 7vh;
+    align-items:center; 
+  }
+  .project-list-item
+  {
+    margin: 1%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    display: block;
+    justify-content: center;
+  }
+
+  .project-list-image
+  {
+    margin: 0%;
+    max-height: 100%;
+    max-width: 100%; /* Set max-width to 100% */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  .project-list-text
+  {
+    padding-bottom: 2%  
+  }
+
+/* ------------ */  
+/* NAV - FOOTER */
+/* ------------ */  
+
+  footer
+  {
+    justify-content: center;
+  }
+}
