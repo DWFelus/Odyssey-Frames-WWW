@@ -1,4 +1,4 @@
-# Obsidian Frames WWW 
+# Odyssey Frames WWW 
 ## Readme and roadmap:
 
 Version history:
@@ -11,6 +11,7 @@ Version history:
 - [x] WWW title
 - [x] Initial Commit
 - [x] updated todo/roadmap
+- [ ] logos created
 
 Todo:
 
@@ -18,7 +19,7 @@ Todo:
 
 - [ ] Video editing
   - [ ] edit 60s showreel
-  - [ ] create 720p thumbnails without bars for lists
+  - [ ] create 27 720p thumbnails without bars for lists
 
 - [ ] Showreel
   - [ ] Add showreel to the page
@@ -50,36 +51,19 @@ Todo:
   - [ ] video outer boxes in width of the webpage
   - [ ] d20 should link to facebook and not change the embeded video
     - [ ] chosen videos:
-      Sessions (9): 
-        Tymon Tymański (highlight)
-        Illusion 1 
-        Illusion 2        
-        Moose The Tramp
-        Thesis
-        Milczenie Owiec
-        Lyko Czy to my
-        Lyko Serce
-        Odd Stars
 
+      Sessions (9): 
+        Illusion 1 / Thesis / Moose The Tramp 
+        Tymon Tymański (highlight)/ Lyko Czy to my / Illusion 2    
+        Odd Stars / Milczenie Owiec / Lyko Serce
+    
       Live (18):
-        lc warsaw (clip) (highlight)
-        illusion tchorz
-        The shipyard so much to win
-        Drown my day        
-        mikromusic
-        obsidian kingdom
-        the black thunder
-        witchrider
-        lucky chops d20
-        calm hatchery
-        krzta
-        sautrus
-        lc warsaw 2
-        lipali trailer
-        moose the tramp hello goodbye
-        lucky chops 3
-        Illusion b90 trailer 1
-        illusion b90 trailer 2
+        Illusion b90 trailer 1 / mikromusic / obsidian kingdom
+        lucky chops d20 / illusion b90 trailer 2 / lc warsaw (clip) (highlight) 
+        illusion tchorz /lc warsaw 2 / krzta
+        lipali trailer /lucky chops 3 / sautrus
+        the black thunder / moose the tramp hello goodbye / Drown my day    
+        The shipyard so much to win / witchrider / calm hatchery
 
 ### **v0.4.0 - Contact and minor adjustments**
 
@@ -93,13 +77,7 @@ Todo:
   - [ ] delete unused resources  
   - [ ] change loading to be a helmet (or another logo) that is filling up
 
-
-
-
-
-
-
-### **v0.5.0 - Rulesets with @Media for different devices**
+### **v0.5.0 - Test Rulesets with @Media for different devices**
   - [ ] 576p portrait
   - [ ] 768p portrait
   - [ ] 1080p portrait
@@ -109,10 +87,6 @@ Todo:
   - [ ] 768p landscape
   - [ ] 1080p landscape
   - [ ] 1080p+ landscape
-
-### **v0.5.1 - Fix Resolution Deadzone**
-- [ ] test half screen on 4K display
-- [ ] test half screen on 1080p display
 
 ### **v0.8.0 - Test Responsiveness and links**
 
