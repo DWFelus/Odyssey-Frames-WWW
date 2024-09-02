@@ -11,19 +11,33 @@ Version history:
 - [x] WWW title
 - [x] Initial Commit
 - [x] updated todo/roadmap
-- [ ] logos created
+- [x] logos created
 
 Todo:
 
 ### **v0.1.0 - Showreel**
 
-- [ ] Video editing
-  - [ ] edit 60s showreel
-  - [ ] create 27 720p thumbnails without bars for lists
+- [x] Video editing
+  - [x] edit 60s showreel
+  - [x] create 27 720p thumbnails without bars for lists
 
-- [ ] Showreel
-  - [ ] Add showreel to the page
-  - [ ] should be static and then change to b/w and blurred out when scrolled down
+        Live (18):
+        [x] [x]  [x] Illusion b90 trailer 1 / mikromusic / obsidian kingdom
+        [x] [x]  [x] lucky chops d20 / illusion b90 trailer 2 / lc warsaw 1 (clip) (highlight) 
+        [x] [x]  [x] illusion tchorz /lc warsaw 2 / krzta
+        [x] [x]  [x] lipali trailer /lc warsaw 3 full / sautrus
+        [x] [x]  [x] the black thunder / moose the tramp hello goodbye / Drown my day    
+        [x] [x]  [x] The shipyard so much to win / witchrider / calm hatchery
+
+        Sessions (9): 
+        [x] [x]  [x] Illusion 1 / Thesis / Moose The Tramp 
+        [x] [x]  [x] Tymon Tymański (highlight)/ Lyko Czy to my / Illusion 2    
+        [x] [x]  [x] Odd Stars / Milczenie Owiec / Lyko Serce
+    
+
+
+- [x] Edit Showreel
+  - [x] Add showreel to the page
 
 ### **v0.2.0 - Website Appearance and structure**
 
@@ -32,7 +46,8 @@ Todo:
   - [ ] move live infront of sessions for now
   - [ ] graphite background of the www
   - [ ] www should be full width and not split to left/right (just like in mobile view)
-  - [ ] all boxes should have black background
+  - [ ] all boxes should have black background  
+  - [ ] Showreel should be static and then change to b/w and blurred out when scrolled down
 
 - [ ] Nav and footer
   - [ ] Replace top left title with logo
@@ -52,18 +67,23 @@ Todo:
   - [ ] d20 should link to facebook and not change the embeded video
     - [ ] chosen videos:
 
-      Sessions (9): 
-        Illusion 1 / Thesis / Moose The Tramp 
-        Tymon Tymański (highlight)/ Lyko Czy to my / Illusion 2    
-        Odd Stars / Milczenie Owiec / Lyko Serce
+
     
       Live (18):
-        Illusion b90 trailer 1 / mikromusic / obsidian kingdom
-        lucky chops d20 / illusion b90 trailer 2 / lc warsaw (clip) (highlight) 
-        illusion tchorz /lc warsaw 2 / krzta
-        lipali trailer /lucky chops 3 / sautrus
-        the black thunder / moose the tramp hello goodbye / Drown my day    
-        The shipyard so much to win / witchrider / calm hatchery
+        [ ] [ ]  [ ] Illusion b90 trailer 1 / mikromusic / obsidian kingdom
+
+        https://www.youtube.com/watch?v=YLoHP2Liv8k
+
+        [ ] [ ]  [ ] lucky chops d20 / illusion b90 trailer 2 / lc warsaw 1 (clip) (highlight) 
+        [ ] [ ]  [ ] illusion tchorz /lc warsaw 2 / krzta
+        [ ] [ ]  [ ] lipali trailer /lc warsaw 3 full / sautrus
+        [ ] [ ]  [ ] the black thunder / moose the tramp hello goodbye / Drown my day    
+        [ ] [ ]  [ ] The shipyard so much to win / witchrider / calm hatchery
+
+      Sessions (9): 
+        [ ] [ ]  [ ] Illusion 1 / Thesis / Moose The Tramp 
+        [ ] [ ]  [ ] Tymon Tymański (highlight)/ Lyko Czy to my / Illusion 2    
+        [ ] [ ]  [ ] Odd Stars / Milczenie Owiec / Lyko Serce
 
 ### **v0.4.0 - Contact and minor adjustments**
 
@@ -76,6 +96,7 @@ Todo:
   - [ ] remove unnecesary css or js files
   - [ ] delete unused resources  
   - [ ] change loading to be a helmet (or another logo) that is filling up
+  - [ ] replace thumbnails for a better composition
 
 ### **v0.5.0 - Test Rulesets with @Media for different devices**
   - [ ] 576p portrait
