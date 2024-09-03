@@ -16,8 +16,10 @@
   
   .content-right
   {  
+    max-width: 25%;
     top:77vh;
     right: 1%;
+    
   }
 
 /* ----- */  
@@ -41,7 +43,7 @@
   
     top: 8%;
   }
-  
+  /*
   #cover
   {  
     position: absolute;
@@ -55,8 +57,10 @@
   
     justify-content: center;
     justify-self: center;
-    align-self:center;      
+    align-self:center;   
+       
   }
+    */
   
   #tagline
   {  
@@ -141,4 +145,7 @@
     height: 40vh;
     visibility: hidden;
    }
+
+   
 }
+

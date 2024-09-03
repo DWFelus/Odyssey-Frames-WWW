@@ -41,21 +41,26 @@ Todo:
 
 ### **v0.2.0 - Website Appearance and structure**
 
-- [ ] General  
-  - [ ] Change font
-  - [ ] move live infront of sessions for now
-  - [ ] graphite background of the www
-  - [ ] www should be full width and not split to left/right (just like in mobile view)
-  - [ ] all boxes should have black background  
-  - [ ] Showreel should be static and then change to b/w and blurred out when scrolled down
+- [x] General  
+  
+  - [x] Change fonts
+  - [x] move live infront of sessions for now
+  - [x] black  background of the www
+  - [x] all boxes should have black background  
+  - [x] Showreel should be static and then change to b/w and blurred out when scrolled down
+  - [x] margins between the videos  in the gallery
 
-- [ ] Nav and footer
-  - [ ] Replace top left title with logo
-  - [ ] wwww by dwfls.pl should be to the right with a slight margin and white
-  - [ ] facebook and instagram icons in the footer (or on the side if footer is too crowded?)
+- [x] Nav and footer
+  - [x] Replace top left title with logo
+  - [x] wwww by dwfls.pl should be to the right with a slight margin and white
+  
+  - [x] facebook and instagram icons in the footer (or on the side if footer is too crowded?)
+    - [x] facebook
+    - [x] instagram
+    - [x] youtube
 
-- [ ] Experience
-  - [ ] add a picture in my experience as a band videographer (perhaps a video performing something in a short loop)
+- [x] Experience
+  - [x] add a picture in my experience as a band videographer (perhaps a video performing something in a short loop)
 
 ### **v0.3.0 - Projects lists**
 
@@ -85,6 +90,9 @@ Todo:
         [ ] [ ]  [ ] Tymon Tymański (highlight)/ Lyko Czy to my / Illusion 2    
         [ ] [ ]  [ ] Odd Stars / Milczenie Owiec / Lyko Serce
 
+    - [ ] overlay video
+    - [ ] change tagline on video hover with videos description
+
 ### **v0.4.0 - Contact and minor adjustments**
 
 - [ ] Contact
@@ -97,6 +105,7 @@ Todo:
   - [ ] delete unused resources  
   - [ ] change loading to be a helmet (or another logo) that is filling up
   - [ ] replace thumbnails for a better composition
+  - [ ] cleanup index.html (bad links or dead css)
 
 ### **v0.5.0 - Test Rulesets with @Media for different devices**
   - [ ] 576p portrait

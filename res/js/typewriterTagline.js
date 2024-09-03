@@ -5,7 +5,7 @@ window.onload = function()
 
 function startTextAnimation()
 {
-  var dataText = ["Hello World, <br> I'm Dariusz!:)"];
+  var dataText = ["Take your band<br>on an adventure"];
   var i = 0;
 
   function animateNextText()

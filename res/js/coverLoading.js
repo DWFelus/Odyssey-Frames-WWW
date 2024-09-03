@@ -7,7 +7,9 @@ var arrowQuiver;
 var boxes;
 var headlineWrappers;
 var tagline;
+var taglineImage;
 var loadTag;
+var taglineCenterImage;
 var taglineCenter;
 var observer; 
 
@@ -67,8 +69,11 @@ window.addEventListener('load', function() {
   boxes = document.getElementsByClassName('box');
   headlineWrappers = document.getElementsByClassName('headline-wrapper');
   tagline = document.getElementById('tagline');
-  loadTag = document.getElementById('loadtag');
+  taglineImage = document.getElementById('tagline-image');
   taglineCenter = document.getElementById('tagline-center');
+  taglineCenterImage = document.getElementById('tagline-center-image');
+  loadTag = document.getElementById('loadtag');
+
   loadScreen = document.getElementsByClassName('load-screen')[0];
 
   observer.disconnect();
@@ -90,10 +95,13 @@ window.addEventListener('load', function() {
       headline.classList.add('show');
     }
 
-    tagline.classList.add('show');
-    taglineCenter.classList.add('show');
     loadScreen.classList.add('hide');    
     loadTag.classList.add('hide');
+    tagline.classList.add('show');
+    taglineImage.classList.add('show');
+    taglineCenter.classList.add('show');
+    taglineCenterImage.classList.add('show');
+    
     
   });
 

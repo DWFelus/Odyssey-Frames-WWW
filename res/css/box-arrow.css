@@ -7,7 +7,7 @@
   background-color: rgba(0, 0, 0, 0.0);
 
   z-index: -1;
-  bottom: 5vh;
+  bottom: 2vh;
 }
 
 .video-container
@@ -20,23 +20,19 @@
   position:fixed;
 
   overflow: hidden; 
+  
 }
 
-#cover
-{
-  filter: contrast(1.0) brightness(1.0) saturate(0.7) sepia(0.0) blur(0px);
+#cover {
+  filter: contrast(1.0) brightness(1.0) saturate(1.0) sepia(0.0) blur(0px);
   opacity: 0;
   transition: opacity 1s ease-in;
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.25);
 
   position: absolute;
-  top: 50%;
-  left: 50%;
-  right:50%;
-  transform: translate(-50%, -50%);
-  max-width: none;
-  max-height: none;
-  width: 100vw;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center center;
@@ -70,6 +66,12 @@
   opacity: 0;
   transition: opacity 1s ease-in;
   cursor: pointer;
+  pointer-events: auto;
+  z-index: 10;
+}
+
+#arrow-down {
+  z-index: 20; /* Ensure it’s clickable */
 }
 
 #arrow-quiver.show

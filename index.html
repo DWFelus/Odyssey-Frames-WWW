@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phalanx Frames</title>
+    <title>Odyssey Frames</title>
 
     <!-- CSS FILES -->        
     <link rel="stylesheet" type="text/css" href="./res/css/load-screen.css"> 
@@ -39,18 +39,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
     <!-- JS -->
     <script src="./res/js/typewriterTagline.js"></script>  
-    <script src="./res/js/coverLoading.js"></script>    
+    <script src="./res/js/coverLoading.js"></script>
+    <script src="./res/js/coverVideoBlur.js"></script>    
     <script src="./res/js/gotoOffset.js"></script>     
-    <script src="./res/js/navFooterSlide.js"></script>     
-    <script src="./res/js/bodyColorTransition.js"></script>
-    <script src="./res/js/autoplayGalleryVideos.js"></script>
-
+    <script src="./res/js/navFooterSlide.js"></script>   
     
   </head>
 
@@ -71,10 +68,11 @@
     <!-- NAV + FOOTER -->
     
     <nav role="presentation"> 
-        <h1 class="nav-name"><a href="#top">Phalanx Visuals</a></h1>
+        <div class="nav-logo-container"><img src="res/logo/of logo name cropped.png"></img></div>
+
         <h1 class="nav-text"><a href="#showreel">Showreel</h1>
-        <h1 class="nav-text"><a href="#sessions">Session</h1>
-        <h1 class="nav-text"><a href="#live">Live</h1>          
+        <h1 class="nav-text"><a href="#live">Live</h1>             
+        <h1 class="nav-text"><a href="#sessions">Session</h1>       
         <h1 class="nav-text"><a href="#exp">Exp</h1>    
         <h1 class="nav-text"><a href="#contact">Contact</h1>  
     </nav>
@@ -85,7 +83,22 @@
       <h1 class="foot-text"><a href="#gotoILLU">Illusion<br>"Tchórz"</a></h1>
       <h1 class="foot-text"><a href="#gotoOK">Obsidian Kingdom<br>"Live in Gdansk"</a></h1>
       <h1 class="foot-text"><a href="#gotoD20">Lucky Chops<br>"D20"</a></h1>      
-      <h1 class="foot-text"><a href="http://www.dwfls.pl" onclick='window.open("http://www.dwfls.pl");return false;'>Website<br> by DWFLS.PL</a></h1>
+      <div class="foot-icon-container">
+        <img src="res/img/fb-icon.png"></img>        
+      </div>
+      <a href="#live">
+      <div class="foot-icon-container">
+        <img src="res/img/insta-icon.png"></img>        
+      </div>     
+    </a> 
+
+      <div class="foot-icon-container">
+        <img src="res/img/yt-icon.png"></img>        
+      </div>
+      
+
+
+      <h1 class="foot-author"><a href="http://www.dwfls.pl" onclick='window.open("http://www.dwfls.pl");return false;'>Website<br> by DWFLS.PL</a></h1>
    </footer>  
 
 
@@ -95,9 +108,13 @@
       
       <!--ANIMATED HEADLINE-->
       <div class="content-right">   
-             
+
+
+        <!-- RIGHT TAGLINE (when in wide windows)-->
         <div class="tagline-container" role="presentation"> 
-          <h2 id="tagline"><span></span></h2>
+
+          <h2 id="tagline"><span>        </span></h2>
+          
         </div>        
       </div>
 
@@ -110,193 +127,250 @@
           <div class="video-container">
             <video id="cover" preload="auto" autoplay loop muted src="res/video/coverV3-4mbps50speed-audiocomp.mp4" alt="Cover video of the www"></video>
           </div>
-             
+          
+          <!-- CENTER TAGLINE (when in narrow windows)-->
           <div id="tagline-center-container">
-            <h2 id="tagline-center">Bring your band<br>To a visual dimension<span></span></h2>
+
+
+            <h2 id="tagline-center"></img> Take your band<br>on an adventure<span></span></h2>
           </div>     
           
-          <div id="arrow-quiver">            
-            <i class="fa-solid fa-arrow-down fa-beat-fade" id="arrow-down"></i> 
-          </div>       
+          
+          <div id="arrow-quiver"> 
+            <a href="#live">           
+            <i class="fa-solid fa-arrow-down fa-beat-fade" id="arrow-down"></i> </a>
+          </div>  
         </div>  
 
         
 <!-- LIVE VIDEOS -->
-<div class="headline-wrapper" role="presentation"> 
-  <div class="headline" id="project-gallery">
-    <h2>Live Videos</h2>
-  </div>
-</div>
 
-<div class="box"> 
+<div class="box" id="live"> 
+  <h2>Live Videos</h2>
+  <div class="welcome-item">
+    <video class="welcome-image" preload="auto" autoplay loop muted loading="lazy" src="res/video/live-video.mp4" alt=""></video>
+    </div>
+  <p> There's something magical about live music — an essence that can't be fully captured through audio alone. However, videos help us relive the experience as best as possible, and to share it with others. Below, you'll find some of my past works, each recorded with live audiences as unique reminders of those performances. Concerts and gigs are environments where I feel like a fish in water. Year by year, I find the rush of capturing the moment when shooting video being hard to one up.</p>
   <div class="project-gallery-box" role="presentation"> 
+        
+    <!--ILLUSION B90 TRAILER 1-->
     <div class="project-gallery-item">
       <a href="#gotoAS">
-        <img class="project-box-image" src="./res/img/LV01-Illu1.png"></img>      </a>
+        <img class="project-box-image" src="./res/img/LV-Illu1.png"></img>      </a>
     </div>
+        
+    <!--MIKROMUSIC-->
     <div class="project-gallery-item">
       <a href="#gotoYLH">
-        <img class="project-box-image" src="./res/img/LV02-MMSM.png"></img> 
+        <img class="project-box-image" src="./res/img/LV-MMSM.png"></img> 
       </a>
     </div>
+        
+    <!--OBSIDIAN KINGDOM-->
     <div class="project-gallery-item">
       <a href="#gotoTP">
-        <img class="project-box-image" src="./res/img/LV03-OK.png"></img>         </a>
+        <img class="project-box-image" src="./res/img/LV-OK.png"></img>         </a>
     </div>
+        
+    <!--LC D20-->
     <div class="project-gallery-item">
       <a href="#gotoPS">
-        <img class="project-box-image" src="./res/img/LV04-LCD20.png"></img>         </a>     
+        <img class="project-box-image" src="./res/img/LV-LCD20.png"></img>         </a>     
     </div>
+        
+    <!--ILLUSION TCHORZ-->
     <div class="project-gallery-item">
       <a href="#gotoPORT">
-        <img class="project-box-image" src="./res/img/LV05-ILL2.png"></img>            </a>
+        <img class="project-box-image" src="./res/img/LV-ILL2.png"></img>            </a>
     </div>
+        
+    <!--LC TEMPLE OF BOOM-->
     <div class="project-gallery-item">
       <a href="#gotoMP">
-        <img class="project-box-image" src="./res/img/LV06-LCLIW.png"></img>             </a>
+        <img class="project-box-image" src="./res/img/LV-LCLIW.png"></img>             </a>
+    </div>
+        
+    <!--ILLUSION B90 TRAILER 2-->
+    <div class="project-gallery-item">
+      <a href="#gotoAS">
+        <img class="project-box-image" src="./res/img/LV-ILLtch.png"></img>        </a>
+    </div>
+         
+    <!--LC LIW FULL-->   
+    <div class="project-gallery-item">
+      <a href="#gotoYLH">
+        <img class="project-box-image" src="./res/img/LV-LCLIW2.png"></img>    
+      </a>
+    </div>
+        
+    <!--KRZTA-->
+    <div class="project-gallery-item">
+      <a href="#gotoTP">
+        <img class="project-box-image" src="./res/img/LV-Krzta.png"></img>          </a>
+    </div>
+        
+    <!--LIPALI-->
+    <div class="project-gallery-item">
+      <a href="#gotoPS">
+        <img class="project-box-image" src="./res/img/LV-LIPALI.png"></img>          </a>
+    </div>
+        
+    <!--LC HELTER SKELTER-->
+    <div class="project-gallery-item">
+      <a href="#gotoPORT">
+        <img class="project-box-image" src="./res/img/LV-LCLIWalt.png"></img>          </a>
+    </div>
+        
+    <!--SAUTRUS-->
+    <div class="project-gallery-item">
+      <a href="#gotoMP">
+        <img class="project-box-image" src="./res/img/LV-Saut2.png"></img>          </a>
+    </div>
+        
+    <!--THE BLACK THUNDER-->
+    <div class="project-gallery-item">
+      <a href="#gotoAS">
+        <img class="project-box-image" src="./res/img/LV-TBT-DG.png"></img>          </a>
+    </div>
+        
+    <!--MTT HELLO-->
+    <div class="project-gallery-item">
+      <a href="#gotoYLH">
+        <img class="project-box-image" src="./res/img/LV-MTTHGH.png"></img>    
+      </a>
+    </div>
+        
+    <!--DROWN MY DAY-->
+    <div class="project-gallery-item">
+      <a href="#gotoTP">
+        <img class="project-box-image" src="./res/img/LV-DMD.png"></img>          </a>
+    </div>
+        
+    <!--THE SHIPYARD-->
+    <div class="project-gallery-item">
+      <a href="#gotoPS">
+        <img class="project-box-image" src="./res/img/LV-THESHIP.png"></img>          </a>
+    </div>
+        
+    <!--WITCHRIDER-->
+    <div class="project-gallery-item">
+      <a href="#gotoPORT">
+        <img class="project-box-image" src="./res/img/LV-WRider.png"></img>          </a>
+    </div>
+        
+    <!--CALM HATCHERY-->
+    <div class="project-gallery-item">
+      <a href="#gotoMP">
+        <img class="project-box-image" src="./res/img/LV-CH.png"></img>          </a>
     </div>
 
-    <div class="project-gallery-item">
-      <a href="#gotoAS">
-        <img class="project-box-image" src="./res/img/LV07-ILLtch.png"></img>        </a>
-    </div>
-    <div class="project-gallery-item">
-      <a href="#gotoYLH">
-        <img class="project-box-image" src="./res/img/LV08-LCLIW2.png"></img>    
-      </a>
-    </div>
-    <div class="project-gallery-item">
-      <a href="#gotoTP">
-        <img class="project-box-image" src="./res/img/LV09-Krzta.png"></img>          </a>
-    </div>
-    <div class="project-gallery-item">
-      <a href="#gotoPS">
-        <img class="project-box-image" src="./res/img/LV10-LIPALI.png"></img>          </a>
-    </div>
-    <div class="project-gallery-item">
-      <a href="#gotoPORT">
-        <img class="project-box-image" src="./res/img/LV11-LCLIWalt.png"></img>          </a>
-    </div>
-    <div class="project-gallery-item">
-      <a href="#gotoMP">
-        <img class="project-box-image" src="./res/img/LV12-Saut2.png"></img>          </a>
-    </div>
-
-    <div class="project-gallery-item">
-      <a href="#gotoAS">
-        <img class="project-box-image" src="./res/img/LV13-TBT-DG.png"></img>          </a>
-    </div>
-    <div class="project-gallery-item">
-      <a href="#gotoYLH">
-        <img class="project-box-image" src="./res/img/LV14-MTTHGH.png"></img>    
-      </a>
-    </div>
-    <div class="project-gallery-item">
-      <a href="#gotoTP">
-        <img class="project-box-image" src="./res/img/LV15-DMD.png"></img>          </a>
-    </div>
-    <div class="project-gallery-item">
-      <a href="#gotoPS">
-        <img class="project-box-image" src="./res/img/LV16-THESHIP.png"></img>          </a>
-    </div>
-    <div class="project-gallery-item">
-      <a href="#gotoPORT">
-        <img class="project-box-image" src="./res/img/LV17-WRider.png"></img>          </a>
-    </div>
-    <div class="project-gallery-item">
-      <a href="#gotoMP">
-        <img class="project-box-image" src="./res/img/LV18-CH.png"></img>          </a>
-    </div>
   </div>
 </div>   
 
 
-        <!-- SESSION AND STUDIO VIDEOS -->
-        <div class="headline-wrapper" role="presentation"> 
-          <div class="headline" id="project-gallery">
-            <h2>Session and Studio Videos</h2>
-          </div>
+    <!-- SESSION AND STUDIO VIDEOS -->
+
+    <div class="box" id="sessions"> 
+      <h2>Session and Studio Videos</h2>
+      <div class="welcome-item">
+        <video class="welcome-image" preload="auto" autoplay loop muted loading="lazy" src="res/video/session-video.mp4" alt=""></video>
+        </div>
+      <p>The thrill of recording in a studio and session environment, is undeniable for everyone involved. For a videographer, it's a space where every visual variable is under creative control. The lighting, the angles, the sound; all can be finely tuned to capture the essence of the performance. Yet, despite this controlled setting, the pressure of being discreet and almost invisible remains. It’s about capturing raw, unfiltered moments without disrupting the flow of creativity. Below you'll find studio and session projects I was glad to be a part of:</p>
+      <div class="project-gallery-box" role="presentation"> 
+        <!-- ILLUSION STUDIO 1-->
+        <div class="project-gallery-item">
+          <a href="#gotoAS">
+            <img class="project-box-image" src="./res/img/SES-IL01.png"></img>
+          </a>
         </div>
 
-        <div class="box"> 
-          <div class="project-gallery-box" role="presentation"> 
-            <div class="project-gallery-item">
-              <a href="#gotoAS">
-                <img class="project-box-image" src="./res/img/SES01-IL01.png"></img>
-              </a>
-            </div>
-            <div class="project-gallery-item">
-              <a href="#gotoYLH">
-                <img class="project-box-image" src="./res/img/SES02-Thesis.png"></img>
-              </a>
-            </div>
-            <div class="project-gallery-item">
-              <a href="#gotoTP">
-                <img class="project-box-image" src="./res/img/SES03-MTTmulk.png"></img>     
-                       </a>
-            </div>
-            <div class="project-gallery-item">
-              <a href="#gotoPS">
-                <img class="project-box-image" src="./res/img/SES04-Tymon.png"></img> 
-                           </a>
-            </div>
-            <div class="project-gallery-item">
-              <a href="#gotoPORT">
-                <img class="project-box-image" src="./res/img/SES05-LYKOczy.png"></img>  
-                          </a>
-            </div>
-            <div class="project-gallery-item">
-              <a href="#gotoMP">
-                <img class="project-box-image" src="./res/img/SES06-Illu.png"></img>              </a>
-            </div>
+        <!-- THESIS STUDIO 1-->
+        <div class="project-gallery-item">
+          <a href="#gotoYLH">
+            <img class="project-box-image" src="./res/img/SES-Thesis.png"></img>
+          </a>
+        </div>
+        
+        <!-- MTT MULK-->
+        <div class="project-gallery-item">
+          <a href="#gotoTP">
+            <img class="project-box-image" src="./res/img/SES-MTTmulk.png"></img>     
+                    </a>
+        </div>
+        
+        <!--TYMON RG-->
+        <div class="project-gallery-item">
+          <a href="#gotoPS">
+            <img class="project-box-image" src="./res/img/SES-Tymon.png"></img> 
+                        </a>
+        </div>
+        
+        <!--LYKO CZY TO-->
+        <div class="project-gallery-item">
+          <a href="#gotoPORT">
+            <img class="project-box-image" src="./res/img/SES-LYKOczy.png"></img>  
+                      </a>
+        </div>
+        
+        <!-- ILLUSION STUDIO 2-->
+        <div class="project-gallery-item">
+          <a href="#gotoMP">
+            <img class="project-box-image" src="./res/img/SES-Illu.png"></img>              </a>
+        </div>
+        
+        <!-- MTT LUNATYCY-->
+        <div class="project-gallery-item">
+          <a href="#gotoMP">
+            <img class="project-box-image" src="./res/img/SES-MTTRG.png"></img>              </a>
+        </div>
+        
+        <!-- ODD STARS-->
+        <div class="project-gallery-item">
+          <a href="#gotoPORT">
+            <img class="project-box-image" src="./res/img/SES-ODD.png"></img>              </a>
+        </div>
+        
+        <!--MILCZENIE OWIEC-->
+        <div class="project-gallery-item">
+          <a href="#gotoMP">
+            <img class="project-box-image" src="./res/img/SES-MO.png"></img>              </a>
+        </div>
+        
+        <!--LYKO RG-->
+        <div class="project-gallery-item">
+          <a href="#gotoMP">
+            <img class="project-box-image" src="./res/img/SES-Lyko.png"></img>              </a>
+        </div>
 
-            <div class="project-gallery-item">
-              <a href="#gotoPORT">
-                <img class="project-box-image" src="./res/img/SES07-ODD.png"></img>              </a>
-            </div>
-
-            <div class="project-gallery-item">
-              <a href="#gotoMP">
-                <img class="project-box-image" src="./res/img/SES08-MO.png"></img>              </a>
-            </div>
-
-            <div class="project-gallery-item">
-              <a href="#gotoMP">
-                <img class="project-box-image" src="./res/img/SES09-Lyko.png"></img>              </a>
-            </div>
-
-          </div>
-        </div>   
+      </div>
+    </div>   
         
         
 
 
         <!-- EXP BOX -->
-        <div class="headline-wrapper">
-          <div class="headline" id="about">
-            <h2>My Experience as a Band Videographer</h2>
-          </div>
-        </div>
 
-        <div class="box">   
+        <div class="box" id="exp">   
       
-
+          <h2>About Me - My Experience as a Band Videographer</h2>
+          <div class="welcome-item">
+          <video class="welcome-image" preload="auto" autoplay loop muted loading="lazy" src="res/video/about-video.mp4" alt=""></video>
+          </div>
           <div class="about-box">            
 
             <div class="about-item">              
               <p id="just">
                 
-                I first picked up a guitar in high school, starting my first band and just few years later I dove headfirst into the world of local <b>live music</b> scene. Over the years, I’ve played in various projects, which has given me a deep understanding of what it’s like to perform live and to comprehend the unique stage and musician lingo. This was crucial to <b>becoming a knowledgable and versatile band videographer</b>.
+                Hello there! I'm Dariusz. I first picked up a guitar in high school, starting my first band and just few years later I dove headfirst into the world of local <b>live music</b> scene. Over the years, I’ve played in various projects, which has given me a deep understanding of what it’s like to perform live and to comprehend the unique stage and musician lingo. This was crucial to <b>becoming a knowledgable and versatile band videographer</b>.
 
                 <br>
                 <br>
 
                 In around 2011, I began exploring video production. It quickly became clear that those two passions were on a direct collision course. Since then, I’ve had the opportunity to create videos in a multitude of venues, mastering the art of working in <b>low light, time pressure and under tight deadlines</b>. I’ve also gained substantial experience in studio settings, including sessions broadcasted live on radio, while occasionally taking on <b>audio mixing gigs</b>.
 
-                <br>
-                <br>
+                
 
-                Under my previous moniker <i>Fractal Videos</i> I’ve produced videos for over <b>50 bands, artists, collectives</b>, numerous one-time projects, while building lasting relationships with many being <b>returning clients</b>. I've filmed bands in <b>London, Warsaw, Manchester, Kraków, Gdańsk</b>, and other cities, from countries such as <b>Spain, Austria, USA, Poland or UK</b>. I've done videos in best venues in Poland: <b>B90, Progresja, Stary Maneż, or Stodoła.</b> The list of bands in my portfolio includes, but is not limited to artists like:
+              
 
               </p> 
             </div>
@@ -308,13 +382,18 @@
             </div>
 
           </div>
-          <p>         
+          <p>  
+            
+            Under my previous moniker <b><i>Fractal Videos</i></b> I’ve produced videos for well over <b>50 bands, and that's excluding solo artists, collectives</b>, numerous one-time projects, while building lasting relationships with musicians, many resulting in <b>returning collaborations</b>. I've filmed bands in <b>London, Warsaw, Manchester, Kraków, Gdańsk</b>, and other cities, from countries such as <b>Spain, Austria, USA, Poland or UK</b>. I've done videos in best venues in Poland: <b>B90, Progresja, Stary Maneż, or Stodoła.</b> The list of bands in my portfolio includes, but is not limited to artists like:
+
+            <br>
+            <br>
             
             <i>Lucky Chops, Mikromusic, Obisidian Kingdom, Illusion, Tymon Tymański, Lipali, Krzta, The Materia, Jeru The Damaja, Abstract Orchestra, Slum Village, Witchrider, Farben Lehre, Mechanism, Moose The Tramp, Milczenie Owiec, Sautrus, The Black Thunder, Calm Hatchery, eM, Drown My Day, Łyko, Moust, Odd Stars, 441 Hz, Closterkeller, Mitra, Venflon, The Shipyard, Bollywood Brass Band, Thesis, Motorłeb, Alcoholica, Lowtide, Lux Perpetua, Gutter Sirens, Kozi Syn, Invicto, Fractal, FNAG, Deer Head On The Wall, Caren Coltrane Crusade <b>and others.</i></b>
 
             <br><Br>
 
-            When I’m not working on videos or writing code, you might find me playing the guitar, composing music, or keeping my eyes sharp in the wilderness with a bow and arrow.
+            When I’m not working on videos or writing code, you might find me playing the guitar, composing music, or keeping my eyes sharp in the wilderness with a bow and arrow. As you might have guessed from this sections' cover video, I have an odd sense of humour, but that's fine, I think.
 
           </p>  
         </div>
@@ -322,13 +401,8 @@
 
         <!-- CONTACT BOX -->
 
-        <div class="headline-wrapper">
-          <div class="headline" id="about">
-            <h2>Contact Me</h2>
-          </div>
-        </div>
-
-        <div class="box">   
+        <div class="box" id="contact">             
+          <h2>Contact Me</h2>
           <div class="about-box"> 
             <div class="about-item">  
             </div>
@@ -340,20 +414,19 @@
 
 
         <!-- PROJECTS LIST BOX -->
-        <div class="headline-wrapper">
-          <div class="headline" id="project-list">
-            <h2>Highlighted Projects</h2>
-          </div> 
-        </div>
 
-        <div class="box" >      
+
+        <div class="box" >  
+          <h2>Highlighted Projects</h2>    
           <div class="project-list-box"> 
             
             <a href="https://github.com/DWFLS/AutosaveNotepad" onclick='window.open("https://github.com/DWFLS/AutosaveNotepad");return false;'>
+
               <div class="project-list-item" id="gotoLIW">
                 <div class="project-list-image-wrapper">
                   <iframe class="project-list-image" src="https://www.youtube.com/embed/xC6JEwFLcJk?si=B29bomPqyskbH4Pu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
+
                 <div class="project-list-text">
                   <h3>Lucky Chops "Live in Warsaw"</h3>
                   <p>Capturing Lucky Chops live in Warsaw was a videographer's dream come true. The band brought the raw energy of New York's jazz and funk scene straight to the heart of Poland, delivering a performance that could rival any stadium rock spectacle. With thundering modern drums and a rumble of catchy brass, the band's dynamic showmanship was on full display. Filming this event was a pure pleasure, and the resulting video was so compelling it was used successfully in Lucky Chops' campaign to fund their next album.</p>
@@ -362,11 +435,13 @@
             </a>
 
             <a href="https://github.com/DWFLS/YourLocalHero" onclick='window.open("https://github.com/DWFLS/YourLocalHero");return false;'>
+
               <div class="project-list-item" id="gotoSM">  
               <div class="project-list-image-wrapper">
                 
                 <iframe class="project-list-image" src="https://www.youtube.com/embed/HV0RozRx1ig?si=6YS8xp4Sc6V-uxfX&amp;start=3039" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
+
                 <div class="project-list-text">
                   
                   <h3>Mikromusic "Live in Stary Maneż"</h3>
@@ -378,10 +453,12 @@
           </a>
 
           <a href="https://github.com/DWFelus/ThemedPomodoro" onclick='window.open("https://github.com/DWFelus/ThemedPomodoro");return false;'>
+
             <div class="project-list-item" id="gotoILLU">          
               <div class="project-list-image-wrapper">
                 <iframe class="project-list-image" src="https://www.youtube.com/embed/1oHNSryjKSw?si=kIxrRUMKS1noV8v1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
+
               <div class="project-list-text">
                 <h3>Illusion "Tchórz" Live Music Video  </h3>
                 
@@ -395,7 +472,7 @@
           <a href="https://www.youtube.com/watch?v=xOOX5x0GvUY" onclick='window.open("https://www.youtube.com/watch?v=xOOX5x0GvUY");return false;'> 
             <div class="project-list-item" id="gotoOK">
               <div class="project-list-image-wrapper">
-                <img class="project-list-image" src="./res/img/ok.png" alt="Picture of the www owner and author">
+                <img class="project-list-image" src="res/img/ok.png" alt="">
               </div>
               <div class="project-list-text">
                 
@@ -414,7 +491,7 @@
               <div class="project-list-image-wrapper">
                 <iframe class="project-list-image" src="https://www.youtube.com/embed/XSrJGvf-xWE?si=HCBFmIgyb3ieYJfV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
-              <div class="project-list-text">
+              <div class="project-list-text" >
                 
                 <h3>Lucky Chops "D20 - Castle Version"</h3>
                 <p>    

@@ -27,9 +27,20 @@
     margin: 1%;
     height: auto;
     max-width: 100%;
+    
+    transition: transform 1s ease, filter 0.3s ease;
+    
+    filter: grayscale(50%);
+  }
+
+  .welcome-image:hover
+  {
+    transform: scale(1.05);  
+    filter: grayscale(0%);
   }
 
   .welcome-text
   {
     flex:1;
   }
+

@@ -1,3 +1,25 @@
+/* SIDE TAGLINE*/
+
+#tagline-container
+{
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+#tagline-image
+{
+  max-width: 30%;
+  height: auto;
+  opacity: 0;
+}
+
+#tagline-image.show
+{
+  opacity: 1;
+}
+
 #tagline
 {
   z-index: 2; 
@@ -15,9 +37,27 @@
   opacity: 1;
 }
 
+/* CENTER TAGLINE */
+
 #tagline-center-container
 {
   visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+#tagline-center-image
+{
+  max-width: 30%;
+  height: auto;
+  margin-bottom: -3vh; /* Add some space between the image and tagline */
+  opacity: 0;
+}
+
+#tagline-center-image.show
+{
+  opacity: 1;
 }
 
 #tagline-center
@@ -35,6 +75,9 @@
   opacity: 1;
 }
 
+
+/* CARET ANIMATION */
+/*
 span
 {
   border-right: .05em solid;
@@ -47,4 +90,4 @@ span
   {
     border-color: transparent;
   }
-}
+}*/
