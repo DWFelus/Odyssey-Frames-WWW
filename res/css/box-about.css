@@ -39,6 +39,36 @@
     align-items: center;
   }
 
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext
+  {
+    visibility: hidden;
+    width: 250px; /* Adjust the width as needed */
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    z-index: 50;
+    bottom: 125%; /* Position the tooltip above the image */
+    left: 50%;
+    margin-left: -125px; /* Center the tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+    white-space: nowrap; /* Prevents text from wrapping */
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+
   .about-image
   {
     width: 100%;

@@ -64,34 +64,19 @@ Todo:
 
 ### **v0.3.0 - Projects lists**
 
-- [ ] Video lists
-  - [ ] embed section headers in the boxes 
-  - [ ] dynamic embed (when clicking on a picture the embed video changes and autoplays) and autoplay and autoscroll on click
-  - [ ] grayscale but color when hovered, no size change
-  - [ ] video outer boxes in width of the webpage
-  - [ ] d20 should link to facebook and not change the embeded video
-    - [ ] chosen videos:
+- [ ] Video lists 
+  - [x] overlay videos
+  - [x] grayscale but color when hovered
+  - [x] d20 should link to facebook
+  - [x] replace thumbnails and move videos for a better composition
+  - [x] change tagline on video hover with videos description
+  - [x] overlay should have transition
+  - [x] sort out the highlight gallery (use video trigger to open the window)
+  - [x] typewriter is too low on 1080p dispaly
 
-
-    
-      Live (18):
-        [ ] [ ]  [ ] Illusion b90 trailer 1 / mikromusic / obsidian kingdom
-
-        https://www.youtube.com/watch?v=YLoHP2Liv8k
-
-        [ ] [ ]  [ ] lucky chops d20 / illusion b90 trailer 2 / lc warsaw 1 (clip) (highlight) 
-        [ ] [ ]  [ ] illusion tchorz /lc warsaw 2 / krzta
-        [ ] [ ]  [ ] lipali trailer /lc warsaw 3 full / sautrus
-        [ ] [ ]  [ ] the black thunder / moose the tramp hello goodbye / Drown my day    
-        [ ] [ ]  [ ] The shipyard so much to win / witchrider / calm hatchery
-
-      Sessions (9): 
-        [ ] [ ]  [ ] Illusion 1 / Thesis / Moose The Tramp 
-        [ ] [ ]  [ ] Tymon Tymański (highlight)/ Lyko Czy to my / Illusion 2    
-        [ ] [ ]  [ ] Odd Stars / Milczenie Owiec / Lyko Serce
-
-    - [ ] overlay video
-    - [ ] change tagline on video hover with videos description
+### **v0.3.1 - Showreel and alts**
+  - [ ] edit showreel to the music and move it to the bottom, turn down the brightness of the background video and include showreel 
+  - [ ] display alt pics when in portrait mode
 
 ### **v0.4.0 - Contact and minor adjustments**
 
@@ -104,8 +89,10 @@ Todo:
   - [ ] remove unnecesary css or js files
   - [ ] delete unused resources  
   - [ ] change loading to be a helmet (or another logo) that is filling up
-  - [ ] replace thumbnails for a better composition
+  
   - [ ] cleanup index.html (bad links or dead css)
+  - [ ] bottom not being unblurred
+  - [ ] why the thumbnails are not straight
 
 ### **v0.5.0 - Test Rulesets with @Media for different devices**
   - [ ] 576p portrait
