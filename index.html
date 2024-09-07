@@ -50,14 +50,15 @@
     <script src="./res/js/coverVideoBlur.js"></script>    
     <script src="./res/js/gotoOffset.js"></script>     
     <script src="./res/js/navFooterSlide.js"></script>      
-    <script src="./res/js/videoOverlay.js"></script>
+    <script src="./res/js/videoOverlay.js"></script>        
+    <script src="./res/js/portraitThumbnails.js"></script>
      
     
   </head>
 
 
   <!-- VISIBLE WWW -->
-<body> 
+<body id="top"> 
 
   <div class="load-screen">            
     <h2 id="loadtag">Loading</h2>
@@ -66,13 +67,13 @@
     </div>
   </div> 
 
-  <div id="content">
-    <div id="top"></div>
+  <div id="content" >
  
     <!-- NAV + FOOTER -->
     
-    <nav role="presentation"> 
-        <div class="nav-logo-container"><img src="res/logo/of logo name cropped.png"></img></div>
+    <nav role="presentation" > 
+        <a href="#top">
+        <div class="nav-logo-container"><img src="res/logo/of logo name cropped.png"></img></div></a>
         
         <h1 class="nav-text"><a href="#live">Live</h1>             
         <h1 class="nav-text"><a href="#sessions">Session</h1>       
@@ -116,7 +117,7 @@
 
 
     <!--MAIN CONTENT>-->
-    <div class="content-box">   
+    <div class="content-box" >   
 
       
       <!--ANIMATED HEADLINE-->
@@ -132,7 +133,7 @@
       </div>
 
       <!--SCROLL CONTENT-->
-      <div class="content-left">
+      <div class="content-left" >
 
         <!--ARROW/COVER BOX -->
         
@@ -165,7 +166,7 @@
   <div class="welcome-item">
     <video class="welcome-image" preload="auto" autoplay loop muted loading="lazy" src="res/video/live-video.mp4" alt=""></video>
     </div>
-  <p> There's something magical about live music — an essence that can't be fully captured through audio alone. However, videos help us relive the experience as best as possible, and to share it with others. Below, you'll find some of my past works, each recorded with live audiences as unique reminders of those performances. Concerts and gigs are environments where I feel like a fish in water. Year by year, I find the rush of capturing the moment when shooting video being hard to one up.</p>
+  <p> There's something magical about live music. However, it's essence cannot be fully captured through audio alone. Videos help us relive this experience as best as possible, it enables us to share it with others. Below, you'll find some of my past works, each recorded with live audiences as unique reminders of those performances. Concerts and gigs are environments where I feel like a fish in water. Year by year, I find the rush of capturing the moment when shooting video being hard to one up.</p>
   
 
 
@@ -173,105 +174,112 @@
        
     <!--ILLUSION B90 TRAILER 2-->
     <div class="project-gallery-item">
-      <img class="project-box-image" data-title='Illusion<br> "Metamorfoza"' src="./res/img/LV-ILLtch.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/YLoHP2Liv8k" data-second="0">
+      <img class="project-box-image"
+       data-title='Illusion<br> "Metamorfoza"'
+       src="./res/img/thumb/LV-ILLtch.jpg"
+       id="video-trigger"
+       activate-typewriter="true"
+       data-video-src="https://www.youtube.com/embed/YLoHP2Liv8k"
+       data-second="0"
+       alt-src="./res/img/thumb/alt/LV-ILLtch.jpg">
   </div>
 
 
         
     <!--MIKROMUSIC-->
     <div class="project-gallery-item">
-        <img class="project-box-image" data-title='Mikromusic<br>"Live in Stary Maneż"' src="./res/img/LV-MMSM.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/HV0RozRx1ig" data-second="3079">
+        <img class="project-box-image" data-title='Mikromusic<br>"Live in Stary Maneż"' alt-src="./res/img/thumb/alt/LV-MMSM.jpg" src="./res/img/thumb/LV-MMSM.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/HV0RozRx1ig" data-second="3079">
 
     </div>
         
     <!--OBSIDIAN KINGDOM-->
     <div class="project-gallery-item">
       <a href="https://youtu.be/xOOX5x0GvUY?si=9l9Gwga1lI2ZMk96&t=153"onclick='window.open("https://youtu.be/xOOX5x0GvUY?si=9l9Gwga1lI2ZMk96&t=153");return false;'> >
-        <img class="project-box-image" data-title='Obsidian Kingdom<br>"Live in Gdańsk"' src="./res/img/LV-OK.jpg" activate-typewriter="true"> </a> 
+        <img class="project-box-image" data-title='Obsidian Kingdom<br>"Live in Gdańsk"' alt-src="./res/img/thumb/alt/LV-OK.jpg" src="./res/img/thumb/LV-OK.jpg" activate-typewriter="true"> </a> 
     </div>
         
     <!--LC TEMPLE OF BOOM-->
     <div class="project-gallery-item">
-      <img class="project-box-image" data-title='Lucky Chops<br>"Temple of Boom"' src="./res/img/LV-LCLIW.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/SBUS4VGlk_0" data-second="130"> 
+      <img class="project-box-image" data-title='Lucky Chops<br>"Temple of Boom"' alt-src="./res/img/thumb/alt/LV-LCLIW.jpg" src="./res/img/thumb/LV-LCLIW.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/SBUS4VGlk_0" data-second="130"> 
     </div>
 
     <!--ILLUSION B90 TRAILER 1-->
     <div class="project-gallery-item">
-      <img class="project-box-image" data-title='Illusion<br>"Do Zobaczenia"' src="./res/img/LV-Illu1.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/EAYaawpGsxc" data-second="0">
+      <img class="project-box-image" data-title='Illusion<br>"Do Zobaczenia"' alt-src="./res/img/thumb/alt/LV-Illu1.jpg" src="./res/img/thumb/LV-Illu1.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/EAYaawpGsxc" data-second="0">
     </div>
 
     <!--LC D20-->
     <div class="project-gallery-item">
-        <img class="project-box-image" data-title='Lucky Chops<br>"D20"' src="./res/img/LV-LCD20.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/xSLiWe7F8xA" data-second="0">        
+        <img class="project-box-image" data-title='Lucky Chops<br>"D20"' alt-src="./res/img/thumb/alt/LV-LCD20.jpg" src="./res/img/thumb/LV-LCD20.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/xSLiWe7F8xA" data-second="0">        
     </div>       
 
 
     <!--KRZTA-->
     <div class="project-gallery-item">
-      <img class="project-box-image" data-title='Krzta<br>"Live in Gdańsk"'src="./res/img/LV-Krzta.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/8x4hUNLRJlc" data-second="0">
+      <img class="project-box-image" data-title='Krzta<br>"Live in Gdańsk"' alt-src="./res/img/thumb/alt/LV-Krzta.jpg" src="./res/img/thumb/LV-Krzta.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/8x4hUNLRJlc" data-second="0">
     </div>
 
     <!--ILLUSION TCHORZ-->
     <div class="project-gallery-item">
-        <img class="project-box-image" data-title='Illusion<br>"Tchórz"' src="./res/img/LV-ILL2.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/1oHNSryjKSw" data-second="0">  
+        <img class="project-box-image" data-title='Illusion<br>"Tchórz"' alt-src="./res/img/thumb/alt/LV-ILL2.jpg" src="./res/img/thumb/LV-ILL2.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/1oHNSryjKSw" data-second="0">  
     </div>
 
     <!--LC LIW FULL-->   
     <div class="project-gallery-item">
-        <img class="project-box-image" data-title='Lucky Chops<br>"Live in Warsaw"' src="./res/img/LC01.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/xC6JEwFLcJk" data-second="400">
+        <img class="project-box-image" data-title='Lucky Chops<br>"Live in Warsaw"' alt-src="./res/img/thumb/alt/LC01.jpg" src="./res/img/thumb/LC01.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/xC6JEwFLcJk" data-second="400">
     </div>
         
 
         
     <!--LIPALI-->
     <div class="project-gallery-item">
-        <img class="project-box-image" data-title='Lipali <br>"Lipa i Popioły"' src="./res/img/LV-LIPALI.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/U3QatiSJG8w" data-second="0">
+        <img class="project-box-image" data-title='Lipali <br>"Lipa i Popioły"' alt-src="./res/img/thumb/alt/LV-LIPALI.jpg" src="./res/img/thumb/LV-LIPALI.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/U3QatiSJG8w" data-second="0">
     </div>
         
     <!--LC HELTER-->
     <div class="project-gallery-item">
-        <img class="project-box-image" data-title='Lucky Chops<br>"Helter Skelter/Walter Jam"' src="./res/img/LC02.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/B7ln7zE5fzU" data-second="69">
+        <img class="project-box-image" data-title='Lucky Chops<br>"Helter Skelter/Walter Jam"' alt-src="./res/img/thumb/alt/LC02.jpg" src="./res/img/thumb/LC02.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/B7ln7zE5fzU" data-second="69">
     </div>
         
     <!--SAUTRUS-->
     <div class="project-gallery-item">
-        <img class="project-box-image" data-title='Sautrus<br>"Kuelmaggah Part II"' src="./res/img/saut01.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/J6EhoEVHMVw" data-second="90">
+        <img class="project-box-image" data-title='Sautrus<br>"Kuelmaggah Part II"' alt-src="./res/img/thumb/alt/saut01.jpg" src="./res/img/thumb/saut01.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/J6EhoEVHMVw" data-second="90">
     </div>
         
     <!--THE BLACK THUNDER-->
     <div class="project-gallery-item">
-        <img class="project-box-image" data-title='The Black Thunder<br>"The Sun is Falling Down"' src="./res/img/tbt01.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/CbjNnYb2NFY" data-second="0">
+        <img class="project-box-image" data-title='The Black Thunder<br>"The Sun is Falling Down"' alt-src="./res/img/thumb/alt/tbt01.jpg" src="./res/img/thumb/tbt01.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/CbjNnYb2NFY" data-second="0">
     </div>
         
     <!--MTT HELLO-->
     <div class="project-gallery-item">
-        <img class="project-box-image" data-title='Moose The Tramp<br>"Hello Goodbye Hello"' src="./res/img/LV-MTTHGH.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/vfOvy9K9yVE" data-second="0">
+        <img class="project-box-image" data-title='Moose The Tramp<br>"Hello Goodbye Hello"' alt-src="./res/img/thumb/alt/LV-MTTHGH.jpg" src="./res/img/thumb/LV-MTTHGH.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/vfOvy9K9yVE" data-second="0">
     </div>
         
     <!--DROWN MY DAY-->
     <div class="project-gallery-item">
       <a href="https://www.youtube.com/watch?v=w49bY6vOuGk&ab_channel=DrownMyDay"onclick='window.open("https://www.youtube.com/watch?v=w49bY6vOuGk&ab_channel=DrownMyDay");return false;'> >
-        <img class="project-box-image" activate-typewriter="true" data-title='Drown My Day<br>"Nightmare Becomes Reality"' src="./res/img/dmd01.jpg" ></a>
+        <img class="project-box-image" activate-typewriter="true" data-title='Drown My Day<br>"Nightmare Becomes Reality"' alt-src="./res/img/thumb/alt/dmd01.jpg" src="./res/img/thumb/dmd01.jpg" ></a>
     </div>
         
 
         
     <!--WITCHRIDER-->
     <div class="project-gallery-item">
-        <img class="project-box-image" data-title='Witchrider<br>"A Glow in the Dark"' src="./res/img/witch01.jpg" activate-typewriter="true" id="video-trigger" data-video-src="https://www.youtube.com/embed/cXBrglDVHm4" data-second="0">
+        <img class="project-box-image" data-title='Witchrider<br>"A Glow in the Dark"' alt-src="./res/img/thumb/alt/witch01.jpg" src="./res/img/thumb/witch01.jpg" activate-typewriter="true" id="video-trigger" data-video-src="https://www.youtube.com/embed/cXBrglDVHm4" data-second="0">
     </div>
         
 
 
     <!--CALM HATCHERY-->
     <div class="project-gallery-item">
-        <img class="project-box-image" data-title='Calm Hatchery<br>"We Are The Universe"' src="./res/img/calm02.jpg" activate-typewriter="true" id="video-trigger" data-video-src="https://www.youtube.com/embed/kgqbAfBwCVo" data-second="0">
+        <img class="project-box-image" data-title='Calm Hatchery<br>"We Are The Universe"' alt-src="./res/img/thumb/alt/calm02.jpg" src="./res/img/thumb/calm02.jpg" activate-typewriter="true" id="video-trigger" data-video-src="https://www.youtube.com/embed/kgqbAfBwCVo" data-second="0">
     </div>
 
     <!--THE SHIPYARD-->
     <div class="project-gallery-item">
       <a href="https://www.youtube.com/watch?v=XdC8ATSofik&ab_channel=TheShipyard"onclick='window.open("https://www.youtube.com/watch?v=XdC8ATSofik&ab_channel=TheShipyard");return false;'> >
-        <img class="project-box-image" activate-typewriter="true" id="video-trigger" data-title='The Shipyard<br>"So Much To Win"' src="./res/img/LV-THESHIP.jpg"></a>
+        <img class="project-box-image" activate-typewriter="true" id="video-trigger" data-title='The Shipyard<br>"So Much To Win"' alt-src="./res/img/thumb/alt/LV-THESHIP.jpg" src="./res/img/thumb/LV-THESHIP.jpg"></a>
     </div>
 
   </div>
@@ -285,66 +293,66 @@
       <div class="welcome-item">
         <video class="welcome-image" preload="auto" autoplay loop muted loading="lazy" src="res/video/session-video.mp4" alt=""></video>
         </div>
-      <p>The thrill of recording in a studio and session environment, is undeniable for everyone involved. For a videographer, it's a space where every visual variable is under creative control. The lighting, the angles, the sound; all can be finely tuned to capture the essence of the performance. Yet, despite this controlled setting, the pressure of being discreet and almost invisible remains. It’s about capturing raw, unfiltered moments without disrupting the flow of creativity. Below you'll find studio and session projects I was glad to be a part of:</p>
+      <p>The thrill of recording in a studio and session environment is undeniable for everyone involved. For a videographer, it's a space where every visual variable is mostly under creative control. The lighting, the angles, the sound; all can be finely tuned to capture the essence of the performance. Yet, despite this controlled setting, the pressure of being discreet and almost invisible remains. It’s about capturing raw, unfiltered moments without disrupting the flow of creativity. Sometimes, it's just the opposite - recording a band to a prerecorded track and making them bring out the best of their performance. Below you'll find studio and session projects I was glad to be a part of:</p>
       <div class="project-gallery-box" role="presentation"> 
         <!-- ILLUSION STUDIO 1-->
         <div class="project-gallery-item">
-            <img class="project-box-image" data-title='Illusion<br>"Dalej"' src="./res/img/SES-IL01.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/dFJ5oksCRcs" data-second="0">
+            <img class="project-box-image" data-title='Illusion<br>"Dalej"' alt-src="./res/img/thumb/alt/SES-IL01.jpg" src="./res/img/thumb/SES-IL01.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/dFJ5oksCRcs" data-second="0">
         </div>
 
         <!-- ODD STARS-->
         <div class="project-gallery-item">
-            <img class="project-box-image" data-title='Odd Stars<br>"Co jest?"' src="./res/img/odd01.jpg" activate-typewriter="true" id="video-trigger" data-video-src="https://www.youtube.com/embed/CA2CcIN-8xo" data-second="87"> 
+            <img class="project-box-image" data-title='Odd Stars<br>"Co jest?"' alt-src="./res/img/thumb/alt/odd01.jpg" src="./res/img/thumb/odd01.jpg" activate-typewriter="true" id="video-trigger" data-video-src="https://www.youtube.com/embed/CA2CcIN-8xo" data-second="87"> 
         </div>
 
         <!-- THESIS STUDIO 1-->
         <div class="project-gallery-item">
           <a href="#gotoYLH">
-            <img class="project-box-image" data-title='Thesis<br>"Aż Zabraknie Słów"' data-title='<br>""' src="./res/img/SES-Thesis.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/yo64R1Xbv7k" data-second="0"></a>
+            <img class="project-box-image" data-title='Thesis<br>"Aż Zabraknie Słów"'  alt-src="./res/img/thumb/alt/SES-Thesis.jpg" src="./res/img/thumb/SES-Thesis.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/yo64R1Xbv7k" data-second="0"></a>
         </div>
         
         <!--TYMON RG-->
         <div class="project-gallery-item">
           <a href="#gotoPS">
-            <img class="project-box-image" data-title='Tymon Tymański<br>"Wybaczcie Piechocie"' src="./res/img/SES-Tymon.jpg" id="video-trigger"  activate-typewriter="true" data-video-src="https://www.youtube.com/embed/VEU1ewzPyL8" data-second="0"></a>
+            <img class="project-box-image" data-title='Tymon Tymański<br>"Wybaczcie Piechocie"' alt-src="./res/img/thumb/alt/SES-Tymon.jpg" src="./res/img/thumb/SES-Tymon.jpg" id="video-trigger"  activate-typewriter="true" data-video-src="https://www.youtube.com/embed/VEU1ewzPyL8" data-second="0"></a>
         </div>
 
         <!-- MTT MULK-->
         <div class="project-gallery-item">
           <a href="#gotoTP">
-            <img class="project-box-image" data-title='Moose The Tramp<br>"Mulk"' src="./res/img/mulk03.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/ZUX-N5hve_Y" data-second="0"></a>
+            <img class="project-box-image" data-title='Moose The Tramp<br>"Mulk"' alt-src="./res/img/thumb/alt/mulk03.jpg" src="./res/img/thumb/mulk03.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/ZUX-N5hve_Y" data-second="0"></a>
         </div>
         
         <!-- ILLUSION STUDIO 2-->
         <div class="project-gallery-item">
           <a href="#gotoMP">
-            <img class="project-box-image" data-title='Illusion<br>"Zanurzam się"' src="./res/img/illustudio01.jpg" activate-typewriter="true" id="video-trigger" data-video-src="https://www.youtube.com/embed/VycPu19ZrMQ" data-second="0"></a>
+            <img class="project-box-image" data-title='Illusion<br>"Zanurzam się"' alt-src="./res/img/thumb/alt/illustudio01.jpg" src="./res/img/thumb/illustudio01.jpg" activate-typewriter="true" id="video-trigger" data-video-src="https://www.youtube.com/embed/VycPu19ZrMQ" data-second="0"></a>
         </div>
         
         <!--MILCZENIE OWIEC-->
         <div class="project-gallery-item">
           <a href="https://youtu.be/9CwLw7hwv-8?feature=shared&t=619"onclick='window.open("https://youtu.be/9CwLw7hwv-8?feature=shared&t=619");return false;'> >
-            <img class="project-box-image" activate-typewriter="true" data-title='Milczenie Owiec,<br>Radio Gdańsk' src="./res/img/SES-MO.jpg"></a>
+            <img class="project-box-image" activate-typewriter="true" data-title='Milczenie Owiec,<br>Radio Gdańsk' alt-src="./res/img/thumb/alt/SES-MO.jpg" src="./res/img/thumb/SES-MO.jpg"></a>
         </div>
 
         <!--LYKO CZY TO-->
         <div class="project-gallery-item">
           <a href="#gotoPORT">
-            <img class="project-box-image" data-title='Łyko<br>"Czy To My?"' src="./res/img/lyko01.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/aSTU8dBAOVA" data-second="0"></a>
+            <img class="project-box-image" data-title='Łyko<br>"Czy To My?"' alt-src="./res/img/thumb/alt/lyko01.jpg" src="./res/img/thumb/lyko01.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/aSTU8dBAOVA" data-second="0"></a>
         </div>
         
         
         <!--LYKO RG-->
         <div class="project-gallery-item">
           <a href="#gotoMP">
-            <img class="project-box-image" data-title='Łyko,<br> Radio Gdańsk' src="./res/img/SES-Lyko.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/e4qT4TR5z48" data-second="33"></a>
+            <img class="project-box-image" data-title='Łyko,<br> Radio Gdańsk' alt-src="./res/img/thumb/alt/SES-Lyko.jpg" src="./res/img/thumb/SES-Lyko.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/e4qT4TR5z48" data-second="33"></a>
         </div>
 
 
         <!-- MTT LUNATYCY-->
         <div class="project-gallery-item">
           <a href="#gotoMP">
-            <img class="project-box-image" data-title='Moose The Tramp,<br>Radio Gdańsk' src="./res/img/SES-MTTRG.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/Z6gl6GPGP7k" data-second="0"></a>
+            <img class="project-box-image" data-title='Moose The Tramp,<br>Radio Gdańsk' alt-src="./res/img/thumb/alt/SES-MTTRG.jpg" src="./res/img/thumb/SES-MTTRG.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/Z6gl6GPGP7k" data-second="0"></a>
         </div>
         
 
@@ -372,7 +380,7 @@
             <div class="about-item">              
               <p id="just">
                 
-                Hello there! I'm Dariusz. I first picked up a guitar in high school, starting my first band and just few years later I dove headfirst into the world of local <b>live music</b> scene. Over the years, I’ve played in various projects, which has given me a decent understanding of what it’s like to perform live, a good comprehension of the stage technicalities, along with the musician lingo. This was crucial to <b>becoming a knowledgable and versatile band videographer</b>.
+                Hello there! I'm Dariusz. I first picked up a guitar in early high school, soon after I've started my first band and just few years later I dove headfirst into the world of local <b>live music</b> scene. Over the years, I’ve played in various projects, which has given me a decent understanding of what it’s like to perform live, a good comprehension of the stage technicalities, all along with the unique musician lingo. This was crucial to <b>becoming a knowledgable and versatile band videographer</b>.
 
                 <br>
                 <br>
@@ -404,7 +412,7 @@
 
             <br><Br>
 
-            When I’m not working on videos or writing code, you might find me playing the guitar, composing music, or keeping my eyes sharp in the wilderness with a bow and arrow. As you might have guessed from this sections' cover video, I have an odd sense of humour, but that's fine, I think.
+            When I’m not working on videos or writing code, I'm preoccupied with playing the guitar, composing music, or keeping my eyes sharp in the wilderness with a bow and arrow. As you might have guessed from this sections' cover video, I have an odd sense of humour, but that's fine, I think.
 
           </p>  
         </div>
@@ -427,7 +435,7 @@
         <!-- PROJECTS LIST BOX -->
 
 
-        <div class="box" >  
+        <div class="box showreel-box" >  
           <h2>Highlighted Projects</h2>    
           <div class="welcome-item">
             <video class="welcome-image" preload="auto" autoplay loop muted loading="lazy" src="res/video/highlights-video.mp4" alt=""></video>
@@ -442,7 +450,7 @@
 
                 <div class="project-list-item" id="gotoLIW">
                   <div class="project-list-image-wrapper">
-                    <img class="project-box-image" data-title='Lucky Chops<br>"Live in Warsaw"' src="./res/img/LV-LCLIWalt.jpg" activate-typewriter="true" id="video-trigger" data-video-src="https://www.youtube.com/embed/xC6JEwFLcJk" data-second="2396">
+                    <img class="project-box-image" data-title='Lucky Chops<br>"Live in Warsaw"' src="./res/img/thumb/LV-LCLIWalt.jpg" activate-typewriter="true" id="video-trigger" data-video-src="https://www.youtube.com/embed/xC6JEwFLcJk" data-second="2396">
                   </div>
                   <div class="project-list-text">
                     <h3>Lucky Chops "Live in Warsaw"</h3>
@@ -452,7 +460,7 @@
 
                 <div class="project-list-item" id="gotoSM">
                   <div class="project-list-image-wrapper">
-                    <img class="project-box-image" data-title='Mikromusic<br>"Live in Stary Maneż"' src="./res/img/LV-MMSMalt.jpg" activate-typewriter="true" id="video-trigger" data-video-src="https://www.youtube.com/embed/HV0RozRx1ig" data-second="2126">
+                    <img class="project-box-image" data-title='Mikromusic<br>"Live in Stary Maneż"' src="./res/img/thumb/LV-MMSMalt.jpg" activate-typewriter="true" id="video-trigger" data-video-src="https://www.youtube.com/embed/HV0RozRx1ig" data-second="2126">
                   </div>
                   <div class="project-list-text">
                     <h3>Mikromusic "Live in Stary Maneż"</h3>
@@ -462,46 +470,53 @@
 
                 <div class="project-list-item" id="gotoILLU">
                   <div class="project-list-image-wrapper">
-                    <img class="project-box-image" data-title='Illusion<br>"Tchórz"' src="./res/img/tchorz02.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/1oHNSryjKSw" data-second="0">
+                    <img class="project-box-image" data-title='Illusion<br>"Tchórz"' src="./res/img/thumb/tchorz02.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/1oHNSryjKSw" data-second="0">
                   </div>
                   <div class="project-list-text">
                     <h3>Illusion "Tchórz" Live Music Video  </h3>
-                    <p>   One of the benefits of working with bands is that sometimes you get to work with musicians you've seen couple of times on the TV. Filming Illusion, the hard rock and metal icons of the polish soil, was one such experience. While I had previously worked on videos for Lipali, the lead vocalist’s other project, the chance to capture Illusion both in the studio and live was truly special. Given full creative freedom, I infused the videos with an old-school vibe that perfectly complements the band’s raw energy, just like I remembered seeing them on the telly. </p>
+                    <p>   One of the benefits of working with bands is that sometimes you get to work with musicians you've seen couple of times on the TV. Filming Illusion, the hard rock and metal icons of the polish soil, was one such experience. While I had previously worked on videos for Lipali, the lead vocalist’s other project, the chance to capture Illusion both in the studio and live was truly special. Given full creative freedom, I infused the videos promoting their latest release "Anhedonia" with an old-school vibes that perfectly complement the band’s raw energy - just like I remembered seeing them on the telly. </p>
                   </div>
                 </div>  
                 
                 <div class="project-list-item" id="gotoOK">
                   <div class="project-list-image-wrapper">
                     <a href="https://youtu.be/xOOX5x0GvUY?si=yEhNKj8oiuj2YI3-&t=622" onclick='window.open("https://youtu.be/xOOX5x0GvUY?si=yEhNKj8oiuj2YI3-&t=622");return false;'> 
-                    <img class="project-box-image" data-title='Obsidian Kingdom<br>"Live in Gdansk"' src="./res/img/ok.jpg" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/xOOX5x0GvUY" data-second="400"></a>
+                    <img class="project-box-image" data-title='Obsidian Kingdom<br>"Live in Gdansk"' src="./res/img/thumb/ok.jpg" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/xOOX5x0GvUY" data-second="400"></a>
                   </div>
                   <div class="project-list-text">
                     <h3>Obsidian Kingdom "Live in Gdańsk"  </h3>
-                    <p>  Filming Obsidian Kingdom in Gdansk was a thrilling challenge — keeping the camera steady and focused while resisting the urge to headbang in the midst of flashing strobe lights was no easy task. The band’s electrifying performance at B90 was amplified by a dramatic lighting setup that played perfectly with the venue's shadows. Remarkably, the video features sound straight from the mixing board, as heard from the PA, capturing the raw, and authentic energy of the night. This project is a testament to the power of having a dedicated light and sound team, and of course, a videographer who knows how to bring the music to your screen.</p>
+                    <p>  Filming Obsidian Kingdom in Gdansk was a thrilling challenge — keeping the camera steady and focused while resisting the urge to headbang in the midst of flashing strobe lights was no easy task. The band’s electrifying performance at B90 was amplified by a dramatic lighting setup that played perfectly with the venue's shadows and industrial atmosphere. Remarkably, the video features sound straight from the mixing board, as heard from the PA, capturing the raw, and authentic energy of the night. This video is a testament to the power of having a dedicated light and sound team, and of course, a videographer who knows how to bring the music to your screen.</p>
                   </div>
                 </div> 
 
                 <div class="project-list-item" id="gotoD20">
                   <div class="project-list-image-wrapper">
                     <a href="https://www.facebook.com/FractalVideos/videos/1680225458763547" onclick='window.open("https://www.facebook.com/FractalVideos/videos/1680225458763547");return false;'> 
-                    <img class="project-box-image" data-title='Lucky Chops<br>"D20 (Castle Version)"' src="./res/img/d20castle.jpg" activate-typewriter="true" data-video-src="" data-second=""></a>
+                    <img class="project-box-image" data-title='Lucky Chops<br>"D20 (Castle Version)"' src="./res/img/thumb/d20castle.jpg" activate-typewriter="true" data-video-src="" data-second=""></a>
                   </div>
                   <div class="project-list-text">
                     <h3>Lucky Chops "D20 - Castle Version"</h3>
-                    <p>  When Lucky Chops returned to tour in Poland, another joint project was inevitable. This time, we captured their vibrant energy not only within the walls of a club Kwadrat in Cracow, but also took the band to the streets, echoing their New York roots. The "Castle" version, was filmed on the historic Wawel Castle walls and by the Vistula River, and was edited to multiple versions. The Castle version landed on our Facebook profile, while the full, raw, <u><b><a href="https://www.youtube.com/watch?v=xSLiWe7F8xA&ab_channel=LuckyChops" onclick='window.open("https://www.youtube.com/watch?v=xSLiWe7F8xA&ab_channel=LuckyChops");return false;'>Judas Priest-esque</a></b></u> club performance was shared on the band’s official channels. Filming a band in such an iconic location was a unique experience, adding another memorable chapter to our collaborations.</p>
+                    <p>  When Lucky Chops returned to tour in Poland, another joint project was inevitable. This time, we captured their vibrant energy not only within the walls of a club Kwadrat in Cracow, but also took the band to the streets, echoing their New York roots. The "Castle" version, was filmed on the rocks of historic Wawel Castle, by the Vistula River, and was edited to multiple versions. The Castle version landed on our Facebook profile, while the full, raw, <u><b><a href="https://www.youtube.com/watch?v=xSLiWe7F8xA&ab_channel=LuckyChops" onclick='window.open("https://www.youtube.com/watch?v=xSLiWe7F8xA&ab_channel=LuckyChops");return false;'>Judas Priest-esque</a></b></u> club performance was shared on the band’s official channels. Filming a band in such an iconic location was a unique experience, adding another memorable chapter to our collabs.</p>
                   </div>
                 </div>  
                     
           </div>
         </div>
 
-        
-        <div class="headline-wrapper">
-          <div class="headline" id="bottom">
-            <h2></h2>
-          </div> 
-          
+
+        <div class="box showreel-box">
+          <div class="showreel-wrapper">
+            <iframe 
+              id="showreel"
+              src="https://www.youtube.com/embed/viw1v9QBUiY" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>    
+          </div>
         </div>
+
         
 
       </div>

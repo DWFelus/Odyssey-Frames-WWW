@@ -75,8 +75,9 @@ Todo:
   - [x] typewriter is too low on 1080p dispaly
 
 ### **v0.3.1 - Showreel and alts**
-  - [ ] edit showreel to the music and move it to the bottom, turn down the brightness of the background video and include showreel 
-  - [ ] display alt pics when in portrait mode
+  - [x] edit showreel to the music and move it to the bottom, turn down the brightness of the background video and include showreel 
+  - [x] display alt pics when in portrait mode
+  - [x] reaching top switches to blur and low brightness bg video
 
 ### **v0.4.0 - Contact and minor adjustments**
 
@@ -88,22 +89,12 @@ Todo:
   - [ ] verify all links (in the nav and footer and when clicking on portfolio items)
   - [ ] remove unnecesary css or js files
   - [ ] delete unused resources  
-  - [ ] change loading to be a helmet (or another logo) that is filling up
+  - [ ] change loading to be a patch logo that is filling up
   
   - [ ] cleanup index.html (bad links or dead css)
-  - [ ] bottom not being unblurred
   - [ ] why the thumbnails are not straight
 
-### **v0.5.0 - Test Rulesets with @Media for different devices**
-  - [ ] 576p portrait
-  - [ ] 768p portrait
-  - [ ] 1080p portrait
-  - [ ] 1080p+ portait
-
-  - [ ] 576p landscape
-  - [ ] 768p landscape
-  - [ ] 1080p landscape
-  - [ ] 1080p+ landscape
+### **v0.5.0 - Test on mobile devices**
 
 ### **v0.8.0 - Test Responsiveness and links**
 

@@ -74,7 +74,7 @@
   
     overflow: hidden;
   
-    top: 5%;
+    top: 8%;
   }
   /*
   #cover
@@ -123,6 +123,11 @@
 /* ----- */    
 /* BOXES */
 /* ----- */  
+
+/* Reduce margin specifically for the showreel box */
+.showreel-box {
+  margin-bottom: 6vh; /* Adjust this value as needed */
+}
   
   .welcome-box
   {      

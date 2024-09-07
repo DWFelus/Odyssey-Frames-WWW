@@ -102,6 +102,11 @@
 /* ----- */    
 /* BOXES */  
 /* ----- */  
+
+/* Reduce margin specifically for the showreel box */
+.showreel-box {
+  margin-bottom: 6vh; /* Adjust this value as needed */
+}
   .welcome-box
   {      
     display: block;  

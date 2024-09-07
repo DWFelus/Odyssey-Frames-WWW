@@ -1,15 +1,15 @@
 var targets = [
   { id: 'top', brightness: 1.1, saturate: 1, blur: 0 },
   { id: 'live', brightness: 0.7, saturate: 0.7, blur: 7 },
-  { id: 'session', brightness: 0.7, saturate: 0.6, blur: 7 },
+  { id: 'sessions', brightness: 0.7, saturate: 0.6, blur: 7 },
   { id: 'exp', brightness: 0.7, saturate: 1, blur: 7 },
   { id: 'contact', brightness: 0.7, saturate: 0.0, blur: 7 },
   { id: 'gotoLIW', brightness: 0.7, saturate: 0.7, blur: 7 },
   { id: 'gotoSM', brightness: 0.7, saturate: 1, blur: 7 },
   { id: 'gotoILLU', brightness: 0.7, saturate: 0.0, blur: 7 },
   { id: 'gotoOK', brightness: 0.7, saturate: 0.7, blur: 7 },
-  { id: 'gotoD20', brightness: 0.7, saturate: 0.5, blur: 0 },
-  { id: 'bottom', brightness: 1.1, saturate: 1, blur: 0 }
+  { id: 'gotoD20', brightness: 0.7, saturate: 0.7, blur: 7 },
+  { id: 'showreel', brightness: 0.3, saturate: 0.1, blur: 10 }
 ];
 
 document.addEventListener('scroll', function () {
