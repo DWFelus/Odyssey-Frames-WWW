@@ -31,6 +31,16 @@ body
   opacity: 1;
 }
 
+.form-container {
+  max-width: 100%; /* Adjust to fit your layout */
+  margin: 0 auto; /* Center the form */
+  padding: 20px;
+  border: 2px solid #ccc; /* Add a border */
+  border-radius: 0px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  background-color: #000000; /* Optional background color */
+}
+
 .headline
 {
   margin: 5%;

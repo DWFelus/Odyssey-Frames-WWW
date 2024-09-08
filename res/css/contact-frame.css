@@ -1,0 +1,72 @@
+/* General form styling */
+#fs-frm {
+  max-width: 100%; /* Adjust width as needed */
+  margin: 0 auto; /* Center the form */
+  padding: 20px;
+  background-color: #000; /* Black background */
+  color: #fff; /* White font color */
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+}
+
+/* Styling for input fields */
+#fs-frm-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between input fields */
+  border: none; /* Remove fieldset border */
+  padding: 0;
+  margin-bottom: 15px; /* Space below the inputs */
+}
+
+/* First row: name and email fields */
+#full-name,
+#email-address {
+  flex: 1; /* Make both inputs take equal width */
+  padding: 10px;
+  border: 1px solid #fff; /* White border */
+  background-color: transparent; /* Transparent background */
+  color: #fff; /* White text color */
+  
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-size: 14px;
+}
+
+/* Second row: full-width textarea */
+#message {
+  width: 100%; /* Full width of form */
+  padding: 10px;
+  border: 1px solid #fff; /* White border */
+  background-color: transparent; /* Transparent background */
+  color: #fff; /* White text color */
+  font-size: 14px;
+  resize: vertical; /* Allow resizing only vertically */
+}
+
+/* Submit button: right-aligned */
+input[type="submit"] {
+  display: block;
+  margin-left: auto; /* Right align the button */
+  padding: 10px 20px;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text color */
+  border: 1px solid #fff; /* White border */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+}
+
+/* Hover effect for the button */
+input[type="submit"]:hover {
+  background-color: #fff; /* White background on hover */
+  color: #000; /* Black text on hover */
+}
+
+/* Placeholder text styling */
+input::placeholder,
+textarea::placeholder {
+  color: #ccc; /* Light color for placeholders */
+  opacity: 0.8;
+}

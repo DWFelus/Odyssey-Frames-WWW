@@ -79,26 +79,38 @@ Todo:
   - [x] display alt pics when in portrait mode
   - [x] reaching top switches to blur and low brightness bg video
 
-### **v0.4.0 - Contact and minor adjustments**
+### **v.0.3.2 - Contact Form**
+- [x] Contact form
 
-- [ ] Contact
-  - [ ] add contact me from scratch
-  
+### **v.0.4.0 New Loading Logo **
+- [ ] Loading logo
+
+### **v0.5.0 - Contact and minor adjustments**
+
+- [ ] Rudimentary contact section  
 - [ ] Minor adjustments
-  - [ ] change classes so they would reflect their content and update it in css and js
+  - [ ] simplify the js
   - [ ] verify all links (in the nav and footer and when clicking on portfolio items)
   - [ ] remove unnecesary css or js files
   - [ ] delete unused resources  
-  - [ ] change loading to be a patch logo that is filling up
-  
+  - [ ] change loading to be a patch logo that is filling up  
   - [ ] cleanup index.html (bad links or dead css)
   - [ ] why the thumbnails are not straight
-
-### **v0.5.0 - Test on mobile devices**
 
 ### **v0.8.0 - Test Responsiveness and links**
 
 ### **v0.9.0 - Code clean up**
 
-### **v.1.0.0 Publish on GithubPages**
+### **v.1.0.0 - Publish on GithubPages**
+
 - [ ] done
+
+### **v1.0.1 - Test on mobile devices**
+
+### **v.1.1.0 - Contact Form**
+- [ ] Contact form
+
+
+
+
+  

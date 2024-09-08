@@ -111,35 +111,7 @@ window.addEventListener('load', function() {
   document.body.style.overflow = "auto";
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*// Declare shared variables
+/*
 var progressBar;
 var resources;
 var totalResources;
@@ -149,12 +121,16 @@ var arrowQuiver;
 var boxes;
 var headlineWrappers;
 var tagline;
+var taglineImage;
+var loadTag;
+var taglineCenterImage;
 var taglineCenter;
+var observer; 
 
 function trackProgress() {
   progressBar = document.getElementById("myProgressBar");
   resources = window.performance.getEntriesByType("resource");
-  totalResources = resources.length;
+  totalResources = resources.length *0.7;
   loadedResources = 0;
 
   function updateProgressBar() {
@@ -162,14 +138,13 @@ function trackProgress() {
     var progress = Math.round((loadedResources / totalResources) * 100);
     progressBar.style.width = progress + "%";
 
-    if (loadedResources === totalResources) {
-      // All resources have finished loading
-      // You can perform any desired actions here
-      console.log("All resources loaded!");
+    if (loadedResources === totalResources || loadedResources > totalResources) {
+      progressBar.style.width = "100%"; // 
+      observer.disconnect(); // 
     }
   }
 
-  var observer = new PerformanceObserver(function (list) {
+  observer = new PerformanceObserver(function (list) {
     var entries = list.getEntries();
     entries.forEach(function (entry) {
       if (
@@ -208,10 +183,21 @@ window.addEventListener('load', function() {
   boxes = document.getElementsByClassName('box');
   headlineWrappers = document.getElementsByClassName('headline-wrapper');
   tagline = document.getElementById('tagline');
+  taglineImage = document.getElementById('tagline-image');
   taglineCenter = document.getElementById('tagline-center');
+  taglineCenterImage = document.getElementById('tagline-center-image');
+  loadTag = document.getElementById('loadtag');
 
-  cover.addEventListener('transitionend', function() {
- 
+  loadScreen = document.getElementsByClassName('load-screen')[0];
+
+  observer.disconnect();
+
+    progressBar = document.getElementById("myProgressBar");   
+    progressBar.style.width = "100%";
+
+  cover.addEventListener('transitionend', function()
+  {    
+    
     arrowQuiver.classList.add('show');
 
     for (let i = 0; i < boxes.length; i++) {
@@ -223,51 +209,20 @@ window.addEventListener('load', function() {
       headline.classList.add('show');
     }
 
+    loadScreen.classList.add('hide');    
+    loadTag.classList.add('hide');
     tagline.classList.add('show');
+    taglineImage.classList.add('show');
     taglineCenter.classList.add('show');
+    taglineCenterImage.classList.add('show');
+    
+    
   });
 
-  cover.classList.add('loaded');
+  setTimeout(function() {
+    cover.classList.add('loaded');
+  }, 250);
   document.body.style.overflow = "auto";
 });
-*/
-
-/*
--------------------------------------------------------------------------------------------------------------------------------
-
-window.addEventListener('load', 
-  function()
-  {
-    const cover = document.getElementById('cover');
-    const arrowQuiver = document.getElementById('arrow-quiver');
-    const boxes = document.getElementsByClassName('box');
-    const headlineWrappers = document.getElementsByClassName('headline-wrapper');
-    
-    const tagline = document.getElementById('tagline');    
-    const taglineCenter = document.getElementById('tagline-center');
-    
-
-    cover.addEventListener('transitionend', function() 
-    {      
-      arrowQuiver.classList.add('show');
-
-      for (let i = 0; i < boxes.length; i++) {
-        boxes[i].classList.add('show');
-      }
-
-      for (let i = 0; i < headlineWrappers.length; i++) {
-        const headline = headlineWrappers[i].querySelector('.headline');
-        headline.classList.add('show');
-      }
-
-      tagline.classList.add('show');
-      taglineCenter.classList.add('show');
-    });
-
-    
-  cover.classList.add('loaded');
-  document.body.style.overflow = "auto";
-  }
-);
 
 */

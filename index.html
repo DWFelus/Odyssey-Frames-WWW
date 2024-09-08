@@ -18,7 +18,8 @@
     <link rel="stylesheet" type="text/css" href="./res/css/box-content.css">
     <link rel="stylesheet" type="text/css" href="./res/css/box-about.css"> 
     <link rel="stylesheet" type="text/css" href="./res/css/box-arrow.css">   
-    <link rel="stylesheet" type="text/css" href="./res/css/box-tagline.css">
+    <link rel="stylesheet" type="text/css" href="./res/css/box-tagline.css">    
+    <link rel="stylesheet" type="text/css" href="./res/css/contact-frame.css">
     
     <link rel="stylesheet" type="text/css" href="./res/css/video-overlay.css">     
 
@@ -422,12 +423,22 @@
 
         <div class="box" id="contact">             
           <h2>Contact Me</h2>
-          <div class="about-box"> 
-            <div class="about-item">  
+            <div class="contact-form">
+              <p>If you have a project in mind, or you just have a song that needs a video to go along with it, don't hesitate to contact me! I'd love to work in a live or studio environment. A link to your music would be appreciated, especially if you have material you'd like me to work on — but it's not necessary.</p>
+
+
+              <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xrbzdjpz" method="post" target="_blank">
+                <fieldset id="fs-frm-inputs">
+                  <input type="text" name="name" id="full-name" placeholder="Band or Artist Name" required="">
+                  <input type="email" name="_replyto" id="email-address" placeholder="your.email@goes.here" required="">
+                  <textarea rows="5" name="message" id="message" placeholder="You message goes here." required=""></textarea>
+                  <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                </fieldset>
+                <input type="submit" value="Submit">
+              </form>
+
+
             </div>
-          </div>
-          <p>  
-          </p>  
         </div>
 
 
