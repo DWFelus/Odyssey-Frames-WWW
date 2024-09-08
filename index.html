@@ -46,7 +46,8 @@
     <script src="./res/js/coverVideoBlur.js"></script>    
     <script src="./res/js/gotoOffset.js"></script>     
     <script src="./res/js/navFooterSlide.js"></script>      
-    <script src="./res/js/videoOverlay.js"></script>        
+    <script src="./res/js/videoOverlay.js"></script>            
+    <script src="./res/js/videoLinks.js"></script>        
     <script src="./res/js/portraitThumbnails.js"></script>
 
     <!-- Font Awesome link-->
@@ -110,7 +111,7 @@
       
 
 
-      <h1 class="foot-author"><a href="http://www.dwfls.pl" onclick='window.open("http://www.dwfls.pl");return false;'>Website<br> by DWFLS.PL</a></h1>
+      <h1 class="foot-author"><a href="http://www.dwfls.pl" onclick='window.open("http://www.dwfls.pl");return false;'>Website<br> by DWFLS</a></h1>
    </footer>  
 
    <!-- VIDEO OVERLAY -->
@@ -201,8 +202,9 @@
         
     <!--OBSIDIAN KINGDOM-->
     <div class="project-gallery-item">
-      <a href="https://youtu.be/xOOX5x0GvUY?si=9l9Gwga1lI2ZMk96&t=153"onclick='window.open("https://youtu.be/xOOX5x0GvUY?si=9l9Gwga1lI2ZMk96&t=153");return false;'> >
-        <img class="project-box-image" data-title='Obsidian Kingdom<br>"Live in Gdańsk"' alt-src="./res/img/thumb/alt/LV-OK.jpg" src="./res/img/thumb/LV-OK.jpg" activate-typewriter="true"> </a> 
+        <img class="project-box-image" data-title='Obsidian Kingdom<br>"Live in Gdańsk"' alt-src="./res/img/thumb/alt/LV-OK.jpg" src="./res/img/thumb/LV-OK.jpg" activate-typewriter="true"
+        id="link-image"
+        data-url="https://youtu.be/xOOX5x0GvUY?si=9l9Gwga1lI2ZMk96&t=153"> 
     </div>
         
     <!--LC TEMPLE OF BOOM-->
@@ -265,8 +267,9 @@
         
     <!--DROWN MY DAY-->
     <div class="project-gallery-item">
-      <a href="https://www.youtube.com/watch?v=w49bY6vOuGk&ab_channel=DrownMyDay"onclick='window.open("https://www.youtube.com/watch?v=w49bY6vOuGk&ab_channel=DrownMyDay");return false;'> >
-        <img class="project-box-image" activate-typewriter="true" data-title='Drown My Day<br>"Nightmare Becomes Reality"' alt-src="./res/img/thumb/alt/dmd01.jpg" src="./res/img/thumb/dmd01.jpg" ></a>
+ 
+        <img class="project-box-image" activate-typewriter="true" data-title='Drown My Day<br>"Nightmare Becomes Reality"' alt-src="./res/img/thumb/alt/dmd01.jpg" src="./res/img/thumb/dmd01.jpg" id="link-image"
+        data-url="https://www.youtube.com/watch?v=w49bY6vOuGk&ab_channel=DrownMyDay" >
     </div>
         
 
@@ -285,8 +288,9 @@
 
     <!--THE SHIPYARD-->
     <div class="project-gallery-item">
-      <a href="https://www.youtube.com/watch?v=XdC8ATSofik&ab_channel=TheShipyard"onclick='window.open("https://www.youtube.com/watch?v=XdC8ATSofik&ab_channel=TheShipyard");return false;'> >
-        <img class="project-box-image" activate-typewriter="true" id="video-trigger" data-title='The Shipyard<br>"So Much To Win"' alt-src="./res/img/thumb/alt/LV-THESHIP.jpg" src="./res/img/thumb/LV-THESHIP.jpg"></a>
+
+        <img class="project-box-image" activate-typewriter="true" data-title='The Shipyard<br>"So Much To Win"' alt-src="./res/img/thumb/alt/LV-THESHIP.jpg" src="./res/img/thumb/LV-THESHIP.jpg" id="link-image"
+        data-url="https://www.youtube.com/watch?v=XdC8ATSofik&ab_channel=TheShipyard" >
     </div>
 
   </div>
@@ -314,58 +318,50 @@
 
         <!-- THESIS STUDIO 1-->
         <div class="project-gallery-item">
-          <a href="#gotoYLH">
-            <img class="project-box-image" data-title='Thesis<br>"Aż Zabraknie Słów"'  alt-src="./res/img/thumb/alt/SES-Thesis.jpg" src="./res/img/thumb/SES-Thesis.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/yo64R1Xbv7k" data-second="0"></a>
+            <img class="project-box-image" data-title='Thesis<br>"Aż Zabraknie Słów"'  alt-src="./res/img/thumb/alt/SES-Thesis.jpg" src="./res/img/thumb/SES-Thesis.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/yo64R1Xbv7k" data-second="0">
         </div>
         
         <!--TYMON RG-->
         <div class="project-gallery-item">
-          <a href="#gotoPS">
-            <img class="project-box-image" data-title='Tymon Tymański<br>"Wybaczcie Piechocie"' alt-src="./res/img/thumb/alt/SES-Tymon.jpg" src="./res/img/thumb/SES-Tymon.jpg" id="video-trigger"  activate-typewriter="true" data-video-src="https://www.youtube.com/embed/VEU1ewzPyL8" data-second="0"></a>
+            <img class="project-box-image" data-title='Tymon Tymański<br>"Wybaczcie Piechocie"' alt-src="./res/img/thumb/alt/SES-Tymon.jpg" src="./res/img/thumb/SES-Tymon.jpg" id="video-trigger"  activate-typewriter="true" data-video-src="https://www.youtube.com/embed/VEU1ewzPyL8" data-second="0">
         </div>
 
         <!-- MTT MULK-->
         <div class="project-gallery-item">
-          <a href="#gotoTP">
-            <img class="project-box-image" data-title='Moose The Tramp<br>"Mulk"' alt-src="./res/img/thumb/alt/mulk03.jpg" src="./res/img/thumb/mulk03.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/ZUX-N5hve_Y" data-second="0"></a>
+            <img class="project-box-image" data-title='Moose The Tramp<br>"Mulk"' alt-src="./res/img/thumb/alt/mulk03.jpg" src="./res/img/thumb/mulk03.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/ZUX-N5hve_Y" data-second="0">
         </div>
         
         <!-- ILLUSION STUDIO 2-->
         <div class="project-gallery-item">
-          <a href="#gotoMP">
-            <img class="project-box-image" data-title='Illusion<br>"Zanurzam się"' alt-src="./res/img/thumb/alt/illustudio01.jpg" src="./res/img/thumb/illustudio01.jpg" activate-typewriter="true" id="video-trigger" data-video-src="https://www.youtube.com/embed/VycPu19ZrMQ" data-second="0"></a>
+            <img class="project-box-image" data-title='Illusion<br>"Zanurzam się"' alt-src="./res/img/thumb/alt/illustudio01.jpg" src="./res/img/thumb/illustudio01.jpg" activate-typewriter="true" id="video-trigger" data-video-src="https://www.youtube.com/embed/VycPu19ZrMQ" data-second="0">
         </div>
         
         <!--MILCZENIE OWIEC-->
         <div class="project-gallery-item">
-          <a href="https://youtu.be/9CwLw7hwv-8?feature=shared&t=619"onclick='window.open("https://youtu.be/9CwLw7hwv-8?feature=shared&t=619");return false;'> >
-            <img class="project-box-image" activate-typewriter="true" data-title='Milczenie Owiec,<br>Radio Gdańsk' alt-src="./res/img/thumb/alt/SES-MO.jpg" src="./res/img/thumb/SES-MO.jpg"></a>
+            <img class="project-box-image" activate-typewriter="true" data-title='Milczenie Owiec,<br>Radio Gdańsk' alt-src="./res/img/thumb/alt/SES-MO.jpg" src="./res/img/thumb/SES-MO.jpg" id="link-image"
+            data-url="https://youtu.be/9CwLw7hwv-8?feature=shared&t=619"
+            >
         </div>
 
         <!--LYKO CZY TO-->
         <div class="project-gallery-item">
-          <a href="#gotoPORT">
-            <img class="project-box-image" data-title='Łyko<br>"Czy To My?"' alt-src="./res/img/thumb/alt/lyko01.jpg" src="./res/img/thumb/lyko01.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/aSTU8dBAOVA" data-second="0"></a>
+            <img class="project-box-image" data-title='Łyko<br>"Czy To My?"' alt-src="./res/img/thumb/alt/lyko01.jpg" src="./res/img/thumb/lyko01.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/aSTU8dBAOVA" data-second="0">
         </div>
         
         
         <!--LYKO RG-->
         <div class="project-gallery-item">
-          <a href="#gotoMP">
-            <img class="project-box-image" data-title='Łyko,<br> Radio Gdańsk' alt-src="./res/img/thumb/alt/SES-Lyko.jpg" src="./res/img/thumb/SES-Lyko.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/e4qT4TR5z48" data-second="33"></a>
+            <img class="project-box-image" data-title='Łyko,<br> Radio Gdańsk' alt-src="./res/img/thumb/alt/SES-Lyko.jpg" src="./res/img/thumb/SES-Lyko.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/e4qT4TR5z48" data-second="33">
         </div>
 
 
         <!-- MTT LUNATYCY-->
         <div class="project-gallery-item">
-          <a href="#gotoMP">
-            <img class="project-box-image" data-title='Moose The Tramp,<br>Radio Gdańsk' alt-src="./res/img/thumb/alt/SES-MTTRG.jpg" src="./res/img/thumb/SES-MTTRG.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/Z6gl6GPGP7k" data-second="0"></a>
+            <img class="project-box-image" data-title='Moose The Tramp,<br>Radio Gdańsk' alt-src="./res/img/thumb/alt/SES-MTTRG.jpg" src="./res/img/thumb/SES-MTTRG.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/Z6gl6GPGP7k" data-second="0">
         </div>
         
 
-        
-
-        
+                
 
 
       </div>

@@ -83,22 +83,16 @@ Todo:
 - [x] Contact form
 
 ### **v.0.4.0 New Loading Logo **
-- [ ] Loading logo
+- [x] Loading logo
 
-### **v0.5.0 - Contact and minor adjustments**
+### **v0.5.0 - Minor adjustments**
  
-- [ ] Minor adjustments
-  - [ ] simplify the js
-  - [ ] verify all links (in the nav and footer and when clicking on portfolio items)
-  - [ ] remove unnecesary css or js files
-  - [ ] delete unused resources  
-  - [ ] change loading to be a patch logo that is filling up  
-  - [ ] cleanup index.html (bad links or dead css)
-  - [ ] why the thumbnails are not straight
+- [x] Minor adjustments
+  - [x] verify all links (in the nav and footer and when clicking on portfolio items)
+  - [x] remove unnecesary css or js files
+  - [x] delete unused resources  
+  - [x] why the thumbnails are not straight
 
-### **v0.8.0 - Test Responsiveness and links**
-
-### **v0.9.0 - Code clean up**
 
 ### **v.1.0.0 - Publish on GithubPages**
 
