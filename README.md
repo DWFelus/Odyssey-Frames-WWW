@@ -86,8 +86,7 @@ Todo:
 - [ ] Loading logo
 
 ### **v0.5.0 - Contact and minor adjustments**
-
-- [ ] Rudimentary contact section  
+ 
 - [ ] Minor adjustments
   - [ ] simplify the js
   - [ ] verify all links (in the nav and footer and when clicking on portfolio items)

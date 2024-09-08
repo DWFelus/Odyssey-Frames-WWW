@@ -1,3 +1,71 @@
+.load-screen {
+  position: fixed; /* Fixes the loading screen in the viewport */
+  top: 50%; /* Centers the screen vertically */
+  left: 50%; /* Centers the screen horizontally */
+  transform: translate(-50%, -50%); /* Adjusts the screen to be truly centered */
+  width: 50%; /* Width of the loading screen */
+  max-height: 70%; /* Limits the height to 70% of the viewport */
+  z-index: -10; /* Ensures it stays behind other content */
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* Optional padding */
+  box-sizing: border-box; /* Includes padding in width and height calculations */
+}
+
+.load-screen.hide {
+  display: none; /* Hides the loading screen */
+}
+
+.loading-logo {
+  margin-bottom: 2%; /* Space between the logo and the progress bar */
+  max-height: 50%; /* Limit the height of the logo */
+  max-width: 100%; /* Ensure the logo fits within the container */
+  overflow: hidden; /* Ensure content does not overflow */
+  
+  animation: blink 2s infinite; /* Blinking animation */
+}
+
+.progress-container {
+  width: 100%; /* Ensure the progress bar container takes full width of the .load-screen */
+  height: 15px; /* Height of the progress bar */
+  background: #848484; /* Background color of the progress bar container */
+  margin-bottom: 2%; /* Space between the progress bar and the loading tag */
+  box-sizing: border-box; /* Ensure padding and border are included in width and height calculations */
+}
+
+.progress-bar {
+  width: 0%; /* Initial width of the progress bar */
+  height: 100%; /* Full height of the progress bar container */
+  background: #f1f1f1; /* Color of the progress bar */
+  transition: width 0.1s; /* Smooth transition for the progress bar */
+}
+
+#loadtag {
+  color: white; /* Text color */
+  margin-top: 0%; /* Space above the loading tag */
+  font-size: 1.3rem; /* Font size */
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5); /* Text shadow */
+  opacity: 1; /* Initial opacity */
+  animation: blink 3s infinite; /* Blinking animation */
+}
+
+#loadtag.hide {
+  opacity: 0; /* Hides the loading tag */
+  animation: none; /* Stops the animation when hidden */
+}
+
+@keyframes blink {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+
+/*
+
 .load-screen
 {
   position: fixed;
@@ -6,36 +74,16 @@
   width: 50%;
   height: 50vh;
   z-index: -10;
-}
 
-.progress-container {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 8px;
-  background: #848484;
-}
-
-.progress-bar {
-  width: 0%;
-  height: 100%;
-  background: #f1f1f1;
-  transition: width 0.1s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .load-screen.hide
 {
   display: none;
-}
-
-
-
-@keyframes blink {
-  0% { opacity: 0; }
-  50% { opacity: 1; }
-  100% { opacity: 0; }
 }
 
 #loadtag {
@@ -54,3 +102,35 @@
   opacity: 0;
   animation: none;
 }
+
+.progress-container {
+  position: relative;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 8px;
+  background: #848484;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  background: #f1f1f1;
+  transition: width 0.1s;
+}
+
+
+@keyframes blink {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.loading-logo {
+  
+  width: 100%;
+  max-width: 300px; 
+
+
+*/

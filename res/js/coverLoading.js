@@ -1,3 +1,4 @@
+
 var progressBar;
 var resources;
 var totalResources;
@@ -110,6 +111,7 @@ window.addEventListener('load', function() {
   }, 250);
   document.body.style.overflow = "auto";
 });
+
 
 /*
 var progressBar;
