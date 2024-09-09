@@ -107,6 +107,19 @@ footer
   z-index: 10;
 }
 
+.flag {
+  cursor: pointer;
+  border: 2px solid transparent;
+  margin: 0 5px;
+  transition: border-color 0.3s ease, border-width 0.3s ease; /* Add transition for a smooth fade effect */
+}
+
+.active-flag {
+  border: 2px solid rgb(224, 224, 224);
+  pointer-events: none; /* Make the active flag non-clickable */
+}
+
+
 footer
 {
   transform: translateY(100%);

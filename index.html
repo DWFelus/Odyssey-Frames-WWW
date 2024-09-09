@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" description="Filming Concerts Live in Poland. Studio and Session Videos. Nagrywanie koncertów w Polsce. Filmowanie w studio.">
     <title>Odyssey Frames</title>
 
     <!-- CSS FILES -->        
@@ -42,6 +42,7 @@
     <!-- JS -->     
     <script src="./res/js/randomLoadtag.js" defer></script>
     <script src="./res/js/typewriterTagline.js"></script>  
+    <script src="./res/js/translation.js"></script>  
     <script src="./res/js/coverLoading.js"></script>
     <script src="./res/js/coverVideoBlur.js"></script>    
     <script src="./res/js/gotoOffset.js"></script>     
@@ -49,6 +50,8 @@
     <script src="./res/js/videoOverlay.js"></script>            
     <script src="./res/js/videoLinks.js"></script>        
     <script src="./res/js/portraitThumbnails.js"></script>
+
+    
 
     <!-- Font Awesome link-->
     <script src="https://kit.fontawesome.com/ad6cff3a8c.js" crossorigin="anonymous"></script>       
@@ -83,11 +86,18 @@
         <a href="#top">
         <div class="nav-logo-container"><img src="res/logo/of logo name cropped.png"></img></div></a>
         
-        <h1 class="nav-text"><a href="#live">Live</h1>             
-        <h1 class="nav-text"><a href="#sessions">Session</h1>       
-        <h1 class="nav-text"><a href="#exp">Exp</h1>    
-        <h1 class="nav-text"><a href="#contact">Contact</h1>  
-        <h1 class="nav-text"><a href="#showreel">Showreel</h1>
+        <h1 class="nav-text" pl="Koncerty"><a href="#live">Live</a>          </h1>   
+        <h1 class="nav-text" pl="Sesje Studyjne"><a href="#sessions">Studio Sessions</a>       </h1>
+        <h1 class="nav-text" pl="Doświadczenie"><a href="#exp">Exp</a>    </h1>
+        <h1 class="nav-text" pl="Kontakt"><a href="#contact">Contact</a>  </h1>
+        <h1 class="nav-text"><a href="#showreel">Showreel</a></h1>
+
+        <div class="nav-image>">
+          <img src="res/img/uk.svg" alt="English" id="flag-en" class="flag active-flag">
+          <img src="res/img/pl.svg" alt="Polish" id="flag-pl" class="flag">          
+        </div>
+
+
     </nav>
 
     <footer role="presentation"> >
@@ -96,22 +106,23 @@
       <h1 class="foot-text"><a href="#gotoILLU">Illusion<br>"Tchórz"</a></h1>
       <h1 class="foot-text"><a href="#gotoOK">Obsidian Kingdom<br>"Live in Gdansk"</a></h1>
       <h1 class="foot-text"><a href="#gotoD20">Lucky Chops<br>"D20"</a></h1>      
+
       <div class="foot-icon-container">
         <img src="res/img/fb-icon.png"></img>        
       </div>
-      <a href="#live">
-      <div class="foot-icon-container">
-        <img src="res/img/insta-icon.png"></img>        
-      </div>     
-    </a> 
+      
 
       <div class="foot-icon-container">
-        <img src="res/img/yt-icon.png"></img>        
+        <img src="res/img/insta-icon.png"></img>        
+      </div>    
+
+      <div class="foot-icon-container">
+        <img src="res/img/yt-icon.png"></img>     
       </div>
       
 
 
-      <h1 class="foot-author"><a href="http://www.dwfls.pl" onclick='window.open("http://www.dwfls.pl");return false;'>Website<br> by DWFLS</a></h1>
+      <h1 class="foot-author">Website<br> by DWFLS</h1>
    </footer>  
 
    <!-- VIDEO OVERLAY -->
@@ -170,11 +181,13 @@
 <!-- LIVE VIDEOS -->
 
 <div class="box" id="live"> 
-  <h2>Live Videos</h2>
+  <h2 pl="Filmy Koncertowe">Live Videos</h2>
   <div class="welcome-item">
     <video class="welcome-image" preload="auto" autoplay loop muted loading="lazy" src="res/video/live-video.mp4" alt=""></video>
     </div>
-  <p> There's something magical about live music. However, it's essence cannot be fully captured through audio alone. Videos help us relive this experience as best as possible, it enables us to share it with others. Below, you'll find some of my past works, each recorded with live audiences as unique reminders of those performances. Concerts and gigs are environments where I feel like a fish in water. Year by year, I find the rush of capturing the moment when shooting video being hard to one up.</p>
+  <p pl="W muzyce na żywo jest niewątpliwie coś magicznego. Mimo wszystko jej kwintesencja nie może być w pełni uchwycona tylko przez nagrany dźwięk. Wideo pomaga nam przypomnieć sobie koncerty jak najlepiej jak to możliwe, pozwalając przy tym na dzielenie się tym doświadczeniem z innymi. Poniżej znajdziesz niektóre z moich wcześniejszych prac, każdą zarejestrowaną z udziałem publiczności jako unikalne przypomnienia tych występów. Koncerty to coś w czym czuję się jak ryba w wodzie. Z roku na rok, trudno mi znaleźć coś, co dorównuje satysfakcji zrobienia fajnej koncertówki.
+          ">
+     There's something magical about live music. However, it's essence cannot be fully captured through audio alone. Videos help us relive this experience as best as possible, it enables us to share it with others. Below, you'll find some of my past works, each recorded with live audiences as unique reminders of those performances. Concerts and gigs are environments where I feel like a fish in water. Year by year, I find the rush of capturing the moment when shooting video being hard to one up.</p>
   
 
 
@@ -300,11 +313,13 @@
     <!-- SESSION AND STUDIO VIDEOS -->
 
     <div class="box" id="sessions"> 
-      <h2>Session and Studio Videos</h2>
+      <h2 pl="Filmy Sesyjne i Studyjne">Session and Studio Videos</h2>
       <div class="welcome-item">
         <video class="welcome-image" preload="auto" autoplay loop muted loading="lazy" src="res/video/session-video.mp4" alt=""></video>
         </div>
-      <p>The thrill of recording in a studio and session environment is undeniable for everyone involved. For a videographer, it's a space where every visual variable is mostly under creative control. The lighting, the angles, the sound; all can be finely tuned to capture the essence of the performance. Yet, despite this controlled setting, the pressure of being discreet and almost invisible remains. It’s about capturing raw, unfiltered moments without disrupting the flow of creativity. Sometimes, it's just the opposite - recording a band to a prerecorded track and making them bring out the best of their performance. Below you'll find studio and session projects I was glad to be a part of:</p>
+      <p pl="Podekscytowanie związane z nagrywaniem w studiu i podczas sesji wideo jest niezaprzeczalne dla wszystkich zaangażowanych. Dla filmowca - sesje to przestrzeń, w której każdy wizualny element jest w dużej mierze pod kreatywną kontrolą. Oświetlenie, kadry, dźwięk; wszystko można precyzyjnie dopasować, aby uchwycić istotę występu. Mimo to, presja bycia dyskretnym i niemal niewidzialnym pozostaje ważnym elementem filmowania zespołów na antenie czy w studio nagraniowym. Priorytetem jest uchwycenie surowych, niefiltrowanych momentów - bez zakłócania przepływu kreatywności. Czasami jest wręcz przeciwnie - nagrywanie zespołu do wcześniej nagranego podkładu i wyciąganie z całości jak najlepszego filmu. Poniżej znajdziesz projekty studyjne i sesyjne, w których miałem przyjemność uczestniczyć:
+            ">
+            The thrill of recording in a studio and session environment is undeniable for everyone involved. For a videographer, it's a space where every visual variable is mostly under creative control. The lighting, the angles, the sound; all can be finely tuned to capture the essence of the performance. Yet, despite this controlled setting, the pressure of being discreet and almost invisible remains. It’s about capturing raw, unfiltered moments without disrupting the flow of creativity. Sometimes, it's just the opposite - recording a band to a prerecorded track and making them bring out the best of their performance. Below you'll find studio and session projects I was glad to be a part of:</p>
       <div class="project-gallery-box" role="presentation"> 
         <!-- ILLUSION STUDIO 1-->
         <div class="project-gallery-item">
@@ -374,27 +389,36 @@
 
         <div class="box" id="exp">   
       
-          <h2>About Me - My Experience as a Band Videographer</h2>
+          <h2 pl="O mnie - Doświadczenie jako Filmowiec Kapel">
+            About Me - My Experience as a Band Videographer</h2>
           <div class="welcome-item">
           <video class="welcome-image" preload="auto" autoplay loop muted loading="lazy" src="res/video/about-video.mp4" alt=""></video>
           </div>
           <div class="about-box">            
 
             <div class="about-item">              
-              <p id="just">
-                
+              <p id="just"
+              
+              pl="Hej! Nazywam się Dariusz. Gram na gitarze mniej więcej od początku szkoły średniej, niedługo potem założyłem swój pierwszy zespół, a kilka lat później poznałem świat lokalnej sceny muzycznej. Z biegiem lat grałem w różnych projektach, co dało mi solidne zrozumienie tego, jak to jest występować na żywo, wiedzę o technicznych aspektach koncertowania i możliwość poznania unikalnego języka muzyków. Jest to kluczowe dla bycia wszechstronnym i kompetentnym filmowcem muzycznym.
+
+              <br><br>
+              
+              Około 2011 roku zacząłem zgłębiać produkcję wideo. Niebawem stało się jasne, że te dwie pasje zmierzają wprost na siebie. Od tego czasu miałem okazję tworzyć wideo w wielu klubach koncertowych, opanowując sztukę pracy przy słabym  oświetleniu, pod presją czasu i przy napiętych terminach. Zyskałem również znaczące doświadczenie w środowiskach studyjnych, na wydarzeniach, w tym podczas sesji transmitowanych na żywo w radio, a od czasu do czasu podejmowałem się także zleceń związanych z miksowaniem dźwięku.
+              ">
+              
+              
                 Hello there! I'm Dariusz. I first picked up a guitar in early high school, soon after I've started my first band and just few years later I dove headfirst into the world of local <b>live music</b> scene. Over the years, I’ve played in various projects, which has given me a decent understanding of what it’s like to perform live, a good comprehension of the stage technicalities, all along with the unique musician lingo. This was crucial to <b>becoming a knowledgable and versatile band videographer</b>.
-
-                <br>
-                <br>
-
-                In around 2011, I began exploring video production. It quickly became clear that those two passions were on a direct collision course. Since then, I’ve had the opportunity to create videos in a multitude of venues, mastering the art of working in <b>low light, time pressure and under tight deadlines</b>. I’ve also gained substantial experience in studio settings, events, including sessions broadcasted live on radio, while occasionally taking on <b>audio mixing gigs</b>.
-
                 
+                <br>
+                <br>
+
+                In around 2011, I began exploring video production. It quickly became clear that those two passions were on a direct collision course. Since then, I’ve had the opportunity to create videos in a multitude of venues, mastering the art of working in <b>low light, time pressure and under tight deadlines</b>. I’ve also gained substantial experience in studio settings, events, including sessions broadcasted live on radio, while occasionally taking on <b>audio mixing gigs.</b>
+
+
+              </p>
+
 
               
-
-              </p> 
             </div>
 
             <div class="about-item">
@@ -404,7 +428,15 @@
             </div>
 
           </div>
-          <p>  
+          <p pl="Pod moim poprzednim pseudonimem <b><i>Fractal Videos</i></b> wyprodukowałem filmy dla ponad <b>50 zespołów, nie licząc muzyków solowych, kolektywów</b> i wielu jednorazowych projektów, budując trwałe relacje z muzykami, z których wiele zaowocowało <b>powracającymi projektami</b>. Filmowałem zespoły w <b>Londynie, Warszawie, Manchesterze, Krakowie, Gdańsku</b> i innych miastach, z krajów takich jak <b>Hiszpania, Austria, USA, Polska czy Wielka Brytania</b>. Kręciłem filmy w najlepszych miejscach w Polsce: <b>B90, Progresja, Stary Maneż czy Stodoła</b>. Lista zespołów w moim portfolio obejmuje, ale nie ogranicza się do artystów takich jak:
+
+            <br> <br>
+            <i>Lucky Chops, Mikromusic, Obisidian Kingdom, Illusion, Tymon Tymański, Lipali, Krzta, The Materia, Jeru The Damaja, Abstract Orchestra, Slum Village, Witchrider, Farben Lehre, Mechanism, Moose The Tramp, Milczenie Owiec, Sautrus, The Black Thunder, Calm Hatchery, eM, Drown My Day, Łyko, Moust, Odd Stars, 441 Hz, Closterkeller, Mitra, Venflon, The Shipyard, Bollywood Brass Band, Thesis, Motorłeb, Alcoholica, Lowtide, Lux Perpetua, Gutter Sirens, Kozi Syn, Invicto, Fractal, FNAG, Deer Head On The Wall, Caren Coltrane Crusade <b>i inni.</i></b>
+            
+            <br> <br>
+            Kiedy nie pracuję nad filmami ani nie piszę kodu, zajmuję się grą na gitarze, komponowaniem muzyki lub łucznictwem terenowym. Jak zapewne zauważyłeś z wideo na tej sekcji, mam dość dziwaczne poczucie humoru, ale myślę, że to w porządku.
+          
+          ">  
             
             Under my previous moniker <b><i>Fractal Videos</i></b> I’ve produced videos for well over <b>50 bands, and that's excluding solo artists, collectives</b>, numerous one-time projects, while building lasting relationships with musicians, many resulting in <b>returning collaborations</b>. I've filmed bands in <b>London, Warsaw, Manchester, Kraków, Gdańsk</b>, and other cities, from countries such as <b>Spain, Austria, USA, Poland or UK</b>. I've done videos in best venues in Poland: <b>B90, Progresja, Stary Maneż, or Stodoła.</b> The list of bands in my portfolio includes, but is not limited to artists like:
 
@@ -424,16 +456,18 @@
         <!-- CONTACT BOX -->
 
         <div class="box" id="contact">             
-          <h2>Contact Me</h2>
+          <h2 pl="Kontakt">Contact Me</h2>
             <div class="contact-form">
-              <p>If you have a project in mind, or you just have a song that needs a video to go along with it, don't hesitate to contact me! I'd love to work in a live or studio environment. A link to your music would be appreciated, especially if you have material you'd like me to work on — but it's not necessary.</p>
+              <p pl="Jeśli masz na myśli projekt wideo lub po prostu masz utwór, do którego potrzebujesz teledysku, nie wahaj się skontaktować ze mną! Chętnie robię filmy zarówno w środowisku live, jak i studyjno/sesyjnym. Link do Twojej muzyki byłby mile widziany, zwłaszcza jeśli masz materiał, do którego miałbym coś zrobić — ale nie jest to konieczne. Możesz również wysłać e-mail bezpośrednio na adres contact/małpa/odysseyframes.com, albo wysłać wiadomość na stronie facebook Odyssey Frames.">
+                
+                If you have a project in mind, or you just have a song that needs a video to go along with it, don't hesitate to contact me! I'd love to work in a live or studio environment. A link to your music would be appreciated, especially if you have material you'd like me to work on — but it's not necessary. You can also send an e-mail directly to contact/at/odysseyframes.com, or a message to Odyssey Frames facebook page.</p>
 
 
               <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xrbzdjpz" method="post" target="_blank">
                 <fieldset id="fs-frm-inputs">
-                  <input type="text" name="name" id="full-name" placeholder="Band or Artist Name" required="">
-                  <input type="email" name="_replyto" id="email-address" placeholder="your.email@goes.here" required="">
-                  <textarea rows="5" name="message" id="message" placeholder="You message goes here." required=""></textarea>
+                  <input type="text" name="name" id="full-name" placeholder="Band or Artist Name" required="" pl="Nazwa zespołu lub wykonawcy">
+                  <input type="email" name="_replyto" id="email-address" placeholder="your@email.address" required="" pl="Twoj@adres.email">
+                  <textarea rows="5" name="message" id="message" placeholder="You message goes here." required="" pl="Napisz wiadomość tutaj."></textarea>
                   <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
                 </fieldset>
                 <input type="submit" value="Submit">
@@ -449,11 +483,13 @@
 
 
         <div class="box showreel-box" >  
-          <h2>Highlighted Projects</h2>    
+          <h2 pl="Wybrane projekty">Highlighted Projects</h2>    
           <div class="welcome-item">
             <video class="welcome-image" preload="auto" autoplay loop muted loading="lazy" src="res/video/highlights-video.mp4" alt=""></video>
             </div>
-              <p> Just as it's hard for anyone to pick a favorite band, for it's equally challenging to choose a single favorite video I've created. Instead, I’d like to showcase a selection of projects that demonstrate my versatility. Whether you play death metal, jazz, funk, or trip-hop, no gig is too difficult to capture on film (unless I need to put on night-vision goggles to pull focus or just to walk around). So, take a look at the diverse and eclectic collection that is my portfolio:
+              <p pl="Tak samo jak trudno jest wybrać swój ulubiony zespół, równie trudno jest mi wybrać jedno ulubione wideo, które stworzyłem. Zamiast tego wolę zaprezentować kolekcję projektów, które pokazują moją wszechstronność. Niezależnie od tego, czy grasz death metal, jazz, funk czy trip-hop, żaden koncert nie jest zbyt trudny do uchwycenia na filmie (chyba że muszę założyć noktowizor, żeby ostrzyć obraz). Zatem, poniżej znajdziesz różnorodną i eklektyczną kolekcję, która jest moim portfolio:">
+                
+                Just as it's hard for anyone to pick a favorite band, for it's equally challenging to choose a single favorite video I've created. Instead, I’d like to showcase a selection of projects that demonstrate my versatility. Whether you play death metal, jazz, funk, or trip-hop, no gig is too difficult to capture on film (unless I need to put on night-vision goggles to pull focus or just to walk around). So, take a look at the diverse and eclectic collection that is my portfolio:
 
               </p>
               <br>
@@ -467,7 +503,9 @@
                   </div>
                   <div class="project-list-text">
                     <h3>Lucky Chops "Live in Warsaw"</h3>
-                    <p>Capturing Lucky Chops live in Warsaw was a videographer's dream come true. The band brought the raw energy of New York's jazz and funk scene straight to the heart of Poland, delivering a performance that could rival any stadium rock spectacle. With thundering modern drums and a rumble of catchy brass, the band's dynamic showmanship was on full display. Filming this event was a pure pleasure, and the resulting video was so compelling it was used successfully in Lucky Chops' campaign to fund their next album.</p>
+                    <p pl="Nagrywanie Lucky Chops na żywo w Warszawie było spełnieniem marzeń każdego filmowca muzycznego. Kapela przeniosła energię nowojorskiej sceny jazzowej i funkowej prosto do serca Polski, oferując występ, który mógłby konkurować z każdym stadionowym spektaklem. Z hukiem nowoczesnej perkusji i brzmieniem chwytliwych instrumentów dętych, dynamiczny pokaz zespołu był w niesamowitym widowiskiem. Filmowanie tego wydarzenia było czystą przyjemnością, a uzyskany materiał był na tyle przekonujący, że został skutecznie wykorzystany w kampanii Lucky Chops na finansowanie ich następnego albumu i promocji światowej trasy koncertowej.">
+                      
+                      Capturing Lucky Chops live in Warsaw was a videographer's dream come true. The band brought the raw energy of New York's jazz and funk scene straight to the heart of Poland, delivering a performance that could rival any stadium rock spectacle. With thundering modern drums and a rumble of catchy brass, the band's dynamic showmanship was on full display. Filming this event was a pure pleasure, and the resulting video was so compelling it was used successfully in Lucky Chops' campaign to fund their next album and promote their world tour.</p>
                   </div>
                 </div>
 
@@ -477,7 +515,9 @@
                   </div>
                   <div class="project-list-text">
                     <h3>Mikromusic "Live in Stary Maneż"</h3>
-                    <p>This video project was born from a spontaneous opportunity — thanks to a Facebook post and a recommendation, I found myself filming Mikromusic in Gdansk days before the event. Despite the last-minute organization, the video is anything but rushed. It captures the essence of Mikromusic’s concert magic, giving viewers insight into the phenomenon behind their success. The video showcases how their masterfully crafted songs resonate deeply with audiences, a true testament to their artistry. </p>
+                    <p pl='Ten projekt narodził się z spontanicznej okazji — dzięki postowi na Facebooku zaledwie kilka dni przed wydarzeniem i rekomendacjach, znalazłem się w Starym Maneżu, gdzie filmowałem Mikromusic. Pomimo organizacji w tylu "last minute", wideo jest dalekie od bycia "na odwal". Film uchwyciło istotę koncertowej magii Mikromusic, dając widzom wgląd w fenomen ich sukcesu. Film pokazuje, jak ich mistrzowsko skonstruowane utwory głęboko rezonują z publicznością, co jest prawdziwym świadectwem ich muzykalnego rzemiosła.'>
+                      
+                      This video project was born from a spontaneous opportunity — thanks to a Facebook post and a recommendation, I found myself filming Mikromusic in Gdansk days before the event. Despite the last-minute organization, the video is anything but rushed. It captures the essence of Mikromusic’s concert magic, giving viewers insight into the phenomenon behind their success. The video showcases how their masterfully crafted songs resonate deeply with audiences, a true testament to their artistry. </p>
                   </div>
                 </div>
 
@@ -486,8 +526,10 @@
                     <img class="project-box-image" data-title='Illusion<br>"Tchórz"' src="./res/img/thumb/tchorz02.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/1oHNSryjKSw" data-second="0">
                   </div>
                   <div class="project-list-text">
-                    <h3>Illusion "Tchórz" Live Music Video  </h3>
-                    <p>   One of the benefits of working with bands is that sometimes you get to work with musicians you've seen couple of times on the TV. Filming Illusion, the hard rock and metal icons of the polish soil, was one such experience. While I had previously worked on videos for Lipali, the lead vocalist’s other project, the chance to capture Illusion both in the studio and live was truly special. Given full creative freedom, I infused the videos promoting their latest release "Anhedonia" with an old-school vibes that perfectly complement the band’s raw energy - just like I remembered seeing them on the telly. </p>
+                    <h3 pl='Illusion "Tchórz" - Teledysk koncertowy '>Illusion "Tchórz" Live Music Video  </h3>
+                    <p pl="Jedną z korzyści pracy z zespołami jest to, że czasami masz okazję pracować z muzykami, których widziałeś kilka razy w telewizji. Filmowanie Illusion, ikon polskiego hard rocka i metalu, było jednym z takich doświadczeń. Chociaż wcześniej pracowałem nad materiałami wideo dla Lipali, innego projektu wokalisty Illusion, możliwość uchwycenia Illusion zarówno w studio, jak i na żywo, była naprawdę wyjątkowa. Mając pełną swobodę twórczą, wprowadziłem do filmów promujących ich najnowsze wydanie „Anhedonia” old-schoolowy klimat, który doskonale uzupełnia surową energię zespołu - dokładnie tak, jak pamiętałem ich z telewizji.">  
+                      
+                      One of the benefits of working with bands is that sometimes you get to work with musicians you've seen couple of times on the TV. Filming Illusion, the hard rock and metal icons of the polish soil, was one such experience. While I had previously worked on videos for Lipali, the lead vocalist’s other project, the chance to capture Illusion both in the studio and live was truly special. Given full creative freedom, I infused the videos promoting their latest release "Anhedonia" with an old-school vibes that perfectly complement the band’s raw energy - just like I remembered seeing them on the telly. </p>
                   </div>
                 </div>  
                 
@@ -498,7 +540,9 @@
                   </div>
                   <div class="project-list-text">
                     <h3>Obsidian Kingdom "Live in Gdańsk"  </h3>
-                    <p>  Filming Obsidian Kingdom in Gdansk was a thrilling challenge — keeping the camera steady and focused while resisting the urge to headbang in the midst of flashing strobe lights was no easy task. The band’s electrifying performance at B90 was amplified by a dramatic lighting setup that played perfectly with the venue's shadows and industrial atmosphere. Remarkably, the video features sound straight from the mixing board, as heard from the PA, capturing the raw, and authentic energy of the night. This video is a testament to the power of having a dedicated light and sound team, and of course, a videographer who knows how to bring the music to your screen.</p>
+                    <p pl="Filmowanie Obsidian Kingdom w Gdańsku było ekscytującym wyzwaniem — utrzymanie kamery stabilnie i ostro, jednocześnie opierając się pokusie machania głową wśród migających stroboskopów nie było łatwym zadaniem. Elektryzujący występ zespołu w B90 został wzmocniony dramatycznym oświetleniem, które doskonale współgrało z cieniami i przemysłową atmosferą B90. Co niezwykłe, wideo zawiera dźwięk bezpośrednio z miksera, jak zespół był słyszany przez nagłośnienie, prezentując autentyczną energię tej nocy. Ten film jest świadectwem mocy posiadania dedykowanego zespołu oświetleniowego i dźwiękowego oraz, oczywiście, filmowca, który wie, jak przenieść muzykę na ekran.">
+                      
+                      Filming Obsidian Kingdom in Gdansk was a thrilling challenge — keeping the camera steady and focused while resisting the urge to headbang in the midst of flashing strobe lights was no easy task. The band’s electrifying performance at B90 was amplified by a dramatic lighting setup that played perfectly with the venue's shadows and industrial atmosphere. Remarkably, the video features sound straight from the mixing board, as heard from the PA, capturing the raw, and authentic energy of the night. This video is a testament to the power of having a dedicated light and sound team, and of course, a videographer who knows how to bring the music to your screen.</p>
                   </div>
                 </div> 
 
@@ -509,7 +553,10 @@
                   </div>
                   <div class="project-list-text">
                     <h3>Lucky Chops "D20 - Castle Version"</h3>
-                    <p>  When Lucky Chops returned to tour in Poland, another joint project was inevitable. This time, we captured their vibrant energy not only within the walls of a club Kwadrat in Cracow, but also took the band to the streets, echoing their New York roots. The "Castle" version, was filmed on the rocks of historic Wawel Castle, by the Vistula River, and was edited to multiple versions. The Castle version landed on our Facebook profile, while the full, raw, <u><b><a href="https://www.youtube.com/watch?v=xSLiWe7F8xA&ab_channel=LuckyChops" onclick='window.open("https://www.youtube.com/watch?v=xSLiWe7F8xA&ab_channel=LuckyChops");return false;'>Judas Priest-esque</a></b></u> club performance was shared on the band’s official channels. Filming a band in such an iconic location was a unique experience, adding another memorable chapter to our collabs.</p>
+                    <p pl='Kiedy Lucky Chops wrócili na trasę koncertową przez Polskę, kolejny wspólny projekt był nieunikniony. Tym razem uchwyciliśmy ich żywiołową energię nie tylko w murach klubu Kwadrat w Krakowie, ale także zabraliśmy zespół "na ulice", oddając hołd ich nowojorskim korzeniom. Wersja „Castle” posiada ujęcia nakręcone na skałach historycznego Wawelu, nad Wisłą, i trafiła na nasz profil na Facebooku, podczas gdy pełny, surowy, klubowy występ w stylu Judas Priest został udostępniony na oficjalnych kanałach zespołu. Filmowanie zespołu w tak ikonicznej lokalizacji było wyjątkowym doświadczeniem, dodającym kolejny niezapomniany rozdział do naszych projektów.'> 
+
+                      When Lucky Chops returned to tour in Poland, another joint project was inevitable. This time, we captured their vibrant energy not only within the walls of a club Kwadrat in Cracow, but also took the band to the streets, echoing their New York roots. The "Castle" version, was filmed on the rocks of historic Wawel Castle, by the Vistula River, and was edited to multiple versions. The Castle version landed on our Facebook profile, while the full, raw, <b>Judas Priest-esque</b> club performance was shared on the band’s official channels. Filming a band in such an iconic location was a unique experience, adding another memorable chapter to our collabs. 
+                      </p>
                   </div>
                 </div>  
                     

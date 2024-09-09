@@ -93,6 +93,10 @@ Todo:
   - [x] delete unused resources  
   - [x] why the thumbnails are not straight
 
+### **v0.5.1 - Polish translation and minor adjustments**
+  - [x] video fills 100% of the background
+  - [x] translation added
+
 
 ### **v.1.0.0 - Publish on GithubPages**
 
