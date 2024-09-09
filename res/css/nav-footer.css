@@ -43,6 +43,15 @@ nav
 }
 
 
+.nav-image {
+  margin-top: 0.5%;
+  min-width: 30px; /* optional, to ensure enough space for images */
+  display: flex; /* or use grid if preferred */
+  flex-direction: column;
+  align-items: center; /* vertically center the images */
+    justify-content: center; /* center the images horizontally */
+}
+
 nav 
 {
   transform: translateY(-100%);
@@ -88,6 +97,9 @@ nav h1
   background-color: rgb(56, 66, 74);
 }
 
+
+
+
 footer
 {
   position: fixed;
@@ -107,16 +119,19 @@ footer
   z-index: 10;
 }
 
+
 .flag {
   cursor: pointer;
   border: 2px solid transparent;
   margin: 0 5px;
   transition: border-color 0.3s ease, border-width 0.3s ease; /* Add transition for a smooth fade effect */
+  
 }
 
 .active-flag {
   border: 2px solid rgb(224, 224, 224);
   pointer-events: none; /* Make the active flag non-clickable */
+  
 }
 
 
