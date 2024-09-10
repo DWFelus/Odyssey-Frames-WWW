@@ -2,89 +2,91 @@
 /* ABOUT */
 /* ----- */  
 
-  #about
-  {
-    margin-top: 5%;
-  }
+#about
+{
+  margin-top: 5%;
+}
 
-  .about-box
-  {      
-    display: flex;
-  }
-
-  .about-item
-  {
-    margin: 1%;
-    padding: 1%;
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-  }
-
-  #about-text
-  {
-    flex: 2;
-  }
-
-  .profile-pic-circle
-  {
-    width:100%;
-    height: auto;
-
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .tooltip {
-    position: relative;
-    display: inline-block;
-  }
+.about-box
+{      
+  display: flex;
   
-  .tooltip .tooltiptext
-  {
-    visibility: hidden;
-    width: 250px; /* Adjust the width as needed */
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 10px;
-    position: absolute;
-    z-index: 50;
-    bottom: 125%; /* Position the tooltip above the image */
-    left: 50%;
-    margin-left: -125px; /* Center the tooltip */
-    opacity: 0;
-    transition: opacity 0.3s;
-    white-space: nowrap; /* Prevents text from wrapping */
-  }
+  flex: 2;
+}
+
+.about-item
+{
+  margin: 1%;
+  padding: 1%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-  }
+}
+
+#about-text
+{
+  flex: 2;
+}
+
+.profile-pic-circle
+{
+  width:100%;
+  height: auto;
+
   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .about-image
-  {
-    width: 100%;
-    height: auto;
-    object-fit: cover; 
-    border-radius: 0%;
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
 
-    filter: grayscale(50%);
-    position: relative;
-    transition: transform 1s ease, filter 0.3s ease;
-    
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
-  }
+.tooltip .tooltiptext
+{
+  visibility: hidden;
+  width: 250px; /* Adjust the width as needed */
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  position: absolute;
+  z-index: 50;
+  bottom: 125%; /* Position the tooltip above the image */
+  left: 50%;
+  margin-left: -125px; /* Center the tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+  white-space: nowrap; /* Prevents text from wrapping */
+}
 
-  .about-image:hover
-  {
-    transform: scale(1.05);  
-    filter: grayscale(0%);
-  }
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.about-image
+{
+  width: 100%;
+  height: auto;
+  object-fit: cover; 
+  border-radius: 0%;
+
+  filter: grayscale(50%);
+  position: relative;
+  transition: transform 1s ease, filter 0.3s ease;
+  
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.about-image:hover
+{
+  transform: scale(1.05);  
+  filter: grayscale(0%);
+}

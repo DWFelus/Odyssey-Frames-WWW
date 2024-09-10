@@ -100,12 +100,8 @@ Todo:
 
 ### **v.1.0.0 - Publish on GithubPages**
 
-- [ ] done
+- [x] done
 
-### **v1.0.1 - Test on mobile devices**
-
-### **v.1.1.0 - Contact Form**
-- [ ] Contact form
 
 
 

@@ -57,7 +57,7 @@ body
 
 /* Reduce margin specifically for the showreel box */
 .showreel-box {
-  margin-bottom: 5vh; /* Adjust this value as needed */
+  margin-bottom: 7vh; /* Adjust this value as needed */
 }
 
 .showreel-wrapper {
@@ -156,8 +156,9 @@ h3
 
 p
 {  
-  font-family: "Roboto Mono", monospace;
-  font-optical-sizing: auto;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
 
   margin: 2%;
   text-align: justify;
