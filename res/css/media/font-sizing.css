@@ -30,6 +30,11 @@ p
   font-size: 0.8rem;
 }
 
+.nav-text
+{
+  font-size: 1.1rem;
+}
+
 .foot-text
 {
   font-size: 0.5rem; 
@@ -125,7 +130,7 @@ p
 
   .foot-text
   {
-    font-size: 0.9rem; 
+    font-size: 0.8rem; 
   }
 }
 
@@ -167,7 +172,7 @@ p
   }
   .nav-text
   {
-    font-size: 1.5rem;  
+    font-size: 1.2rem;  
   }
 
   .foot-text
