@@ -80,7 +80,7 @@ nav h1
 
 .nav-name:hover
 {
-  transform: scale(1.4);
+  transform: scale(1.1);
   background-color: rgb(56, 66, 74);
 }
 
@@ -93,7 +93,7 @@ nav h1
 
 .nav-text:hover
 {
-  transform: scale(1.2);
+  transform: scale(1.1);
   background-color: rgb(56, 66, 74);
 }
 
