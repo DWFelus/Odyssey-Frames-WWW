@@ -22,13 +22,15 @@ nav
   max-height: 7vh; 
   margin: 0% 2%;
   margin-right: 20%;
+
 }
 
 .nav-logo-container img {
   width: 100%; 
   min-width: 75px;
   height: auto; 
-  object-fit: contain; 
+  object-fit: contain;  
+  
 }
 
 .foot-icon-container {
@@ -86,7 +88,7 @@ nav h1
 
 .nav-text
 {
-  margin: 1% 2%;
+  margin: 1% 1%;
 
   transition: transform 0.3s ease;
 }
