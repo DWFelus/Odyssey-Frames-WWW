@@ -1,5 +1,11 @@
 /* default settings*/
 
+nav h1
+{
+  font-size: 1.0rem;
+
+}
+
 #tagline
 {
   font-size: 2.0rem;
@@ -37,7 +43,7 @@ p
 
 .foot-text
 {
-  font-size: 0.5rem; 
+  font-size: 0.6rem; 
 }
 
 
@@ -172,12 +178,12 @@ p
   }
   .nav-text
   {
-    font-size: 1.2rem;  
+    font-size: 1.1rem;  
   }
 
   .foot-text
   {
-    font-size: 0.7rem; 
+    font-size: 0.5rem; 
   }
 }
 
