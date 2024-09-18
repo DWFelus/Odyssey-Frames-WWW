@@ -26,6 +26,7 @@ nav
 
 .nav-logo-container img {
   width: 100%; 
+  min-width: 75px;
   height: auto; 
   object-fit: contain; 
 }
