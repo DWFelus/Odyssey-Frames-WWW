@@ -31,7 +31,7 @@ window.onload = function () {
 };
 
 function startTextAnimation() {
-  const dataText = ["Take your band<br>on an adventure!"];
+  const dataText = ["Relive the Energy.<br>Rewatch the moment."];
   let i = 0;
 
   function animateNextText() {
