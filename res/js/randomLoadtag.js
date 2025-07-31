@@ -1,31 +1,49 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // Array of quotes
-  const quotes = [
-      '"Waiting on a sunny day, gonna chase the clouds away."',
-      '"So I’m waiting, waiting for the sun to shine."',
-      '"I’m waiting in the wings for my turn to shine."',
-      '"Waiting for the storm to pass, and the skies to clear."',
-      '"I’m waiting for a miracle, can’t you see?"',
-      '"I’m not good at waiting. I’m good at impatiently pacing."',
-      '"If you wait for the perfect moment, you\'ll be waiting forever."'
-  ];
+    // Prominence-based groups
+    const clientsA = ["Lucky Chops", "Mikromusic", "Luxtorpeda", "Spięty", "Obisidian Kingdom", "Illusion", "Tymon Tymański", "Lipali", "The Materia", "Farben Lehre", "Alegramy Festial", "University of Gdansk", "Tuse", "V-event", "Closterkeller", "Mayones Guitars"];
+    const clientsB = ["Bollywood Brass Band", "Thesis", "Curse of The Undead", "Krzta", "Witchrider", "Mechanism", "Moose The Tramp", "Milczenie Owiec", "Sautrus", "The Black Thunder", "Calm Hatchery", "eM", "Drown My Day", "Łyko"];
+    const clientsC = ["Moust", "Odd Stars", "441 Hz", "Mitra", "Venflon", "The Shipyard", "FNAG", "Deer Head On The Wall", "Caren Coltrane Crusade", "Motorłeb", "Alcoholica", "Lowtide", "Lux Perpetua", "Gutter Sirens", "Kozi Syn", "Invicto", "Fractal"];
 
-  // Function to get a random quote
-  function getRandomQuote() {
-      const randomIndex = Math.floor(Math.random() * quotes.length);
-      return quotes[randomIndex];
-  }
+    // Shuffle utility
+    function shuffleArray(array) {
+        return array
+            .map(value => ({ value, sort: Math.random() }))
+            .sort((a, b) => a.sort - b.sort)
+            .map(({ value }) => value);
+    }
 
-  // Function to update the text content of the #loadtag element
-  function updateLoadingText() {
-      const loadtagElement = document.getElementById('loadtag');
-      if (loadtagElement) {
-          loadtagElement.textContent = getRandomQuote();
-      } else {
-          console.error('Element with ID "loadtag" not found.');
-      }
-  }
+    // Stitch all shuffled groups: A (most important), then B, then C
+    const combinedClients = [
+        ...shuffleArray(clientsA),
+        ...shuffleArray(clientsB),
+        ...shuffleArray(clientsC)
+    ];
 
-  // Execute the function when the DOM content is fully loaded
-  updateLoadingText();
+    // Display logic
+    function showClientsSequentially(clients, interval = 50, loop = true) {
+        const loadtagElement = document.getElementById('loadtag');
+        if (!loadtagElement) {
+            console.error('Element with ID "loadtag" not found.');
+            return;
+        }
+
+        let index = 0;
+
+        setInterval(() => {
+            loadtagElement.textContent = clients[index];
+            index++;
+
+            if (index >= clients.length) {
+                if (loop) {
+                    index = 0; // loop back to start
+                } else {
+                    // Optionally clear interval if you don't want looping
+                    // clearInterval(intervalId);
+                }
+            }
+        }, interval);
+    }
+
+    // Start displaying
+    showClientsSequentially(combinedClients, 130, true); // set `loop` to false if you don't want it to repeat
 });
