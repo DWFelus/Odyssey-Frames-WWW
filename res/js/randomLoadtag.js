@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Prominence-based groups
-    const clientsA = ["Lucky Chops", "Mikromusic", "Luxtorpeda", "Spięty", "Obisidian Kingdom", "Illusion", "Tymon Tymański", "Lipali", "The Materia", "Farben Lehre", "Alegramy Festial", "University of Gdansk", "eM", "V-event", "Closterkeller", "Bollywood Brass Band", "Mayones Guitars"];
-    const clientsB = ["Thesis", "Curse of The Undead", "Krzta", "Witchrider", "Mechanism", "Moose The Tramp", "Milczenie Owiec", "Sautrus", "The Black Thunder", "Calm Hatchery","Drown My Day", "Łyko"];
+    const clientsA = ["Lucky Chops", "Mikromusic", "Luxtorpeda", "Spięty", "Obisidian Kingdom", "Illusion", "Tymon Tymański", "Curse of The Undead", "Lipali", "The Materia", "Alegramy Festial", "University of Gdansk", "eM", "V-event", "Closterkeller", "Bollywood Brass Band", "Mayones Guitars"];
+    const clientsB = ["Thesis", "Krzta", "Witchrider", "Mechanism", "Moose The Tramp", "Milczenie Owiec", "Sautrus", "The Black Thunder", "Calm Hatchery","Drown My Day", "Łyko"];
     const clientsC = ["Moust", "Odd Stars", "441 Hz", "Mitra", "Venflon", "The Shipyard", "FNAG", "Deer Head On The Wall", "Caren Coltrane Crusade", "Motorłeb", "Alcoholica", "Lowtide", "Lux Perpetua", "Gutter Sirens", "Kozi Syn", "Invicto", "Fractal"];
 
     // Shuffle utility
