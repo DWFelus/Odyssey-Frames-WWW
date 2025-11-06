@@ -30,13 +30,13 @@
     
     transition: transform 1s ease, filter 0.3s ease;
     
-    filter: grayscale(50%);
+    filter: brightness(100%);
   }
 
   .welcome-image:hover
   {
     transform: scale(1.05);  
-    filter: grayscale(0%);
+    filter: brightness(102%);
   }
 
   .welcome-text

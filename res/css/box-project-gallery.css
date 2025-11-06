@@ -21,7 +21,7 @@
     margin: 1%;
     display: flex;
     justify-content: center; /* Horizontally center the image */
-    filter: grayscale(75%);
+    filter: brightness(100%);    
     position: relative;
     transition: transform 0.3s ease, filter 0.3s ease;
   }
@@ -29,7 +29,7 @@
   .project-gallery-item:hover
   {
     transform: scale(1.02);
-    filter: grayscale(0%);    
+    filter: brightness(110%);    
   }
 
   .project-box-image

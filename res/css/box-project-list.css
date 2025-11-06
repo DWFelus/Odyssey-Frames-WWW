@@ -18,7 +18,7 @@
     flex-direction: column; /* Stack content vertically */
     align-items: center;
     justify-content: center;
-    filter: grayscale(75%);
+    filter: brightness(100%);
     position: relative;
     transition: transform 1s ease, box-shadow 0.3s ease, background-color 0.3s ease, filter 0.3s ease;
   }
@@ -35,7 +35,7 @@
     transform: scale(1.02);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
     
-    filter: grayscale(0%);
+    filter: brightness(150%);
   }
 
   .project-list-image {
