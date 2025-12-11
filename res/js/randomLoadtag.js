@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Prominence-based groups
-    const clientsA = ["Lucky Chops", "Mikromusic", "Song Laboratory","Luxtorpeda", "Spięty", "Obisidian Kingdom", "Illusion", "Tymon Tymański", "Curse of The Undead", "Lipali", "The Materia", "Alegramy Festial", "University of Gdansk", "eM", "V-event", "Closterkeller", "Bollywood Brass Band", "Mayones Guitars"];
+    const clientsA = ["Lucky Chops", "Mikromusic", "Song Laboratory","Luxtorpeda", "Spięty", "Obisidian Kingdom", "Illusion", "Tymon Tymański", "Curse of The Undead", "Lipali", "The Materia", "Alegramy Festial", "University of Gdansk", "eM", "V-event", "Faun", "Ye Banished Privateers", "Bollywood Brass Band", "Mayones Guitars"];
     const clientsB = ["Thesis", "Krzta", "Witchrider", "Mechanism", "Moose The Tramp", "Milczenie Owiec", "Sautrus", "The Black Thunder", "Calm Hatchery","Drown My Day", "Łyko"];
     const clientsC = ["Moust", "Odd Stars", "441 Hz", "Mitra", "The Shipyard", "Lowtide", "Lux Perpetua", "Gutter Sirens", "Kozi Syn", "Invicto", "Fractal"];
 
