@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Prominence-based groups
-    const clientsA = ["Lucky Chops", "Mikromusic", "Song Laboratory","Luxtorpeda", "Spięty", "Obisidian Kingdom", "Illusion", "Tymon Tymański", "Curse of The Undead", "Lipali", "The Materia", "Alegramy Festial", "University of Gdansk", "eM", "V-event", "Faun", "Ye Banished Privateers", "Bollywood Brass Band", "Mayones Guitars"];
-    const clientsB = ["Thesis", "Krzta", "Witchrider", "Mechanism", "Moose The Tramp", "Milczenie Owiec", "Sautrus", "The Black Thunder", "Calm Hatchery","Drown My Day", "Łyko"];
-    const clientsC = ["Moust", "Odd Stars", "441 Hz", "Mitra", "The Shipyard", "Lowtide", "Lux Perpetua", "Gutter Sirens", "Kozi Syn", "Invicto", "Fractal"];
+    // Groups
+    const clientsA = ["Lucky Chops", "Mikromusic", "Song Laboratory","Luxtorpeda", "Spięty", "Zakopower", "Illusion", "Tymon Tymański", "Alegramy Festial", "University of Gdansk", "V-event", "Faun", "Ye Banished Privateers", "Mayones Guitars"];
+    const clientsB = ["Thesis", "Krzta", "Witchrider", "Mechanism", "Moose The Tramp", "Milczenie Owiec", "Sautrus", "The Black Thunder", "Calm Hatchery","The Materia", "Curse of The Undead","Obisidian Kingdom", "Drown My Day", "Lipali", "Łyko"];
+    const clientsC = ["Moust", "Odd Stars", "441 Hz", "Mitra", "The Shipyard", "Lowtide", "Lux Perpetua", "Gutter Sirens", "Kozi Syn", "Invicto", "Fractal", "Bollywood Brass Band", "eM"];
 
     // Shuffle utility
     function shuffleArray(array) {
