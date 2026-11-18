@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Groups
-    const clientsA = ["Lucky Chops", "Mikromusic", "Song Laboratory","Luxtorpeda", "Spięty", "Zakopower", "Illusion", "Tymon Tymański", "Alegramy Festial", "University of Gdansk", "V-event", "Faun", "Ye Banished Privateers", "Mayones Guitars"];
+    const clientsA = ["Lucky Chops", "Mikromusic", "Song Laboratory","Luxtorpeda", "Spięty", "Zakopower", "Illusion", "Tymon Tymański", "Alegramy Festial", "University of Gdansk", "V-event", "Faun", "Ye Banished Privateers"];
     const clientsB = ["Thesis", "Krzta", "Witchrider", "Mechanism", "Moose The Tramp", "Milczenie Owiec", "Sautrus", "The Black Thunder", "Calm Hatchery","The Materia", "Curse of The Undead","Obisidian Kingdom", "Drown My Day", "Lipali", "Łyko"];
     const clientsC = ["Moust", "Odd Stars", "441 Hz", "Mitra", "The Shipyard", "Lowtide", "Lux Perpetua", "Gutter Sirens", "Kozi Syn", "Invicto", "Fractal", "Bollywood Brass Band", "eM"];
 
