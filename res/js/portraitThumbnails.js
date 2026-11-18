@@ -25,8 +25,8 @@ function switchImageSources() {
   });
 }
 
-// Run the function when the page loads
-window.addEventListener('load', switchImageSources);
+// Choose the orientation-specific source before lazy images are requested
+document.addEventListener('DOMContentLoaded', switchImageSources);
 
 // Listen for changes in the screen orientation
 window.addEventListener('resize', switchImageSources);

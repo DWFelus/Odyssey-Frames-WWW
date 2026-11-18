@@ -23,9 +23,8 @@
     <link rel="stylesheet" type="text/css" href="./res/css/box-tagline.css">    
     <link rel="stylesheet" type="text/css" href="./res/css/contact-frame.css">
     
-    <link rel="stylesheet" type="text/css" href="./res/css/video-overlay.css">    
-    
-     
+
+
     <link rel="stylesheet" type="text/css" href="./res/css/media/mobile.css"> 
     <link rel="stylesheet" type="text/css" href="./res/css/media/Portrait1080p+.css">
     <link rel="stylesheet" type="text/css" href="./res/css/media/Landscape1080p+.css">
@@ -51,20 +50,19 @@
     
     <!-- JS -->     
     <script src="./res/js/randomLoadtag.js" defer></script>
-    <script src="./res/js/typewriterTagline.js"></script>  
-    <script src="./res/js/translation.js"></script>  
-    <script src="./res/js/coverLoading.js"></script>
-    <script src="./res/js/coverVideoBlur.js"></script>    
-    <script src="./res/js/gotoOffset.js"></script>     
-    <script src="./res/js/navFooterSlide.js"></script>      
-    <script src="./res/js/videoOverlay.js"></script>            
-    <script src="./res/js/videoLinks.js"></script>        
-    <script src="./res/js/portraitThumbnails.js"></script>
+    <script src="./res/js/typewriterTagline.js" defer></script>  
+    <script src="./res/js/translation.js" defer></script>  
+    <script src="./res/js/coverLoading.js" defer></script>
+    <script src="./res/js/coverVideoBlur.js" defer></script>    
+    <script src="./res/js/gotoOffset.js" defer></script>     
+    <script src="./res/js/navFooterSlide.js" defer></script>      
+    <script src="./res/js/videoLinks.js" defer></script>        
+    <script src="./res/js/portraitThumbnails.js" defer></script>
 
     
 
     <!-- Font Awesome link-->
-    <script src="https://kit.fontawesome.com/ad6cff3a8c.js" crossorigin="anonymous"></script>       
+    <script src="https://kit.fontawesome.com/ad6cff3a8c.js" crossorigin="anonymous" defer></script>       
 
     <!-- FAVICON-->
     <link rel="icon" href="./favicon.png" type="image/png">
@@ -143,17 +141,6 @@
       <h1 class="foot-author">Website<br> by DWFLS</h1>
    </footer>  
 
-   <!-- VIDEO OVERLAY -->
-
-   <div id="videoOverlay" class="video-overlay">
-    <button class="close-button">&times;</button>
-    <div class="video-overlay-container">
-      
-      <iframe id="videoFrame" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-  </div>
-
-
     <!--MAIN CONTENT>-->
     <div class="content-box" >   
 
@@ -178,7 +165,7 @@
         <div class="arrow-box">
 
           <div class="video-container">
-            <video id="cover" preload="auto" autoplay loop muted src="res/video/coverV4-3mbps-audiocomp.mp4" alt="Cover video of the www"></video>
+            <video id="cover" preload="auto" autoplay loop muted playsinline src="res/video/coverV4-3mbps-audiocomp.mp4" alt="Cover video of the www"></video>
           </div>
           
           <!-- CENTER TAGLINE (when in narrow windows)-->
@@ -199,7 +186,7 @@
 <div class="box" id="live"> 
   <h2 pl="Filmy Koncertowe">Live Videos</h2>
   <div class="welcome-item">
-    <video class="welcome-image" preload="auto" autoplay loop muted loading="lazy" src="res/video/live-video.mp4" alt=""></video>
+    <video class="welcome-image" preload="none" loop muted playsinline data-autoplay src="res/video/live-video.mp4" alt=""></video>
     </div>
   <p pl="W muzyce na żywo jest niewątpliwie coś magicznego. Mimo wszystko jej kwintesencja nie może być w pełni uchwycona tylko przez nagrany dźwięk. Wideo pozwala jak najlepiej wrócić pamięcią do koncertów, a jednocześnie umożliwia dzielenie się tym doświadczeniem z innymi. Poniżej znajdują się niektóre z wcześniejszych realizacji, każda zarejestrowana z udziałem publiczności jako unikalne przypomnienie tych występów.
           ">
@@ -211,54 +198,54 @@
   
       <!-- ILLUROCK -->
   <div class="project-gallery-item">
-      <img class="project-box-image"
+      <img class="project-box-image" loading="lazy" decoding="async"
        data-title='Illusion<br>"Rockowizna 2026"'
-        alt-src="./res/img/thumb/alt/illurock-alt-new.jpg" 
-        src="./res/img/thumb/illurock-new.jpg" id="link-image" 
+        alt-src="./res/img/thumbwebp/alt/illurock-alt-new.webp" 
+        src="./res/img/thumbwebp/illurock-new.webp" id="link-image" 
         activate-typewriter="true" 
         data-url="https://www.facebook.com/share/r/1EfoLT3P3R/">
   </div>
 
   <!--SPIETY2026WAWA-->
     <div class="project-gallery-item">
-      <img class="project-box-image" data-title='Spięty<br>"Warsaw 2026"' alt-src="./res/img/thumb/alt/spiety2026wawa-alt-new.jpg" src="./res/img/thumb/spiety2026wawa-new.jpg" activate-typewriter="true" id="link-image" data-url="https://www.facebook.com/reel/2420957641749435">
+      <img class="project-box-image" loading="lazy" decoding="async" data-title='Spięty<br>"Warsaw 2026"' alt-src="./res/img/thumbwebp/alt/spiety2026wawa-alt-new.webp" src="./res/img/thumbwebp/spiety2026wawa-new.webp" activate-typewriter="true" id="link-image" data-url="https://www.facebook.com/reel/2420957641749435">
   </div>
 
   <!--LUXTORPEDA KREW Z KRWI-->
   <div class="project-gallery-item">
-    <img class="project-box-image"
+    <img class="project-box-image" loading="lazy" decoding="async"
      data-title='Luxtorpeda<br> "Krew z Krwi"'
-     src="./res/img/thumb/LV-L2.jpg"
+     src="./res/img/thumbwebp/LV-L2.webp"
      id="video-trigger"
      activate-typewriter="true"
      data-video-src="https://www.youtube.com/embed/Xc3_kgze-Zs"
      data-second="0"
-     alt-src="./res/img/thumb/alt/LV-L2N.jpg">
+     alt-src="./res/img/thumbwebp/alt/LV-L2N.webp">
   </div>
 
   <!-- LAB 
   <div class="project-gallery-item">
-      <img class="project-box-image"
+      <img class="project-box-image" loading="lazy" decoding="async"
        data-title='Song Laboratory<br>"Sonce"'
-        alt-src="./res/img/thumb/alt/alt-lab.jpg" 
-        src="./res/img/thumb/lab.jpg" id="link-image" 
+        alt-src="./res/img/thumbwebp/alt/alt-lab.webp" 
+        src="./res/img/thumbwebp/lab.webp" id="link-image" 
         activate-typewriter="true" 
         data-url="https://www.instagram.com/p/DO_kj_2CA80/">
   </div>-->
 
   <!--FAUN-->
   <div class="project-gallery-item">
-      <img class="project-box-image" activate-typewriter="true" data-title='Faun "Hare Spell"<br>Aftermovie' alt-src="./res/img/thumb/alt/faun_alt.jpg" src="./res/img/thumb/faun.jpg" id="link-image"
+      <img class="project-box-image" loading="lazy" decoding="async" activate-typewriter="true" data-title='Faun "Hare Spell"<br>Aftermovie' alt-src="./res/img/thumbwebp/alt/faun_alt.webp" src="./res/img/thumbwebp/faun.webp" id="link-image"
       data-url="https://drive.google.com/file/d/1wSpBaj70Dhwjih-CXEHY9D9JojaT_cKT/view"
       >
   </div>
 
   <!-- ZAKOPOWER -->
   <div class="project-gallery-item">
-      <img class="project-box-image"
+      <img class="project-box-image" loading="lazy" decoding="async"
         data-title='Zakopower<br>"Kolędowo"'
-        alt-src="./res/img/thumb/alt/zakopower-alt.jpg" 
-        src="./res/img/thumb/zakopower.jpg" id="link-image" 
+        alt-src="./res/img/thumbwebp/alt/zakopower-alt.webp" 
+        src="./res/img/thumbwebp/zakopower.webp" id="link-image" 
         activate-typewriter="true" 
         data-url="https://www.facebook.com/reel/4148731908603749">
   </div>
@@ -267,14 +254,14 @@
 
           <!--SPIETY2026-->
     <div class="project-gallery-item">
-      <img class="project-box-image" data-title='Spięty<br>"GTS 2026"' alt-src="./res/img/thumb/alt/spiety2026-alt.jpg" src="./res/img/thumb/spiety2026.jpg" activate-typewriter="true" id="link-image" data-url="https://www.facebook.com/reel/2334474633713951">
+      <img class="project-box-image" loading="lazy" decoding="async" data-title='Spięty<br>"GTS 2026"' alt-src="./res/img/thumbwebp/alt/spiety2026-alt.webp" src="./res/img/thumbwebp/spiety2026.webp" activate-typewriter="true" id="link-image" data-url="https://www.facebook.com/reel/2334474633713951">
   </div>
 
 
 
    <!--LC LIW FULL-->   
     <div class="project-gallery-item">
-        <img class="project-box-image" data-title='Lucky Chops<br>"Live in Warsaw"' alt-src="./res/img/thumb/alt/LC01.jpg" src="./res/img/thumb/LC01.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/xC6JEwFLcJk" data-second="400">
+        <img class="project-box-image" loading="lazy" decoding="async" data-title='Lucky Chops<br>"Live in Warsaw"' alt-src="./res/img/thumbwebp/alt/LC01.webp" src="./res/img/thumbwebp/LC01.webp" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/xC6JEwFLcJk" data-second="400">
     </div>
 
 
@@ -283,12 +270,12 @@
 
       <!--MIKROMUSIC-->
     <div class="project-gallery-item">
-      <img class="project-box-image" data-title='Mikromusic<br>"Live in Stary Maneż"' alt-src="./res/img/thumb/alt/LV-MMSM.jpg" src="./res/img/thumb/LV-MMSM.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/HV0RozRx1ig" data-second="3079">
+      <img class="project-box-image" loading="lazy" decoding="async" data-title='Mikromusic<br>"Live in Stary Maneż"' alt-src="./res/img/thumbwebp/alt/LV-MMSM.webp" src="./res/img/thumbwebp/LV-MMSM.webp" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/HV0RozRx1ig" data-second="3079">
     </div>
 
        <!--YBP
   <div class="project-gallery-item">
-      <img class="project-box-image" activate-typewriter="true" data-title='Ye Banished Privateers,<br>"Mates Together" Aftermovie' alt-src="./res/img/thumb/alt/ybp_alt.jpg" src="./res/img/thumb/ybp.jpg" id="link-image"
+      <img class="project-box-image" loading="lazy" decoding="async" activate-typewriter="true" data-title='Ye Banished Privateers,<br>"Mates Together" Aftermovie' alt-src="./res/img/thumbwebp/alt/ybp_alt.webp" src="./res/img/thumbwebp/ybp.webp" id="link-image"
       data-url="https://drive.google.com/file/d/11fZm1GLSClKFGkF4pk5gwl7C6twTGIWk/view"
       >
   </div>
@@ -296,93 +283,93 @@
 
    <!--KOWALSKI-->
   <div class="project-gallery-item">
-      <img class="project-box-image" activate-typewriter="true" data-title='Spięty<br>"Kowalski"<br> Official Single' alt-src="./res/img/thumb/alt/kowalski-alt-new.jpg" src="./res/img/thumb/kowalski-new.jpg" id="link-image"
+      <img class="project-box-image" loading="lazy" decoding="async" activate-typewriter="true" data-title='Spięty<br>"Kowalski"<br> Official Single' alt-src="./res/img/thumbwebp/alt/kowalski-alt-new.webp" src="./res/img/thumbwebp/kowalski-new.webp" id="link-image"
       data-url="https://www.youtube.com/watch?v=r2RIxxRcsjc"
       >
   </div>
 
       <!--SPIETY-->
     <div class="project-gallery-item">
-      <img class="project-box-image" data-title='Spięty<br>"Blue"' alt-src="./res/img/thumb/alt/sbluealt.jpg" src="./res/img/thumb/SBLUE.jpg" activate-typewriter="true" id="link-image" data-url="https://www.facebook.com/Spiety/videos/1362105411905723/?mibextid=rS40aB7S9Ucbxw6v">
+      <img class="project-box-image" loading="lazy" decoding="async" data-title='Spięty<br>"Blue"' alt-src="./res/img/thumbwebp/alt/sbluealt.webp" src="./res/img/thumbwebp/SBLUE.webp" activate-typewriter="true" id="link-image" data-url="https://www.facebook.com/Spiety/videos/1362105411905723/?mibextid=rS40aB7S9Ucbxw6v">
   </div>
 
      <!--ILLUSION B90 TRAILER 2-->
     <div class="project-gallery-item">
-      <img class="project-box-image"
+      <img class="project-box-image" loading="lazy" decoding="async"
        data-title='Illusion<br> "Metamorfoza"'
-       src="./res/img/thumb/LV-ILLtch.jpg"
+       src="./res/img/thumbwebp/LV-ILLtch.webp"
        id="video-trigger"
        activate-typewriter="true"
        data-video-src="https://www.youtube.com/embed/YLoHP2Liv8k"
        data-second="0"
-       alt-src="./res/img/thumb/alt/LV-ILLtch.jpg">
+       alt-src="./res/img/thumbwebp/alt/LV-ILLtch.webp">
   </div>
         
     <!--OBSIDIAN KINGDOM-->
     <div class="project-gallery-item">
-        <img class="project-box-image" data-title='Obsidian Kingdom<br>"Live in Gdańsk"' alt-src="./res/img/thumb/alt/LV-OK.jpg" src="./res/img/thumb/LV-OK.jpg" activate-typewriter="true"
+        <img class="project-box-image" loading="lazy" decoding="async" data-title='Obsidian Kingdom<br>"Live in Gdańsk"' alt-src="./res/img/thumbwebp/alt/LV-OK.webp" src="./res/img/thumbwebp/LV-OK.webp" activate-typewriter="true"
         id="link-image"
         data-url="https://youtu.be/xOOX5x0GvUY?si=9l9Gwga1lI2ZMk96&t=153"> 
     </div>
         
     <!--LC TEMPLE OF BOOM-->
     <div class="project-gallery-item">
-      <img class="project-box-image" data-title='Lucky Chops<br>"Temple of Boom"' alt-src="./res/img/thumb/alt/LV-LCLIW.jpg" src="./res/img/thumb/LV-LCLIW.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/SBUS4VGlk_0" data-second="130"> 
+      <img class="project-box-image" loading="lazy" decoding="async" data-title='Lucky Chops<br>"Temple of Boom"' alt-src="./res/img/thumbwebp/alt/LV-LCLIW.webp" src="./res/img/thumbwebp/LV-LCLIW.webp" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/SBUS4VGlk_0" data-second="130"> 
     </div>
 
     <!--ILLUSION B90 TRAILER 1
     <div class="project-gallery-item">
-      <img class="project-box-image" data-title='Illusion<br>"Do Zobaczenia"' alt-src="./res/img/thumb/alt/LV-Illu1.jpg" src="./res/img/thumb/LV-Illu1.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/EAYaawpGsxc" data-second="0">
+      <img class="project-box-image" loading="lazy" decoding="async" data-title='Illusion<br>"Do Zobaczenia"' alt-src="./res/img/thumbwebp/alt/LV-Illu1.webp" src="./res/img/thumbwebp/LV-Illu1.webp" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/EAYaawpGsxc" data-second="0">
     </div>-->
 
     <!--DROWN MY DAY --> 
     <div class="project-gallery-item">
  
-        <img class="project-box-image" activate-typewriter="true" data-title='Drown My Day<br>"Nightmare Becomes Reality"' alt-src="./res/img/thumb/alt/dmd01.jpg" src="./res/img/thumb/dmd01.jpg" id="link-image"
+        <img class="project-box-image" loading="lazy" decoding="async" activate-typewriter="true" data-title='Drown My Day<br>"Nightmare Becomes Reality"' alt-src="./res/img/thumbwebp/alt/dmd01.webp" src="./res/img/thumbwebp/dmd01.webp" id="link-image"
         data-url="https://www.youtube.com/watch?v=w49bY6vOuGk&ab_channel=DrownMyDay" >
     </div>  
 
     <!--LC D20
     <div class="project-gallery-item">
-        <img class="project-box-image" data-title='Lucky Chops<br>"D20"' alt-src="./res/img/thumb/alt/LV-LCD20.jpg" src="./res/img/thumb/LV-LCD20.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/xSLiWe7F8xA" data-second="0">        
+        <img class="project-box-image" loading="lazy" decoding="async" data-title='Lucky Chops<br>"D20"' alt-src="./res/img/thumbwebp/alt/LV-LCD20.webp" src="./res/img/thumbwebp/LV-LCD20.webp" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/xSLiWe7F8xA" data-second="0">        
     </div>
     -->
     
     <!--KRZTA
     <div class="project-gallery-item">
-      <img class="project-box-image" data-title='Krzta<br>"Live in Gdańsk"' alt-src="./res/img/thumb/alt/LV-Krzta.jpg" src="./res/img/thumb/LV-Krzta.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/8x4hUNLRJlc" data-second="0">
+      <img class="project-box-image" loading="lazy" decoding="async" data-title='Krzta<br>"Live in Gdańsk"' alt-src="./res/img/thumbwebp/alt/LV-Krzta.webp" src="./res/img/thumbwebp/LV-Krzta.webp" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/8x4hUNLRJlc" data-second="0">
     </div>
     -->
 
     <!--ILLUSION TCHORZ
     <div class="project-gallery-item">
-        <img class="project-box-image" data-title='Illusion<br>"Tchórz"' alt-src="./res/img/thumb/alt/LV-ILL2.jpg" src="./res/img/thumb/LV-ILL2.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/1oHNSryjKSw" data-second="0">  
+        <img class="project-box-image" loading="lazy" decoding="async" data-title='Illusion<br>"Tchórz"' alt-src="./res/img/thumbwebp/alt/LV-ILL2.webp" src="./res/img/thumbwebp/LV-ILL2.webp" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/1oHNSryjKSw" data-second="0">  
     </div> -->
     
     <!--LIPALI
     <div class="project-gallery-item">
-        <img class="project-box-image" data-title='Lipali <br>"Lipa i Popioły"' alt-src="./res/img/thumb/alt/LV-LIPALI.jpg" src="./res/img/thumb/LV-LIPALI.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/U3QatiSJG8w" data-second="0">
+        <img class="project-box-image" loading="lazy" decoding="async" data-title='Lipali <br>"Lipa i Popioły"' alt-src="./res/img/thumbwebp/alt/LV-LIPALI.webp" src="./res/img/thumbwebp/LV-LIPALI.webp" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/U3QatiSJG8w" data-second="0">
     </div>-->
         
     <!--LC HELTER
     <div class="project-gallery-item">
-        <img class="project-box-image" data-title='Lucky Chops<br>"Helter Skelter/Walter Jam"' alt-src="./res/img/thumb/alt/LC02.jpg" src="./res/img/thumb/LC02.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/B7ln7zE5fzU" data-second="69">
+        <img class="project-box-image" loading="lazy" decoding="async" data-title='Lucky Chops<br>"Helter Skelter/Walter Jam"' alt-src="./res/img/thumbwebp/alt/LC02.webp" src="./res/img/thumbwebp/LC02.webp" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/B7ln7zE5fzU" data-second="69">
     </div>-->
         
     <!--SAUTRUS
     <div class="project-gallery-item">
-        <img class="project-box-image" data-title='Sautrus<br>"Kuelmaggah Part II"' alt-src="./res/img/thumb/alt/saut01.jpg" src="./res/img/thumb/saut01.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/J6EhoEVHMVw" data-second="90">
+        <img class="project-box-image" loading="lazy" decoding="async" data-title='Sautrus<br>"Kuelmaggah Part II"' alt-src="./res/img/thumbwebp/alt/saut01.webp" src="./res/img/thumbwebp/saut01.webp" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/J6EhoEVHMVw" data-second="90">
     </div>-->
         
     <!--THE BLACK THUNDER
     <div class="project-gallery-item">
-        <img class="project-box-image" data-title='The Black Thunder<br>"The Sun is Falling Down"' alt-src="./res/img/thumb/alt/tbt01.jpg" src="./res/img/thumb/tbt01.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/CbjNnYb2NFY" data-second="0">
+        <img class="project-box-image" loading="lazy" decoding="async" data-title='The Black Thunder<br>"The Sun is Falling Down"' alt-src="./res/img/thumbwebp/alt/tbt01.webp" src="./res/img/thumbwebp/tbt01.webp" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/CbjNnYb2NFY" data-second="0">
     </div>        
     -->
 
     <!--MTT HELLO
     <div class="project-gallery-item">
-        <img class="project-box-image" data-title='Moose The Tramp<br>"Hello Goodbye Hello"' alt-src="./res/img/thumb/alt/LV-MTTHGH.jpg" src="./res/img/thumb/LV-MTTHGH.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/vfOvy9K9yVE" data-second="0">
+        <img class="project-box-image" loading="lazy" decoding="async" data-title='Moose The Tramp<br>"Hello Goodbye Hello"' alt-src="./res/img/thumbwebp/alt/LV-MTTHGH.webp" src="./res/img/thumbwebp/LV-MTTHGH.webp" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/vfOvy9K9yVE" data-second="0">
     </div>
     -->
 
@@ -394,7 +381,7 @@
     <div class="box" id="events"> 
       <h2 pl="Filmy Eventowe">Event Coverage</h2>
       <div class="welcome-item">
-        <video class="welcome-image" preload="auto" autoplay loop muted loading="lazy" src="res/video/events-header.mp4" alt=""></video>
+        <video class="welcome-image" preload="none" loop muted playsinline data-autoplay src="res/video/events-header.mp4" alt=""></video>
         </div>
       <p pl="Filmowanie wydarzeń to sztuka ciągłej adaptacji i szybkiego myślenia. W przeciwieństwie do kontrolowanego środowiska w studiu albo spontaniczności, jakie wiążą się z filmowaniem koncertów, wydarzenia opierają się na krótkich i niepowtarzalnych momentach. Nie ma drugich podejść ani chwil na poprawki. Niezależnie od tego, czy jest to konferencja naukowa wymagająca zrozumienia skomplikowanych zagadnień, ceremonia zaślubin czy wydarzenie rozrywkowe, wyzwanie pozostaje to samo: uchwycić istotę chwili w sposób płynny i nienachalny.
             ">
@@ -403,17 +390,17 @@
       <div class="project-gallery-box" role="presentation"> 
          <!-- ALEGRAMY2025-->
         <div class="project-gallery-item">
-            <img class="project-box-image" data-title='Alegramy 2025 Festival<br>AmberExpo' alt-src="./res/img/thumb/alt/alegramy2025-alt-new.jpg" src="./res/img/thumb/alegramy2025-new.jpg" id="link-image" activate-typewriter="true" data-url="https://www.facebook.com/reel/1567626981082903?locale=pl_PL">
+            <img class="project-box-image" loading="lazy" decoding="async" data-title='Alegramy 2025 Festival<br>AmberExpo' alt-src="./res/img/thumbwebp/alt/alegramy2025-alt-new.webp" src="./res/img/thumbwebp/alegramy2025-new.webp" id="link-image" activate-typewriter="true" data-url="https://www.facebook.com/reel/1567626981082903?locale=pl_PL">
         </div>
 
         <!-- HY2026-->
         <div class="project-gallery-item">
-            <img class="project-box-image" data-title='Hallyu 2026<br>Korean Trade Fair<br>Katowice' alt-src="./res/img/thumb/alt/hallyu-alt-new.jpg" src="./res/img/thumb/hallyu-new.jpg" id="link-image" activate-typewriter="true" data-url="https://www.instagram.com/p/DWgosVGiKZr/">
+            <img class="project-box-image" loading="lazy" decoding="async" data-title='Hallyu 2026<br>Korean Trade Fair<br>Katowice' alt-src="./res/img/thumbwebp/alt/hallyu-alt-new.webp" src="./res/img/thumbwebp/hallyu-new.webp" id="link-image" activate-typewriter="true" data-url="https://www.instagram.com/p/DWgosVGiKZr/">
         </div>
         
         <!-- ALEGRAMY2024-->
         <div class="project-gallery-item">
-            <img class="project-box-image" data-title='Alegramy 2024 Festival<br>AmberExpo' alt-src="./res/img/thumb/alt/alegramy-alt.jpg" src="./res/img/thumb/alegramy.jpg" id="link-image" activate-typewriter="true" data-url="https://www.facebook.com/festiwalalegramy/videos/896172696033434?locale=pl_PL">
+            <img class="project-box-image" loading="lazy" decoding="async" data-title='Alegramy 2024 Festival<br>AmberExpo' alt-src="./res/img/thumbwebp/alt/alegramy-alt.webp" src="./res/img/thumbwebp/alegramy.webp" id="link-image" activate-typewriter="true" data-url="https://www.facebook.com/festiwalalegramy/videos/896172696033434?locale=pl_PL">
         </div>
 
 
@@ -422,42 +409,42 @@
 
         <!-- AW-->
         <div class="project-gallery-item">
-            <img class="project-box-image" data-title='Army World<br>Korean Trade Fair<br>EXPO XXI Warsaw' alt-src="./res/img/thumb/alt/aw-alt.jpg" src="./res/img/thumb/aw.jpg" id="link-image" activate-typewriter="true" data-url="https://www.instagram.com/p/DM0Y3DJihi8/">
+            <img class="project-box-image" loading="lazy" decoding="async" data-title='Army World<br>Korean Trade Fair<br>EXPO XXI Warsaw' alt-src="./res/img/thumbwebp/alt/aw-alt.webp" src="./res/img/thumbwebp/aw.webp" id="link-image" activate-typewriter="true" data-url="https://www.instagram.com/p/DM0Y3DJihi8/">
         </div>
 
         <!-- AWgda-->
         <div class="project-gallery-item">
-            <img class="project-box-image" data-title='Army World<br>Korean Trade Fair<br>GDANSK' alt-src="./res/img/thumb/alt/awgda-alt-new.jpg" src="./res/img/thumb/awgda-new.jpg" id="link-image" activate-typewriter="true" data-url="https://www.instagram.com/p/DblKBJjt4L0/?hl=en">
+            <img class="project-box-image" loading="lazy" decoding="async" data-title='Army World<br>Korean Trade Fair<br>GDANSK' alt-src="./res/img/thumbwebp/alt/awgda-alt-new.webp" src="./res/img/thumbwebp/awgda-new.webp" id="link-image" activate-typewriter="true" data-url="https://www.instagram.com/p/DblKBJjt4L0/?hl=en">
         </div>
 
         <!-- CZRUG
         <div class="project-gallery-item">
-            <img class="project-box-image" data-title='Culturally about<br>Sustainable<br>Development<br>University of Gdansk'  alt-src="./res/img/thumb/alt/czrug-alt.jpg" src="./res/img/thumb/czrug.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/x4P3w4ALDc8" data-second="0">
+            <img class="project-box-image" loading="lazy" decoding="async" data-title='Culturally about<br>Sustainable<br>Development<br>University of Gdansk'  alt-src="./res/img/thumbwebp/alt/czrug-alt.webp" src="./res/img/thumbwebp/czrug.webp" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/x4P3w4ALDc8" data-second="0">
         </div>-->
         
         <!-- MAYONES -->
         <div class="project-gallery-item">
-          <img class="project-box-image" data-title='Mayones Guitars<br>Anniversary Report' alt-src="./res/img/thumb/alt/mayones-alt.jpg" src="./res/img/thumb/mayones.jpg" activate-typewriter="true" id="video-trigger" data-video-src="https://www.youtube.com/embed/G6uLLnJ2LsI" data-second="0">
+          <img class="project-box-image" loading="lazy" decoding="async" data-title='Mayones Guitars<br>Anniversary Report' alt-src="./res/img/thumbwebp/alt/mayones-alt.webp" src="./res/img/thumbwebp/mayones.webp" activate-typewriter="true" id="video-trigger" data-video-src="https://www.youtube.com/embed/G6uLLnJ2LsI" data-second="0">
       </div>
 
           <!--K+P-->
           <div class="project-gallery-item">
-            <img class="project-box-image" data-title='K+P<br>Wedding Video' alt-src="./res/img/thumb/alt/kp-alt.jpg" src="./res/img/thumb/kp.jpg" id="link-image"  activate-typewriter="true" data-url="https://www.facebook.com/fractalweddings/videos/2769564719776011">
+            <img class="project-box-image" loading="lazy" decoding="async" data-title='K+P<br>Wedding Video' alt-src="./res/img/thumbwebp/alt/kp-alt.webp" src="./res/img/thumbwebp/kp.webp" id="link-image"  activate-typewriter="true" data-url="https://www.facebook.com/fractalweddings/videos/2769564719776011">
         </div>
 
         <!-- TUSE-->
         <div class="project-gallery-item">
-          <img class="project-box-image" data-title='Graffiti Workshop<br>with Tuse' alt-src="./res/img/thumb/alt/tuse-alt.jpg" src="./res/img/thumb/tuse.jpg" activate-typewriter="true" id="link-image" data-url="https://www.facebook.com/OdysseyFrames/videos/1082920098494089"> 
+          <img class="project-box-image" loading="lazy" decoding="async" data-title='Graffiti Workshop<br>with Tuse' alt-src="./res/img/thumbwebp/alt/tuse-alt.webp" src="./res/img/thumbwebp/tuse.webp" activate-typewriter="true" id="link-image" data-url="https://www.facebook.com/OdysseyFrames/videos/1082920098494089"> 
       </div>
 
         <!--LEGO-->
         <div class="project-gallery-item">
-            <img class="project-box-image" data-title='Lego Exhbition<br>Polsat Arena' alt-src="./res/img/thumb/alt/lego-alt.jpg" src="./res/img/thumb/lego.jpg" id="link-image"  activate-typewriter="true" data-url="https://www.facebook.com/watch/?mibextid=rS40aB7S9Ucbxw6v&v=1644865148966245">
+            <img class="project-box-image" loading="lazy" decoding="async" data-title='Lego Exhbition<br>Polsat Arena' alt-src="./res/img/thumbwebp/alt/lego-alt.webp" src="./res/img/thumbwebp/lego.webp" id="link-image"  activate-typewriter="true" data-url="https://www.facebook.com/watch/?mibextid=rS40aB7S9Ucbxw6v&v=1644865148966245">
         </div>
 
         <!--WIEDZMIN WYSTAWA -->
         <div class="project-gallery-item">
-            <img class="project-box-image" data-title='The Witcher<br>Exhibition' alt-src="./res/img/thumb/alt/the witcher exhibition-alt.jpg" src="./res/img/thumb/the witcher exhibition.jpg" id="link-image"  activate-typewriter="true" data-url="https://www.youtube.com/watch?v=8aEutg9t9Y4">
+            <img class="project-box-image" loading="lazy" decoding="async" data-title='The Witcher<br>Exhibition' alt-src="./res/img/thumbwebp/alt/the witcher exhibition-alt.webp" src="./res/img/thumbwebp/the witcher exhibition.webp" id="link-image"  activate-typewriter="true" data-url="https://www.youtube.com/watch?v=8aEutg9t9Y4">
         </div>
         
 
@@ -469,7 +456,7 @@
     <div class="box" id="sessions"> 
       <h2 pl="Filmy Sesyjne i Studyjne">Session and Studio Videos</h2>
       <div class="welcome-item">
-        <video class="welcome-image" preload="auto" autoplay loop muted loading="lazy" src="res/video/session-video.mp4" alt=""></video>
+        <video class="welcome-image" preload="none" loop muted playsinline data-autoplay src="res/video/session-video.mp4" alt=""></video>
         </div>
       <p pl="Podekscytowanie związane z nagrywaniem w studiu i podczas sesji wideo jest niezaprzeczalne dla wszystkich zaangażowanych. Dla filmowca sesje to przestrzeń, w której każdy wizualny element pozostaje w dużej mierze pod kreatywną kontrolą. Oświetlenie, kadry, dźwięk — wszystko można precyzyjnie dopasować, aby uchwycić istotę występu. Mimo to presja bycia dyskretnym i niemal niewidzialnym pozostaje ważnym elementem filmowania zespołów na antenie czy w studiu nagraniowym. Priorytetem jest uchwycenie surowych, niefiltrowanych momentów bez zakłócania przepływu kreatywności. Czasami jest jednak odwrotnie — zespół nagrywa do wcześniej przygotowanego podkładu, a zadaniem jest wydobycie z całości jak najlepszego obrazu.
             ">
@@ -478,49 +465,49 @@
       <div class="project-gallery-box" role="presentation"> 
         <!-- Lipali Session 2026-->
         <div class="project-gallery-item">
-            <img class="project-box-image" data-title='Lipali<br>"Live Session 2026"' alt-src="./res/img/thumb/alt/lipali2026-alt-new.jpg" src="./res/img/thumb/lipali2026-new.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/HF71nv4XbIw" data-second="0">
+            <img class="project-box-image" loading="lazy" decoding="async" data-title='Lipali<br>"Live Session 2026"' alt-src="./res/img/thumbwebp/alt/lipali2026-alt-new.webp" src="./res/img/thumbwebp/lipali2026-new.webp" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/HF71nv4XbIw" data-second="0">
         </div>
 
         <!-- ILLUSION STUDIO 1-->
         <div class="project-gallery-item">
-            <img class="project-box-image" data-title='Illusion<br>"Dalej"' alt-src="./res/img/thumb/alt/SES-IL01.jpg" src="./res/img/thumb/SES-IL01.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/dFJ5oksCRcs" data-second="0">
+            <img class="project-box-image" loading="lazy" decoding="async" data-title='Illusion<br>"Dalej"' alt-src="./res/img/thumbwebp/alt/SES-IL01.webp" src="./res/img/thumbwebp/SES-IL01.webp" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/dFJ5oksCRcs" data-second="0">
         </div>
 
         <!-- ODD STARS-->
         <div class="project-gallery-item">
-            <img class="project-box-image" data-title='Odd Stars<br>"Co jest?"' alt-src="./res/img/thumb/alt/odd01.jpg" src="./res/img/thumb/odd01.jpg" activate-typewriter="true" id="video-trigger" data-video-src="https://www.youtube.com/embed/CA2CcIN-8xo" data-second="87"> 
+            <img class="project-box-image" loading="lazy" decoding="async" data-title='Odd Stars<br>"Co jest?"' alt-src="./res/img/thumbwebp/alt/odd01.webp" src="./res/img/thumbwebp/odd01.webp" activate-typewriter="true" id="video-trigger" data-video-src="https://www.youtube.com/embed/CA2CcIN-8xo" data-second="87"> 
         </div>
 
         <!-- THESIS STUDIO 1-->
         <div class="project-gallery-item">
-            <img class="project-box-image" data-title='Thesis<br>"Aż Zabraknie Słów"'  alt-src="./res/img/thumb/alt/SES-Thesis.jpg" src="./res/img/thumb/SES-Thesis.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/yo64R1Xbv7k" data-second="0">
+            <img class="project-box-image" loading="lazy" decoding="async" data-title='Thesis<br>"Aż Zabraknie Słów"'  alt-src="./res/img/thumbwebp/alt/SES-Thesis.webp" src="./res/img/thumbwebp/SES-Thesis.webp" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/yo64R1Xbv7k" data-second="0">
         </div>
         
         <!--TYMON RG-->
         <div class="project-gallery-item">
-            <img class="project-box-image" data-title='Tymon Tymański<br>"Wybaczcie Piechocie"' alt-src="./res/img/thumb/alt/SES-Tymon.jpg" src="./res/img/thumb/SES-Tymon.jpg" id="video-trigger"  activate-typewriter="true" data-video-src="https://www.youtube.com/embed/VEU1ewzPyL8" data-second="0">
+            <img class="project-box-image" loading="lazy" decoding="async" data-title='Tymon Tymański<br>"Wybaczcie Piechocie"' alt-src="./res/img/thumbwebp/alt/SES-Tymon.webp" src="./res/img/thumbwebp/SES-Tymon.webp" id="video-trigger"  activate-typewriter="true" data-video-src="https://www.youtube.com/embed/VEU1ewzPyL8" data-second="0">
         </div>
 
         <!-- MTT MULK-->
         <div class="project-gallery-item">
-            <img class="project-box-image" data-title='Moose The Tramp<br>"Mulk"' alt-src="./res/img/thumb/alt/mulk03.jpg" src="./res/img/thumb/mulk03.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/ZUX-N5hve_Y" data-second="0">
+            <img class="project-box-image" loading="lazy" decoding="async" data-title='Moose The Tramp<br>"Mulk"' alt-src="./res/img/thumbwebp/alt/mulk03.webp" src="./res/img/thumbwebp/mulk03.webp" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/ZUX-N5hve_Y" data-second="0">
         </div>
         
         <!-- ILLUSION STUDIO
         <div class="project-gallery-item">
-            <img class="project-box-image" data-title='Illusion<br>"Zanurzam się"' alt-src="./res/img/thumb/alt/illustudio01.jpg" src="./res/img/thumb/illustudio01.jpg" activate-typewriter="true" id="video-trigger" data-video-src="https://www.youtube.com/embed/VycPu19ZrMQ" data-second="0">
+            <img class="project-box-image" loading="lazy" decoding="async" data-title='Illusion<br>"Zanurzam się"' alt-src="./res/img/thumbwebp/alt/illustudio01.webp" src="./res/img/thumbwebp/illustudio01.webp" activate-typewriter="true" id="video-trigger" data-video-src="https://www.youtube.com/embed/VycPu19ZrMQ" data-second="0">
         </div> 2-->
         
         <!--MILCZENIE OWIEC
         <div class="project-gallery-item">
-            <img class="project-box-image" activate-typewriter="true" data-title='Milczenie Owiec,<br>Radio Gdańsk' alt-src="./res/img/thumb/alt/SES-MO.jpg" src="./res/img/thumb/SES-MO.jpg" id="link-image"
+            <img class="project-box-image" loading="lazy" decoding="async" activate-typewriter="true" data-title='Milczenie Owiec,<br>Radio Gdańsk' alt-src="./res/img/thumbwebp/alt/SES-MO.webp" src="./res/img/thumbwebp/SES-MO.webp" id="link-image"
             data-url="https://youtu.be/9CwLw7hwv-8?feature=shared&t=619"
             >
         </div>-->
 
         <!--LYKO CZY TO
         <div class="project-gallery-item">
-            <img class="project-box-image" data-title='Łyko<br>"Czy To My?"' alt-src="./res/img/thumb/alt/lyko01.jpg" src="./res/img/thumb/lyko01.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/aSTU8dBAOVA" data-second="0">
+            <img class="project-box-image" loading="lazy" decoding="async" data-title='Łyko<br>"Czy To My?"' alt-src="./res/img/thumbwebp/alt/lyko01.webp" src="./res/img/thumbwebp/lyko01.webp" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/aSTU8dBAOVA" data-second="0">
         </div>-->
         
 
@@ -530,7 +517,7 @@
         
 
 
-        <!-- EXP BOX 
+        <!-- EXP BOX -->
 
 
         <div class="box" id="exp">   
@@ -538,7 +525,7 @@
           <h2 pl="O mnie - Doświadczenie jako Filmowiec">
             About Me - My Experience as a Videographer</h2>
           <div class="welcome-item">
-          <video class="welcome-image" preload="auto" autoplay loop muted loading="lazy" src="res/video/about-video.mp4" alt=""></video>
+          <video class="welcome-image" preload="none" loop muted playsinline data-autoplay src="res/video/about-video.mp4" alt=""></video>
           </div>
           <div class="about-box">            
 
@@ -577,7 +564,7 @@
 
             <div class="about-item">
               <div class="profile-pic-circle">
-              <img class="about-image" src="./res/img/profV2.jpg">
+              <img class="about-image" src="./res/img/profV2.jpg" loading="lazy" decoding="async">
               </div>
             </div>
 
@@ -617,13 +604,13 @@
               src="https://www.youtube.com/embed/viw1v9QBUiY" 
               title="YouTube video player" 
               frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen>
             </iframe>    
           </div>
         </div>
 
-        -->
         <!-- CONTACT BOX -->
 
         <!---->
@@ -659,7 +646,7 @@
         <div class="box showreel-box" >  
           <h2 pl="Wybrane projekty">Highlighted Projects</h2>    
           <div class="welcome-item">
-            <video class="welcome-image" preload="auto" autoplay loop muted loading="lazy" src="res/video/highlights-video.mp4" alt=""></video>
+            <video class="welcome-image" preload="none" loop muted playsinline data-autoplay src="res/video/highlights-video.mp4" alt=""></video>
             </div>
               <p pl="Tak samo jak trudno jest wybrać swój ulubiony zespół, równie trudno jest wskazać jedno ulubione wideo. Zamiast tego lepiej zaprezentować kolekcję projektów. Niezależnie od tego, czy grasz death metal, jazz, funk czy trip-hop, żaden koncert nie jest zbyt trudny do uchwycenia na filmie (chyba że trzeba założyć noktowizor, żeby ostrzyć obraz).">
                 
@@ -673,7 +660,7 @@
                 <!-- LIVE IN WARSAW-->
                 <div class="project-list-item" id="gotoLIW">
                   <div class="welcome-item">
-                    <img class="welcome-image" data-title='Lucky Chops<br>"Live in Warsaw"' src="./res/img/thumb/LV-LCLIWalt.jpg" activate-typewriter="true" id="video-trigger" data-video-src="https://www.youtube.com/embed/xC6JEwFLcJk" data-second="2396">
+                    <img class="welcome-image" loading="lazy" decoding="async" data-title='Lucky Chops<br>"Live in Warsaw"' src="./res/img/thumbwebp/LV-LCLIWalt.webp" activate-typewriter="true" id="video-trigger" data-video-src="https://www.youtube.com/embed/xC6JEwFLcJk" data-second="2396">
                   </div>
                   <div class="project-list-text">
                     <h3>Lucky Chops "Live in Warsaw"</h3>
@@ -688,7 +675,7 @@
               <!-- LUXTORPEDA-->
               <div class="project-list-item" id="gotoLUX">
                 <div class="welcome-item">
-                  <img class="welcome-image" data-title='Luxtorpeda<br>"Krew z Krwi"' src="./res/img/thumb/lux.jpg" activate-typewriter="true" id="video-trigger" data-video-src="https://www.youtube.com/embed/Xc3_kgze-Zs" data-second="2396">
+                  <img class="welcome-image" loading="lazy" decoding="async" data-title='Luxtorpeda<br>"Krew z Krwi"' src="./res/img/thumbwebp/lux.webp" activate-typewriter="true" id="video-trigger" data-video-src="https://www.youtube.com/embed/Xc3_kgze-Zs" data-second="2396">
                 </div>
                 <div class="project-list-text">
                   <h3>Luxtorpeda "Krew z Krwi"</h3>
@@ -702,7 +689,7 @@
 
                 <div class="project-list-item" id="gotoSM">
                   <div class="welcome-item">
-                    <img class="welcome-image" data-title='Mikromusic<br>"Live in Stary Maneż"' src="./res/img/thumb/LV-MMSMalt.jpg" activate-typewriter="true" id="video-trigger" data-video-src="https://www.youtube.com/embed/HV0RozRx1ig" data-second="2126">
+                    <img class="welcome-image" loading="lazy" decoding="async" data-title='Mikromusic<br>"Live in Stary Maneż"' src="./res/img/thumbwebp/LV-MMSMalt.webp" activate-typewriter="true" id="video-trigger" data-video-src="https://www.youtube.com/embed/HV0RozRx1ig" data-second="2126">
                   </div>
                   <div class="project-list-text">
                     <h3>Mikromusic "Live in Stary Maneż"</h3>
@@ -721,7 +708,7 @@
                 <div class="project-list-item" id="gotoKOWALSKI">
                   <div class="welcome-item">
                     <a href="https://www.youtube.com/watch?v=r2RIxxRcsjc" onclick='window.open("https://www.youtube.com/watch?v=r2RIxxRcsjc");return false;'> 
-                    <img class="welcome-image" data-title='Spięty<br>"Kowalski Własnego Losu"' src="./res/img/thumb/kowalski.jpg" id="video-trigger" activate-typewriter="true" data-video-src="" data-second="">
+                    <img class="welcome-image" loading="lazy" decoding="async" data-title='Spięty<br>"Kowalski Własnego Losu"' src="./res/img/thumbwebp/kowalski.webp" id="video-trigger" activate-typewriter="true" data-video-src="" data-second="">
                   </a></div>
                   <div class="project-list-text">
                     <h3 pl='Spięty "Kowalski" - Official Single '>Spięty "Kowalski" - Official Single</h3>
@@ -738,7 +725,7 @@
 
                 <div class="project-list-item" id="gotoILLU">
                   <div class="welcome-item">
-                    <img class="welcome-image" data-title='Illusion<br>"Tchórz"' src="./res/img/thumb/tchorz02.jpg" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/1oHNSryjKSw" data-second="0">
+                    <img class="welcome-image" loading="lazy" decoding="async" data-title='Illusion<br>"Tchórz"' src="./res/img/thumbwebp/tchorz02.webp" id="video-trigger" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/1oHNSryjKSw" data-second="0">
                   </div>
                   <div class="project-list-text">
                     <h3 pl='Illusion "Tchórz" - Teledysk koncertowy '>Illusion "Tchórz" Live Music Video  </h3>
@@ -755,7 +742,7 @@
                 <div class="project-list-item" id="gotoOK">
                   <div class="welcome-item">
                     <a href="https://youtu.be/xOOX5x0GvUY?si=yEhNKj8oiuj2YI3-&t=622" onclick='window.open("https://youtu.be/xOOX5x0GvUY?si=yEhNKj8oiuj2YI3-&t=622");return false;'> 
-                    <img class="welcome-image" data-title='Obsidian Kingdom<br>"Live in Gdansk"' src="./res/img/thumb/ok.jpg" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/xOOX5x0GvUY" data-second="400"></a>
+                    <img class="welcome-image" loading="lazy" decoding="async" data-title='Obsidian Kingdom<br>"Live in Gdansk"' src="./res/img/thumbwebp/ok.webp" activate-typewriter="true" data-video-src="https://www.youtube.com/embed/xOOX5x0GvUY" data-second="400"></a>
                   </div>
                   <div class="project-list-text">
                     <h3>Obsidian Kingdom "Live in Gdańsk"  </h3>
@@ -771,7 +758,7 @@
                 <div class="project-list-item" id="gotoD20">
                   <div class="welcome-item">
                     <a href="https://www.facebook.com/FractalVideos/videos/1680225458763547" onclick='window.open("https://www.facebook.com/FractalVideos/videos/1680225458763547");return false;'> 
-                    <img class="welcome-image" data-title='Lucky Chops<br>"D20 (Castle Version)"' src="./res/img/thumb/d20castle.jpg" activate-typewriter="true" data-video-src="" data-second=""></a>
+                    <img class="welcome-image" loading="lazy" decoding="async" data-title='Lucky Chops<br>"D20 (Castle Version)"' src="./res/img/thumbwebp/d20castle.webp" activate-typewriter="true" data-video-src="" data-second=""></a>
                   </div>
                   <div class="project-list-text">
                     <h3>Lucky Chops "D20 - Castle Version"</h3>

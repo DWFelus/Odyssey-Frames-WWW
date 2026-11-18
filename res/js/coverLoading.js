@@ -61,7 +61,39 @@ function isResourceWithLazyLoading(entry) {
   return entry.loading === "lazy";
 }
 
-document.addEventListener("DOMContentLoaded", trackProgress);
+function setupSectionVideos() {
+  var sectionVideos = document.querySelectorAll("video[data-autoplay]");
+
+  if (!("IntersectionObserver" in window)) {
+    sectionVideos.forEach(function(video) {
+      video.play().catch(function(error) {
+        console.warn("Section video autoplay deferred:", error);
+      });
+    });
+    return;
+  }
+
+  var videoObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.play().catch(function(error) {
+          console.warn("Section video autoplay deferred:", error);
+        });
+      } else {
+        entry.target.pause();
+      }
+    });
+  }, { rootMargin: "300px 0px" });
+
+  sectionVideos.forEach(function(video) {
+    videoObserver.observe(video);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  trackProgress();
+  setupSectionVideos();
+});
 
 window.addEventListener('load', function() {
   cover = document.getElementById('cover');
